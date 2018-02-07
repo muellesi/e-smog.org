@@ -1,8 +1,18 @@
 ---
 # Front matter comment to ensure Jekyll properly reads file.
 ---
+
+@import "vars";
+
 nav {
-  min-height: 6em;
+  min-height: 5em;
+  background-color: $light;
+}
+
+.navbar-brand{
+  img{
+    max-height: 4em;
+  }
 }
 
 /* Padding below the footer and lighter body text */ 

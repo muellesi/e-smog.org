@@ -1,14 +1,7 @@
 ---
 # Front matter comment to ensure Jekyll properly reads file.
 ---
-$body-bg: #cccccc;
-$body-color: #000000;
-$enable-shadows: true;
 
-$theme-colors: ( 
-  "primary": #003982, 
-  "secondary":  #003982,
-  "danger": #ff4136
-);
 
+@import "vars";
 @import "bootstrap/scss/bootstrap";

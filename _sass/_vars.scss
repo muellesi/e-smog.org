@@ -1,0 +1,22 @@
+$body-bg: #cccccc;
+$body-color: #000000;
+$enable-shadows: true;
+
+$warning: #ffd900;
+$success: #008000;
+$info: #0077ff;
+$light: #edeff5;
+$dark: #303133;
+
+$navbar-light-color: $dark;
+
+$theme-colors: ( 
+  "primary": #636363, 
+  "secondary":  #003982,
+  "danger": #9c1710,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "light":      $light,
+  "dark":       $dark
+);
