@@ -1,18 +1,24 @@
-$body-bg: #cccccc;
-$body-color: #000000;
-$enable-shadows: true;
-
 $warning: #ffd900;
 $success: #008000;
 $info: #0077ff;
+
 $light: #edeff5;
+$lighter: #fafafa;
+$grey: #727272;
 $dark: #303133;
+$darker: #131414;
+$highlight: #22b6fa;
+
+$body-bg: $light;
+$body-color: #000000;
+
+$enable-shadows: true;
 
 $navbar-light-color: $dark;
 
 $theme-colors: ( 
   "primary": #636363, 
-  "secondary":  #003982,
+  "secondary":  #1e5dbd,
   "danger": #9c1710,
   "success":    $success,
   "info":       $info,
@@ -20,3 +26,6 @@ $theme-colors: (
   "light":      $light,
   "dark":       $dark
 );
+
+$big-navbar-height: 5rem;
+$small-navbar-height: 3rem;
