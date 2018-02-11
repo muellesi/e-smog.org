@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
   <meta charset="utf-8">
@@ -8,12 +8,14 @@
 
   <meta name="description" content="">
   <meta name="author" content="Simon Mueller">
-  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="{{"favicon.ico" | absolute_url }}">
 
   <title>{{ site.title }}</title>
-  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{{"/css/bootstrap.min.css" | absolute_url }}">
 
-  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/custom.css">
+  <link rel="stylesheet" type="text/css" href="{{"/css/custom.css" | absolute_url }}">
+  <link rel="stylesheet" type="text/css" href="{{"/css/material-icons.css" | absolute_url }}">
+
 </head>
 
 <body>
