@@ -7,10 +7,11 @@
 header {
     nav.navbar {
         min-height: $big-navbar-height;
-        background-color: $light;
+        background-color: $lighter !important;
         padding: 0;
         box-shadow: 0 0 2px rgba(0, 0, 0, .1);
         margin-bottom: 1rem; 
+        transition: 0.1s;
 
         .navbar-brand {
             img {
@@ -27,6 +28,7 @@ header {
         }
         div.collapse {
             height: 100%;
+            justify-content: flex-end;
 
             ul.navbar-nav {
                 height: 100%;
@@ -34,7 +36,6 @@ header {
                 a:hover {
                     background-color: $highlight;
                     color: $light;
-                    transition: 0.3s;
                 }
             }
         }
@@ -42,7 +43,6 @@ header {
 }
 
 nav.navbar.fixed-top {
-    transition: 0.3s;
     box-shadow: 0 0 5px rgba(0, 0, 0, .5);
     min-height: $small-navbar-height;
 
@@ -99,7 +99,19 @@ nav.navbar.fixed-top {
         font-weight: 200;
         line-height: 1;
         letter-spacing: -.05rem;
+        margin-bottom: 1rem;
     }
+
+    .featurette-heading:after {
+        display: block;
+        content: "";
+        width: 30%;
+        background-color: $highlight;
+        height: 0.2rem;
+        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+    }
+
     .post-text {
         padding: 0 3em 3em 3em;
         text-align: justify;
@@ -147,11 +159,12 @@ nav.navbar.fixed-top {
 }
 
 
+
 footer {
     min-height: 5rem;
-    background-color: $dark;
+    background-color: $darker;
     margin-top: 1rem;
-    border-top: 3px solid $darker;
+    border-top: 3px solid $highlight;
     color: $light;
 }
 
@@ -169,6 +182,10 @@ a:hover {
 .post-meta {
     font-size: 80%;
     color: $grey;
+    line-height: 80%;
+    .material-icons{
+        font-size: 120%;
+    }
 }
 
 

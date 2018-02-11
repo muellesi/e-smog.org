@@ -2,7 +2,7 @@ $warning: #ffd900;
 $success: #008000;
 $info: #0077ff;
 
-$light: #edeff5;
+$light: #ececec;
 $lighter: #fafafa;
 $grey: #727272;
 $dark: #303133;
@@ -13,6 +13,8 @@ $body-bg: $light;
 $body-color: #000000;
 
 $enable-shadows: true;
+$enable-rounded: true;
+$enable-gradients: true;
 
 $navbar-light-color: $dark;
 
@@ -28,4 +30,4 @@ $theme-colors: (
 );
 
 $big-navbar-height: 5rem;
-$small-navbar-height: 3rem;
+$small-navbar-height: 4rem;
