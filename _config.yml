@@ -13,7 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: ElektroSmog &#8211; Tutorials rund um Gaming, Bildbearbeitungs- und sonstige Software
+title: ElektroSmog
+subtitle: Tutorials rund um Gaming, Bildbearbeitungs- und sonstige Software
 name: ElektroSmog
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -21,6 +22,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://test.e-smog.org" # the base hostname & protocol for your site, e.g. http://example.com
+headerimage: assets/header.png
 
 # Build settings
 markdown: kramdown

@@ -10,7 +10,6 @@ header {
         background-color: $lighter !important;
         padding: 0;
         box-shadow: 0 0 2px rgba(0, 0, 0, .1);
-        margin-bottom: 1rem; 
         transition: 0.1s;
 
         .navbar-brand {
@@ -56,6 +55,43 @@ nav.navbar.fixed-top {
         line-height: $small-navbar-height;
     }
 }
+
+.head-title{
+    background: $header-image-url;
+    background-size: cover;
+    color: $lighter;
+    text-shadow: 1px 1px $dark;
+    margin-bottom: 1.5rem;
+    padding: 0;
+
+    .overlay {
+        width: 100%;
+        height: 100%;
+        min-height: 20rem;
+        overflow: auto;
+        padding-top: 5vw;
+        background: rgba($dark, 0.4);
+    }
+
+    h1 {
+        z-index: 0;
+        color: #fff;
+        font-size: calc(3vh + 3vw);
+        line-height: 65px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        width: 100%;
+    }
+
+    h2 {
+        width: 100%;
+        font-weight: 200;
+        font-size: calc(1vh + 1vw);
+        text-align: center;
+    }
+}
+
 
 /* CAROUSEL
   -------------------------------------------------- */
@@ -158,7 +194,9 @@ nav.navbar.fixed-top {
     }
 }
 
-
+.container.main-content {
+    margin-top: 2rem;
+}
 
 footer {
     min-height: 5rem;
@@ -188,6 +226,10 @@ a:hover {
     }
 }
 
+.static-background {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
 
 /* RESPONSIVE CSS
   -------------------------------------------------- */
