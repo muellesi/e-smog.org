@@ -13,9 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: ElektroSmog
+title: e-smog.org
 subtitle: Tutorials rund um Gaming, Bildbearbeitungs- und sonstige Software
-name: ElektroSmog
+name: e-smog.org
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -23,6 +23,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://test.e-smog.org" # the base hostname & protocol for your site, e.g. http://example.com
 headerimage: assets/header.png
+logo: ""
 
 # Build settings
 markdown: kramdown
@@ -46,6 +47,8 @@ exclude:
    - Gemfile
    - Gemfile.lock
    - node_modules
+   - package.json
+   - package-lock.json
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
@@ -110,3 +113,34 @@ pagination:
   indexpage: 'index'
 
 ############################################################
+
+
+autopages:
+
+  # Site-wide kill switch, disable here and it doesn't run at all 
+  enabled: true
+
+  # Category pages, omit entire config element to disable
+  categories: 
+    # Optional, the list of layouts that should be processed for every category found in the site
+    layouts: 
+      - 'category-view.html'
+    # Optional, the title that each category paginate page should get (:cat is replaced by the Category name)
+    title: 'Posts in category :cat'
+    # Optional, the permalink for the  pagination page (:cat is replaced), 
+    # the pagination permalink path is then appended to this permalink structure
+    permalink: '/category/:cat'
+
+  # Collection pages, omit to disable
+  collections:
+    layouts: 
+      - 'category-view.html'
+    title: 'Posts in collection :coll' # :coll is replaced by the collection name
+    permalink: '/collection/:coll'
+  
+  # Tag pages, omit to disable
+  tags:
+    layouts: 
+      - 'category-view.html'
+    title: 'Posts tagged with :tag' # :tag is replaced by the tag name
+    permalink: '/tag/:tag'
