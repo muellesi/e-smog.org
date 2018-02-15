@@ -1,8 +1,12 @@
 <header>
   <nav id="header" class="navbar navbar-expand-md navbar-light bg-light">
-    <div class="container">
+    <div class="container-fluid">
         <a class="navbar-brand" href="{{ "/" | absolute_url }}">
-          <img src="{{ "assets/logo.png" | absolute_url }}" alt="{{site.name}}"/>
+          {% if site.logo != "" %}
+          <img src="{{ site.logo | absolute_url }}" alt="{{site.name}}"/>
+          {% else %}
+          <h1 class="brand-heading">{{ site.name }}</h1>
+          {% endif %}
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
           aria-expanded="false" aria-label="Toggle navigation">

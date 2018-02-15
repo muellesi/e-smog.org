@@ -1,27 +1,31 @@
+$enable-shadows: true;
+$enable-rounded: true;
+$enable-gradients: true;
+
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/functions";
+
+/*Colors have to be defined up here in order to overwrite color maps like $theme-colors */
+$primary: #2c2c2c;
+$secondary: #56a5ff;
+$danger: #9c1710;
 $warning: #ffd900;
 $success: #008000;
-$info: #0077ff;
-
+$info: #56a5ff;
 $light: #ececec;
 $lighter: #fafafa;
 $grey: #727272;
 $dark: #303133;
 $darker: #131414;
 $highlight: #22b6fa;
-
-$body-bg: $light;
+$body-bg: $lighter;
 $body-color: #000000;
-
-$enable-shadows: true;
-$enable-rounded: true;
-$enable-gradients: true;
-
 $navbar-light-color: $dark;
 
 $theme-colors: ( 
-  "primary": #636363, 
-  "secondary":  #1e5dbd,
-  "danger": #9c1710,
+  "primary":    $primary, 
+  "secondary":  $secondary,
+  "danger":     $danger,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
@@ -29,6 +33,13 @@ $theme-colors: (
   "dark":       $dark
 );
 
+
+/* Now import the bootstrap standard variables for access to standard values. Defined colors are overwritten */
+@import "bootstrap/scss/variables";
+
+
 $big-navbar-height: 5rem;
 $small-navbar-height: 4rem;
 $header-image-url: url("/assets/circuit_board.jpg");
+$headings-font-family: Montserrat, $font-family-base;
+$line-height-base: 1.625;

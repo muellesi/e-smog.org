@@ -4,14 +4,6 @@
 {% include header.html %}
 
 <main role="main">
-
-  <div class="container-fluid head-title static-background">
-    <div class="overlay">
-      <h1 class="display-1">{{ site.name }} </h1>
-      <h2> {{ site.subtitle }}</h2>
-    </div>
-  </div>
-
   <div class="container">
     {% for post in paginator.posts %}
     <div class="row featurette">
@@ -39,20 +31,19 @@
     <hr class="featurette-divider"> 
     {% endfor %}
 
-{% if paginator.total_pages > 1 %}
-<ul>
-  {% if paginator.previous_page %}
-  <li>
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
-  </li>
+  {% if paginator.total_pages > 1 %}
+  <nav>
+    <ul class="pagination">
+      {% if paginator.page_trail %}
+      {% for trail in paginator.page_trail %}
+        <li class="page-item{% if page.url == trail.path %} active{% endif %}">
+            <a class="page-link" href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}">{{ trail.num }}</a>
+        </li>
+      {% endfor %}
+    {% endif %}
+    </ul>
+  </nav>
   {% endif %}
-  {% if paginator.next_page %}
-  <li>
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
-  </li>
-  {% endif %}
-</ul>
-{% endif %}
   </div>
 </main>  
   <!-- /.container -->

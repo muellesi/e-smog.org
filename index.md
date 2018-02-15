@@ -6,4 +6,5 @@ layout: home
 pagination:
   enabled: true
   permalink: /page/:num.html
+  per_page: 5
 ---
