@@ -23,6 +23,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://test.e-smog.org" # the base hostname & protocol for your site, e.g. http://example.com
 headerimage: assets/header.png
+smallicon: assets/logo-50x50.png
+largeicon: assets/logo.png
 logo: ""
 
 # Build settings
@@ -49,6 +51,9 @@ exclude:
    - node_modules
    - package.json
    - package-lock.json
+   - jekyll-build.sh
+   - jekyll-build-watch.sh
+   - jekyll-serve.sh
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/

@@ -7,13 +7,13 @@
   <div class="container">
     {% for post in paginator.posts %}
     <div class="row featurette">
-      <div class="featurette-image col-md-5">
+      <div class="featurette-image col-md-4">
         <div class="img-container mx-auto">
             <a href="{{ post.url | absolute_url }}"><img class="featurette-image mx-auto" src="{{ post.image | absolute_url }}" alt=""></a>
         </div>
       </div>
 
-      <div class="post-text col-md-7">
+      <div class="post-text col-md-8">
         <h2 class="featurette-heading">
           <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
         </h2>
