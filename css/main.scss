@@ -5,7 +5,7 @@
 
 header {
     nav.navbar {
-        min-height: $big-navbar-height;
+        height: $big-navbar-height;
         background-color: $lighter !important;
         padding: 0;
        // box-shadow: 0 0 2px rgba(0, 0, 0, .1);
@@ -46,7 +46,7 @@ header {
 
 nav.navbar.fixed-top {
     box-shadow: 0 0 5px rgba($dark, .3);
-    min-height: $small-navbar-height;
+    height: $small-navbar-height;
 
     .navbar-brand {
         img {
@@ -227,6 +227,33 @@ main {
         text-align: justify;
     }
 }
+
+
+/* Dirty dirty hack for correct anchor behavior in connection with the floating navbar */
+.heading-anchor:before {
+    display: block; 
+    content: " "; 
+    margin-top: -$big-navbar-height * 1.2; 
+    height: $big-navbar-height * 1.2; 
+    visibility: hidden; 
+    pointer-events: none;
+}
+
+h1, h2, h3, 
+h4, h5, h6 {
+    a.heading-anchor-link {
+        transition: 0.3s ease;
+        color: rgba($dark, 0);
+    }
+}
+
+h1:hover, h2:hover, h3:hover, 
+h4:hover, h5:hover, h6:hover {
+    a.heading-anchor-link {
+       color: rgba($dark, 1);
+    }
+}
+
 
 /* GLOBAL */
 

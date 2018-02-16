@@ -15,12 +15,14 @@
 
       <div class="post-text col-md-8">
         <h2 class="featurette-heading">
-          <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+          <a href="{{ post.url | absolute_url }}">{{ post.title | escape }}</a>
         </h2>
         <div class="postmeta">        
-            <span class="post-meta"><i class="material-icons">perm_contact_calendar</i> Von {{ post.author }}</span> &middot;
-            <span class="post-meta"><i class="material-icons">date_range</i> {{ post.date | date: "%d.%m.%Y" }}</span> &middot;
-            <span class="post-meta"><i class="material-icons">folder_special</i> {{ post.categories[0] }}</span>
+            <span class="post-meta"><i class="material-icons">date_range</i> {{ post.date | date: "%d.%m.%Y" }}</span> &nbsp;
+
+            <span class="post-meta"><i class="material-icons">folder_special</i>
+              {% for category in post.categories %}{% if category != post.categories[0] %}, {%endif%}{{ category }}{% endfor %}
+            </span>
         </div>
         <div class="p-3 mb-2">
             {{ post.excerpt }}
