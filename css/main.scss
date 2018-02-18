@@ -2,6 +2,7 @@
 # Front matter comment to ensure Jekyll properly reads file. 
 --- 
 @import "vars";
+@import "syntax-highlight";
 
 header {
     nav.navbar {
