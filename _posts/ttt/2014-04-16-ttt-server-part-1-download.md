@@ -10,7 +10,7 @@ showtoc: true
 
 Da ich vor einiger Zeit selbst vor dem Problem stand, einen Dedicated Server für den Garry’s Mod-Spielmodus Trouble in Terrorist Town zu erstellen und es sehr wenige Tutorials gibt, welche sich wirklich ausführlich mit diesem Thema beschäftigen: Hier eine (hoffentlich) sehr ausführliche Tutorialreihe zu diesem Thema.
 
-### (System-)Voraussetzungen
+## (System-)Voraussetzungen
 Einen Dedicated Server aufzusetzen, ergibt nur Sinn, wenn bestimmte Bedingungen erfüllt sind:
 
 * Der Computer muss aus dem Internet via IPv4 erreichbar sein
@@ -19,7 +19,7 @@ Einen Dedicated Server aufzusetzen, ergibt nur Sinn, wenn bestimmte Bedingungen 
 * Natürlich sollte auch der PC an sich nicht zu schwach auf der Brust sein. Genauere Angaben folgen, nachdem ich einige Tests zu diesem Thema gemacht habe. Grundsätzlich gilt: je mehr Spieler auf einem Server spielen wollen, desto leistungsstärker (CPU &amp; RAM) sollte dieser sein. Generell sind Source-Dedicated Server aber nicht sehr Ressourcenhungrig, deswegen tut es in den meisten Fällen ein ganz normaler Home-PC.  (Auf meinem alten PC, ausgestattet mit einem Intel i5-2500 und 8GB RAM liefen der Server mit bis zu 7 verbundenen Spielern und Garry’s Mod selbst gleichzeitig und es kam zu keinerlei Problemen).
 * Eine eigene URL, unter der der Server erreichbar ist, wäre von Vorteil. Dies ist zum Beispiel mit dem Dienst von [no-ip](http://www.noip.com/) möglich.
 
-### Steam Cmd herunterladen und aktualisieren
+## Steam Cmd herunterladen und aktualisieren
 
 Im [Valve Developer-Wiki](https://developer.valvesoftware.com/wiki/SteamCMD#Downloading_SteamCMD) kann man die sogenannte Steam-Console herunterladen. Diese ist eine Minimalversion von Steam ohne Benutzeroberfläche.  Sie wird hauptsächlich zum Einrichten von Dedicated Servern genutzt - so auch hier in diesem Tutorial.
 
@@ -32,7 +32,7 @@ Nach dem Entpacken startet ihr die steamcmd.exe. Es sollte sich ein Konsolenfens
 
 
 
-### Garry’s Mod Dedicated Server herunterladen
+## Garry’s Mod Dedicated Server herunterladen
 
 Jetzt wo ihr also eine funktionierende SteamCMD habt, könnt ihr den eigentlichen Garry’s Mod-Server herunterladen. Im noch geöffneten SteamCMD-Fenster gebt ihr dazu den Befehl `login anonymous` ein. Damit werdet ihr bei Steam eingeloggt, sodass ihr den Server herunterladen könnt.
 
