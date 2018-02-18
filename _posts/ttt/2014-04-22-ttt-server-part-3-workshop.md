@@ -73,7 +73,7 @@ Am einfachsten geht das, wenn ihr im Unterordner /garrysmod/lua/autorun/server e
 resource.AddWorkshop( "workshopid" )
 ~~~ 
 
-Anstatt "workhopid" müsst ihr für jedes Addon, dessen Download ihr erzwingen wollt dessen ID in Anführungszeichen einfügen. Wenn also die URL eines Addons im Workshop `http://steamcommunity.com/sharedfiles/filedetails/?id=1234567` lautet, müsstet ihr die folgende Zeile einfügen, um dessen Download zu erzwingen: `resource.AddWorkshop( "1234567" )`. Mit ein paar mehr Addons sähe das dann so aus:
+Anstatt "workshopid" müsst ihr für jedes Addon, dessen Download ihr erzwingen wollt dessen ID in Anführungszeichen einfügen. Wenn also die URL eines Addons im Workshop `http://steamcommunity.com/sharedfiles/filedetails/?id=1234567` lautet, müsstet ihr die folgende Zeile einfügen, um dessen Download zu erzwingen: `resource.AddWorkshop( "1234567" )`. Mit ein paar mehr Addons sähe das dann so aus:
 
 ~~~ lua
 resource.AddWorkshop( "1234567" ) --Pedobär Playermodel Version 1337
