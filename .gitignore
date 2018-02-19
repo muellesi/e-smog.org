@@ -4,3 +4,4 @@ _site
 .vscode
 node_modules
 /deploy
+/deploy-test
