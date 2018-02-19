@@ -10,6 +10,8 @@ showtoc: true
 
 In diesem Teil soll es nun wie bereits angekündigt darum gehen, unserem Server ein wenig Leben in Form von Steam-Workshop-Inhalten wie neuen Waffen, Funktionen – oder dem allerwichtigsten: zusätzlichen Maps! - einzuhauchen.
 
+<!--more-->
+
 ## Steam API-Key besorgen
 
 Um mit eurem Server auf den Steam Workshop zugreifen zu können, braucht ihr zunächst einen Steam API-Key. Diesen könnt ihr euch unter [http://steamcommunity.com/dev/apikey](http://steamcommunity.com/dev/apikey) generieren lassen.

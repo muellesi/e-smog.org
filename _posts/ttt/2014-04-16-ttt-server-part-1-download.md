@@ -10,6 +10,8 @@ showtoc: true
 
 Da ich vor einiger Zeit selbst vor dem Problem stand, einen Dedicated Server für den Garry’s Mod-Spielmodus Trouble in Terrorist Town zu erstellen und es sehr wenige Tutorials gibt, welche sich wirklich ausführlich mit diesem Thema beschäftigen: Hier eine (hoffentlich) sehr ausführliche Tutorialreihe zu diesem Thema.
 
+<!--more-->
+
 ## (System-)Voraussetzungen
 Einen Dedicated Server aufzusetzen, ergibt nur Sinn, wenn bestimmte Bedingungen erfüllt sind:
 

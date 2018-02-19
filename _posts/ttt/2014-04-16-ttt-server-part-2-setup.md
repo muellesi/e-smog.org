@@ -10,6 +10,8 @@ showtoc: true
 
 Nach dem Herunterladen folgt jetzt die grundlegende Einrichtung des Servers. In diesem Teil möchte ich euch zeigen, wie man einen Garry’s Mod-Server zu einem Trouble in Terrorist Town Server macht und was es dabei zu beachten gibt. Nach diesem Teil ist der Server bereit für einen ersten Test.
 
+<!--more-->
+
 ## Grundeinstellungen für den Server
 Da es in diesem Tutorial um einen TTT-Server gehen soll, werde ich euch jetzt auch die Einstellungen für Trouble in Terrorist Town zeigen. Für andere Spielmodi von Garry’s Mod ist die Vorgehensweise wahrscheinlich ähnlich.
 
