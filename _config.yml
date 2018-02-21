@@ -27,6 +27,20 @@ smallicon: assets/logo-50x50.png
 largeicon: assets/logo.png
 logo: ""
 
+defaults: 
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
 # Build settings
 markdown: kramdown
 plugins:
@@ -136,14 +150,14 @@ autopages:
     title: 'Posts in category :cat'
     # Optional, the permalink for the  pagination page (:cat is replaced), 
     # the pagination permalink path is then appended to this permalink structure
-    permalink: '/category/:cat'
+    permalink: '/category/:cat.html'
 
   # Collection pages, omit to disable
   collections:
     layouts: 
       - 'category-view.html'
     title: 'Posts in collection :coll' # :coll is replaced by the collection name
-    permalink: '/collection/:coll'
+    permalink: '/collection/:coll.html'
   
   # Tag pages, omit to disable
   tags:
