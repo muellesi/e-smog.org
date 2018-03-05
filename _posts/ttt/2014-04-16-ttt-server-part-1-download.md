@@ -4,7 +4,7 @@ title:  "TTT Dedicated Server Part 1: Download"
 author: Simon Müller
 date:   2014-04-16 21:30:33 +0100
 categories: TTT-Server
-image: assets/gm-mods.jpg
+image: assets/post_images/garrysmod.jpg
 showtoc: true
 ---
 

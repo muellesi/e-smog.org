@@ -5,9 +5,13 @@
 @import "syntax-highlight";
 
 header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
     nav.navbar {
-        height: $big-navbar-height;
+        min-height: $big-navbar-height;
         background-color: $lighter !important;
+        box-shadow: 0 0 5px rgba($dark, .3);
         padding: 0;
        // box-shadow: 0 0 2px rgba(0, 0, 0, .1);
         transition: 0.1s;
@@ -42,25 +46,6 @@ header {
                 }
             }
         }
-    }
-}
-
-nav.navbar.fixed-top {
-    box-shadow: 0 0 5px rgba($dark, .3);
-    height: $small-navbar-height;
-
-    .navbar-brand {
-        img {
-            max-height: 0.1rem + $small-navbar-height - 1rem;
-            height: 100%;
-         }
-         h1 {
-             font-size: $small-navbar-height * 2/3;
-             padding: 5px;
-         }
-    }
-    a {
-        line-height: $small-navbar-height;
     }
 }
 
@@ -166,28 +151,45 @@ main .featurette:first-of-type {
     }
 
     .featurette-image{
-        overflow: hidden;
 
-        .img-container{
+        .img-square-container{
                 position: relative;
                 width: 80%;
-            a{
+                overflow: hidden;
+
+            &:before{
                 display: block;
-                width: 100%;
-                height: 100%;
+                padding-top: 100%;
+                content: "";
+            }
+            .img-square-content {
                 position: absolute;
                 top: 0;
                 left: 0;
-                overflow: hidden;
-                border-radius: 10% !important;
-                transition: all 0.3s ease;
-                text-align: center;
-
-                img{
-                    transition: inherit;
+                bottom: 0;
+                right: 0;
+                text-align:center;  // old ie
+                font: 0/0 a;        // old ie
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     height: 100%;
-                    width: auto;
-                }
+                    width: 100%;
+                    position: relative;
+                    text-align: center;
+                    font: 0/0 a;
+                    vertical-align: middle;
+                    transition: all 0.3s ease;
+
+                    img{
+                        transition: inherit;
+                        height: 100%;
+                        width: auto;
+                        align-self: center;
+                    }
+                }   
+
             }
 
             a:hover {
@@ -197,11 +199,6 @@ main .featurette:first-of-type {
                     transform: scale(1.1);
                 }
             }   
-        }
-        .img-container:before{
-                display: block;
-                padding-top: 100%;
-                content: "";
         }
     }
 }
@@ -281,4 +278,9 @@ a:hover {
     border: 0;
     background-color: $light;
     border-radius: 0;
+}
+
+.affix {
+    position: sticky;
+    top: $big-navbar-height + 1rem;
 }

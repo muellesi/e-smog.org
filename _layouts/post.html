@@ -1,14 +1,15 @@
 ---
 ---
-{% include htmlhead.html %}
-{% include header.html %}
+{% include html_head.html %}
+{% include navbar.html %}
 <main role="main">
     <div class="container main-content">
             <div class="row">
-                <div class="col{% if page.showtoc == true %}-sm-9{% endif %}">
-                    <h1> {{ page.title }} </h1>
+                <div class="col-sm-9">
+                    <h1 class="page-header"> {{ page.title }} </h1>
                     {{content}}
                 </div>
+
 
                 {% if page.showtoc == true %}
                 <div class="col-sm-3">
@@ -31,4 +32,4 @@
             </div>
     </div>
 </main>
-{% include footer.html %}
+{% include post_footer.html %}

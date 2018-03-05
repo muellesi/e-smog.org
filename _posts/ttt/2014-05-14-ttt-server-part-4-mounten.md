@@ -4,7 +4,7 @@ title:  "TTT Dedicated Server Part 4: Fehlende Physik - CSS Mounten"
 author: Simon Müller
 date:   2014-05-14 21:30:33 +0100
 categories: TTT-Server
-image: assets/gm-mods.jpg
+image: assets/post_images/garrysmod.jpg
 showtoc: true
 ---
 

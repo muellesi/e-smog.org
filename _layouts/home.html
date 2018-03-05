@@ -1,19 +1,22 @@
 ---
 ---
-{% include htmlhead.html %} 
-{% include header.html %}
+{% include html_head.html %} 
+{% include navbar.html %}
 
 <main role="main">
   <div class="container">
     {% for post in paginator.posts %}
     <div class="row featurette">
-      <div class="featurette-image col-md-4">
-        <div class="img-container mx-auto">
-            <a href="{{ post.url | absolute_url }}"><img class="featurette-image mx-auto" src="{{ post.image | absolute_url }}" alt=""></a>
+
+      <div class="featurette-image col-md-3">
+        <div class="img-square-container mx-auto">
+          <div class="img-square-content">
+              <a href="{{ post.url | absolute_url }}"><img class="featurette-image mx-auto" src="{{ post.image | absolute_url }}" alt=""></a>
+          </div>
         </div>
       </div>
 
-      <div class="post-text col-md-8">
+      <div class="post-text col-md-9">
         <h2 class="featurette-heading">
           <a href="{{ post.url | absolute_url }}">{{ post.title | escape }}</a>
         </h2>
@@ -37,4 +40,4 @@
   </div>
 </main>  
   <!-- /.container -->
-  {% include footer.html %}
+  {% include standard_footer.html %}

@@ -4,7 +4,7 @@ title:  "TTT Dedicated Server Part 5: Ein eigener Loadingscreen"
 author: Simon Müller
 date:   2014-06-18 21:30:33 +0100
 categories: TTT-Server
-image: assets/gm-mods.jpg
+image: assets/post_images/garrysmod.jpg
 showtoc: true
 ---
 
@@ -24,7 +24,7 @@ Habt ihr all diese Grundlagen erfüllt, steht eurem eigenen Ladebildschirm nicht
 ## Was müssen wir auf dem Webspace tun
 Auf dem Webspace erfolgt der Hauptteil der ganzen Arbeit. Hier werden wir im Folgenden eine ganz normale Webseite anlegen.
 
-### Anlegen eines eigenen Verzeichnisses im Webspace</h3>
+### Anlegen eines eigenen Verzeichnisses im Webspace
 Um uns nicht den ganzen Webspace mit den Dateien für den Ladebildschirm zu "verunstalten", legen wir ein eigenes Verzeichnis an, in dem später nur die  zum Ladebildschirm gehörenden Dateien landen. Ich werde das Verzeichnis im Folgenden `ttt_loading` nennen. Passt bei der Namensgebung darauf auf, möglichst auf Sonderzeichen, Umlaute und Leerzeichen zu verzichten, da diese zu Problemen führen können.
 
 ### Anlegen der nötigen Dateien

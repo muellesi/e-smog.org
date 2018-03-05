@@ -1,6 +1,7 @@
 ---
 title: \[Veraltet\] Separate Plus unter Gimp 2.8.10 bis 2.8.14 installieren
 date: 2014-05-06 08:23
+image: assets/post_images/cmyk.png
 categories: Gimp
 ---
 

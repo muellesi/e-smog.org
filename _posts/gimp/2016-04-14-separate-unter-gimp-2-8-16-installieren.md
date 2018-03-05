@@ -1,6 +1,7 @@
 ---
 title: Separate+ unter Gimp 2.8.16+ installieren
 date: 2016-04-14 14:11
+image: assets/post_images/cmyk.png
 categories: Gimp
 ---
 
