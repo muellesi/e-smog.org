@@ -24,10 +24,7 @@
             <span class="post-meta"><i class="material-icons">date_range</i> {{ post.date | date: "%d.%m.%Y" }}</span> &nbsp;
 
             <span class="post-meta"><i class="material-icons">folder_special</i>
-              {% for category in post.categories %}
-                {% if category != post.categories[0] %}, {%endif%}
-                <a href="{{ category  | downcase | prepend: "/category/" | absolute_url}}">{{ category }}</a>
-              {% endfor %}
+              {% for category in post.categories %}{% if category != post.categories[0] %}, {%endif%}<a href="{{ category  | downcase | prepend: "/category/" | absolute_url}}">{{ category }}</a>{% endfor %}
             </span>
         </div>
         <div class="p-3 mb-2">

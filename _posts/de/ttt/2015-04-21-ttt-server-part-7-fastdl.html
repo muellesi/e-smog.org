@@ -1,0 +1,41 @@
+---
+layout: post
+title:  "TTT Dedicated Server Part 7: Fast-DL einrichten"
+author: Simon Müller
+date:   2015-04-21 21:30:33 +0100
+categories: TTT-Server
+image: assets/post_images/garrysmod.jpg
+showtoc: true
+---
+
+In diesem Part möchte ich euch zeigen, wie ihr euren Mitspielern den ersten Serverbeitritt angenehmer gestalten könnt, wenn ihr sogenannte legacy Addons (Alle Addons, die nicht aus dem Workshop stammen) benutzt. Dies geschieht über eine Technik namens FastDL, die von jedem Source-Server unterstützt wird.
+
+<!--more-->
+
+<div class="tipp">Anmerkung: Das folgende Tutorial orientiert sich an <a href="http://forums.srcds.com/viewtopic/5240" target="_blank">http://forums.srcds.com/viewtopic/5240</a>. Da diese Anleitung jedoch nur auf englisch verfügbar ist und um diese Tutorialreihe möglichst vollständig zu halten, möchte ich eine eigene Version dieses Tutorials schreiben.</div>
+<div class="tipp"></div>
+<h3>Die Motivation</h3>
+Ein normaler Garrys Mod-Server unterstützt eine maximale Downloadrate von 64kBit/Sekunde. Dies ist wie ihr eventuell ausrechnen könnt für Addons mit mehreren MB Größe extrem unpraktisch, weil so der erste Serverbeitritt mitunter mehrere Minuten dauern kann. Hierfür gibt es eine Lösung namens Fast Download oder FastDL.
+
+&nbsp;
+<h3>Was ihr dafür braucht:</h3>
+<ul>
+ 	<li>Einen Garrys Mod-Server</li>
+ 	<li>Einen eigenen Webspace, auf den ihr Dateien hochladen könnt, die dann auch per http abgerufen werden können (Kein File Hoster wie Mega o.ä. - ihr müsst eine eigene Verzeichnisstruktur anlegen können). Natürlich braucht ihr entsprechend der Größe eurer Addons eine passende Menge von Speicherplatz. Falls ihr bereits einen eigenen Loading Screen erstellt habt, könnt ihr zum Beispiel den Webspace, welchen ihr hierfür genutzt habt noch einmal verwenden.</li>
+</ul>
+<h4>Schritt 1: Vorbereitung</h4>
+Am besten legt ihr auf eurem Webserver für den Content, den wir gleich hochladen werden, einen eigenen Ordner an (für das Tutorial wähle ich hier einfach den Namen fastdl), um alles schön übersichtlich zu halten. Auf diese Weise könnt ihr falls das später nötig wird zum Beispiel auch Content für einen zweiten Server in einem anderen Ordner ablegen. In diesem Ordner werden wir im folgenden alle wichtigen Dateien unterbringen, die beim Serverbeitritt vom User heruntergeladen werden müssen.
+<h4>Schritt 2: Upload</h4>
+Nun ladet ihr alle Dateien, welche in /gm/garrysmod von euch hinzugefügt wurden, unter Erhaltung der Ordnerstruktur in den gerade angelegten Ordner hoch. Dazu gehören unter anderem: Maps, Addons, Musik, Soundeffekte, Grafiken, etc.
+<h5>Ein Kurzes Beispiel:</h5>
+Ihr habt eine eigene SWEP (Traitor/Detective-Waffe, …) installiert und musstet hierfür Dateien oder gar ganze Ordner nach C:\steamcmd\gm\garrysmod\gamemodes\terrortown\entities\weapons
+
+kopieren. Dann müssen nun alle diese eigenen Dateien/Ordner nach
+
+WEBSERVER/fastdl/gamemodes/terrortown/entities/weapons hochgeladen werden.
+
+Wenn ihr also die beiden Verzeichnisstrukturen vom Ordner “garrysmod” auf eurem PC und dem Ordner “fastdl” auf eurem Webserver vergleicht, sollten sie übereinstimmen.
+
+Achtung: Ladet aber keinen Content hoch, der schon seit der Serverinstallation vorhanden ist (und damit direkt zum Server gehört) – das hat keinerlei Nutzen und sorgt nur dafür, dass die Spieler unnötige Dateien herunterladen müssen. Wenn ihr also keine eigenen Dateien im Ordner “materials” habt, braucht ihr diesen Ordner auch nicht auf eurem Webserver zu erstellen.
+
+Ladet außerdem auf keinen Fall euer cfg-Verzeichnis hoch – darin ist unter anderem das rcon-Passwort zu finden – ihr würdet damit also jedem das Passwort herausgeben, mit dem man euren Server fernsteuern kann.
