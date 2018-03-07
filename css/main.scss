@@ -117,6 +117,7 @@ header {
 
 .featurette-divider {
     margin: 3rem 0;
+    border-color: $light;
 }
 
 main .featurette:first-of-type {
@@ -125,8 +126,8 @@ main .featurette:first-of-type {
 
 .featurette {
     background: $lighter;
-    padding: 2rem;
-    box-shadow: 0 0 2px rgba(0, 0, 0, .1);
+    padding: 1.5rem;
+   // box-shadow: 0 0 2px rgba(0, 0, 0, .1);
 
     .featurette-heading {
         font-weight: 200;
@@ -146,7 +147,7 @@ main .featurette:first-of-type {
     }
 
     .post-text {
-        padding: 0 1em 3em 1em;
+        padding: 0 1em 1em 1em;
         text-align: justify;
     }
 
@@ -223,6 +224,7 @@ footer {
 main {
     p {
         text-align: justify;
+        letter-spacing: 0.002em;
     }
 }
 
@@ -283,4 +285,22 @@ a:hover {
 .affix {
     position: sticky;
     top: $big-navbar-height + 1rem;
+}
+
+
+
+.danger,
+.error,
+.important {
+   @include single-border-colored-box($danger);
+}
+
+.info,
+.hint {
+   @include single-border-colored-box($info);
+}
+
+.warning,
+.attention {
+   @include single-border-colored-box($warning);
 }

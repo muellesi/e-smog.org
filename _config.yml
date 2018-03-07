@@ -70,6 +70,8 @@ exclude:
    - jekyll-build.sh
    - jekyll-build-watch.sh
    - jekyll-serve.sh
+   - jekyll-build-test.sh
+   - deploy
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
@@ -150,14 +152,14 @@ autopages:
     title: 'Posts in category :cat'
     # Optional, the permalink for the  pagination page (:cat is replaced), 
     # the pagination permalink path is then appended to this permalink structure
-    permalink: '/category/:cat.html'
+    permalink: '/category/:cat'
 
   # Collection pages, omit to disable
   collections:
     layouts: 
       - 'category-view.html'
     title: 'Posts in collection :coll' # :coll is replaced by the collection name
-    permalink: '/collection/:coll.html'
+    permalink: '/collection/:coll'
   
   # Tag pages, omit to disable
   tags:
