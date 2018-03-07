@@ -47,6 +47,6 @@ $single-side-border-width: 5px;
 
 @mixin single-border-colored-box($color) {
   border-left: $single-side-border-width solid $color;
-  background: rgba($info, 0.2);
+  background: rgba($color, 0.2);
   padding: 1rem;
 }
