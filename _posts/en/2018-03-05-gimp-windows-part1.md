@@ -6,18 +6,21 @@ kramdown:
   parse_block_html: true
 ---
 
-Building GIMP for Windows seems like a tedious task at first - there seems to be no current information about which requirements have to be met and what to do in which order. There is a short tutorial on [wiki.gimp.org](https://wiki.gimp.org/wiki/Hacking:Building/Windows#Building_GIMP_natively_under_Windows_using_MSYS2) that guides you through the most basic steps of building Gimp so I will  refer to that tutorial for most of the basic things like setting up a basic build environment.
+Building GIMP for Windows seems like a tedious task at first - there seems to be no current information about which requirements have to be met and what to do in which order. There is a short tutorial on [wiki.gimp.org](https://wiki.gimp.org/wiki/Hacking:Building/Windows#Building_GIMP_natively_under_Windows_using_MSYS2) that guides you through the most basic steps of building Gimp so I will try to stay as close as possible to that tutorial for most of the basic things like setting up a basic build environment.
 
 After the basic setup I will guide you through the necesseary steps to integrate the needed build steps into Visual Studio Code. This will enable you to build and debug GIMP from within VS Code.
 
 <!--more-->
 ## Setup 
 
+Until recently, Gimp could not be built natively on Windows. Its build process requires certain tools to be available on the build system that do not come with a typical windows installation. This changed with Windows 10's optional Ubuntu Subsystem but since not everyone uses Windows 10 yet, this Tutorial will still use the 'old' approach of using [MSYS2](http://www.msys2.org/) to get the required build essentials. 
+
 ### Setting up an MSYS2 build environment
-Until recently, Gimp couldl not be built natively on Windows. Its build process requires certain tools to be available on the build system that do not come with a typical windows installation. This changed with Windows 10's optional Ubuntu Subsystem but since not everyone uses Windows 10 yet, this Tutorial will still use the 'old' approach of using [MSYS2](http://www.msys2.org/) to get the required build essentials. Basically, MSYS2 emulates a Linux environment with full support of Arch Linux' 'pacman' package manager. When downloading, make sure to use the 64 bit version of MSYS2 if your system supports it - there is no advantage of using the 32bit version.
+Basically, MSYS2 emulates a Linux environment with full support of Arch Linux' 'pacman' package manager. When downloading, make sure to use the 64 bit version of MSYS2 if your system supports it - there is no advantage of using the 32bit version.
 
 **Info:** You could install MSYS2 wherever you want but from this point I will assume that it is located in a direct subfolder of the C: drive to make paths shorter. Also be carful not to use a path that contain spaces since this could lead to strange problems later on.
 {: class="hint"}
+
 
 After you've installed MSYS2, let's have a quick look at its root folder: You will see that there are four executables: 
 * msys2.exe - this is the exectuable that we will use for basic setup
@@ -61,7 +64,7 @@ mingw-w64-x86_64-glib-networking
 #### Setting up the environment
 build-setup.sh
 
-~~~ bash
+{% highlight bash linenos %}
 #!/bin/sh
 #Gimp build
 export PREFIX=`realpath ~/gimp_dev/build`
@@ -93,7 +96,7 @@ echo "INCLUDE_PATH:" $INCLUDE_PATH
 echo "LIBRARY_PATH:" $LIBRARY_PATH
 echo "CPATH:" $CPATH
 echo "CFLAGS:" $CFLAGS
-~~~
+{% endhighlight %}
 
 ## Building
 For now, we will build GIMP and its most volatile dependencies by hand and from the command line since this gives you a good feeling for what requirements there are for the GIMP build to succeed.
@@ -112,14 +115,15 @@ make install
 cd ..
 ~~~
 
+#### Mypaint-Brushes
 ~~~ bash
 git clone https://github.com/Jehan/mypaint-brushes.git
 cd mypaint-brushes
 git fetch --all --tags --prune
 git checkout origin/v1.3.x -b Branch_v1.3.x
-
 ~~~
 
+#### Babl
 ~~~ bash
 git clone git://git.gnome.org/babl
 cd babl
@@ -128,7 +132,9 @@ make
 make install
 cd ..
 ~~~
+Babl should build relatively fast since it is only a small library. 
 
+#### Gegl
 ~~~ bash
 git clone git://git.gnome.org/gegl
 cd gegl
@@ -137,7 +143,10 @@ make
 make install
 cd ..
 ~~~
+This will take a bit longer than the previous steps.
 
+#### And finally: GIMP itself
+Once all of the above dependencies are compiled installed without any errors, we should be able to compile GIMP itself now. The basic procedure is exactly the same as for the dependencied before: `git clone`, `autogen`, `make`, `make install`:
 ~~~ bash
 git clone git://git.gnome.org/gimp
 cd gimp
@@ -147,4 +156,11 @@ make install
 cd ..
 ~~~
 
-*[MSYS2]: MSYS2 is an independent rewrite of msys and mingw64. It has nothing to do with msys as you might know it from od mingw32 installations.
+As you can see, we pass the option `--with-gimpdir=GIMP/git-master` to the autogen-script. This changes the path that our newly built GIMP will use to store its user settings.
+{: class="hint"}
+
+Building GIMP can take a long time if it is the first build in a clean working directory. Luckily we don't need to rebuild every part of GIMP for every single code change so subsequential builds will most likely be much faster.
+
+
+
+## Troubleshooting
