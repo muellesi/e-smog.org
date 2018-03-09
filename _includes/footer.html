@@ -1,10 +1,28 @@
 <!-- FOOTER -->
 <footer class="container-fluid">
-  <p class="float-right">
-    <a href="#">Back to top</a>
-  </p>
-  <p>&copy; 2017-2018 Simon Müller &middot;
-    <a href="{{"/datenschutz.html" | absolute_url }}">Datenschutz</a> &middot;
-    <a href="{{"/impressum.html" | absolute_url }}">Impressum</a>
-  </p>
+  <div class="row">
+    <div class="col-sm-4">
+      <nav>
+        <ul class="nav flex-column">
+          <li clas="nav-item">
+              <a class="nav-link" href="{{"/datenschutz.html" | absolute_url }}">Datenschutz</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="{{"/impressum.html" | absolute_url }}">Impressum</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4"></div>
+  </div>
+
+
+  <div class="copyright">
+      <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>&copy; 2017 Simon Müller
+        </p>
+  </div>
 </footer>

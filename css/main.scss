@@ -216,9 +216,15 @@ main .featurette:first-of-type {
 footer {
     min-height: 5rem;
     background-color: $darker;
-    margin-top: 1rem;
     border-top: 3px solid $highlight;
     color: $light;
+    padding-top: 1rem;
+    
+    .copyright {
+        text-align: center;
+        color: rgba($light, 0.5);
+        font-size: 80%;
+    }
 }
 
 main {
@@ -314,4 +320,8 @@ a:hover {
 .warning,
 .attention {
    @include single-border-colored-box($warning);
+}
+
+.highlight {
+    box-shadow: 0px 0xp 0 0 $dark;
 }
