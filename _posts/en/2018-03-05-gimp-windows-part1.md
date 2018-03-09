@@ -5,21 +5,21 @@ categories: en Gimp Programming
 kramdown:
   parse_block_html: true
 ---
+When I first tried to build GIMP for Windows, I felt kind of lost - I did not find a single Tutorial that was working without any errors. And as someone who did some programming on Windows before but is a complete beginner when it comes to the GNU/Linux way of compiling C-programs, it took me a while until I finally got a working result.
 
-Building GIMP for Windows seems like a tedious task at first - there seems to be no current information about which requirements have to be met and what to do in which order. There is a short tutorial on [wiki.gimp.org](https://wiki.gimp.org/wiki/Hacking:Building/Windows#Building_GIMP_natively_under_Windows_using_MSYS2) that guides you through the most basic steps of building Gimp so I will try to stay as close as possible to that tutorial for most of the basic things like setting up a basic build environment.
-
-After the basic setup I will guide you through the necesseary steps to integrate the needed build steps into Visual Studio Code. This will enable you to build and debug GIMP from within VS Code.
-
+Now that I have the feeling to have figured out at least the most important things, I want to share this knowledge and hope, it will maybe help someone else down the line sometimes. This first part of the tutorial will show you how to compile GIMP for yourself. In subsequent tutorials, I will show you how to integrate the GCC toolchain in [Visual Studio Code](https://www.visualstudio.com/de/) in order to get some kind of simple IDE for the whole process of bug hunting and fixing.
 <!--more-->
+
+There is a short tutorial on [wiki.gimp.org](https://wiki.gimp.org/wiki/Hacking:Building/Windows#Building_GIMP_natively_under_Windows_using_MSYS2) that guides you through the most basic steps of building Gimp but it a bit old and is therefore missing some important steps. I will try to stay as close as possible to that tutorial for most of the basic things like setting up a basic build environment and simply add information where it is needed.
 
 ## Setup 
 
-Until recently, Gimp could not be built natively on Windows. Its build process requires certain tools to be available on the build system that do not come with a typical windows installation. This changed with Windows 10's optional Ubuntu Subsystem but since not everyone uses Windows 10 yet, this Tutorial will still use the 'old' approach of using [MSYS2](https://www.msys2.org/) to get the required build essentials. 
+Since GIMP's build process requires the GCC toolchain to be available on the build system, Gimp could not be built natively on Windows until recently. This changed with Windows 10's optional Ubuntu Subsystem but since not everyone uses Windows 10 yet, this Tutorial will still use the 'old' approach of using [MSYS2](https://www.msys2.org/) to get the required build essentials. 
 
 ### Setting up an MSYS2 build environment
-Basically, MSYS2 emulates a Linux environment with full support of Arch Linux' 'pacman' package manager. When downloading, make sure to use the 64 bit version of MSYS2 if your system supports it - there is no advantage of using the 32bit version.
+Basically, MSYS2 emulates a Linux environment with full support of Arch Linux' 'pacman' package manager. When downloading, make sure to use the 64 bit version of MSYS2 if your system supports it - there is no advantage of using the 32bit version and I will focus on building GIMP for 64 bit systems anyways.
 
-**Info:** You could install MSYS2 wherever you want but from this point I will assume that it is located in a direct subfolder of the C: drive to make paths shorter. Also be carful not to use a path that contain spaces since this could lead to strange problems later on.
+**Info:** You can install MSYS2 wherever you want but for simplicities sake, I will assume that it is located in a direct subfolder of the C: drive. Also be careful not to use a path that contains spaces since this could lead to strange problems later on.
 {: class="hint"}
 
 
@@ -28,27 +28,29 @@ After you've installed MSYS2, let's have a quick look at its root folder: You wi
 * mingw32/64.exe - those are the executables we will use when building GIMP (mingw64.exe probably only exists on your system if you installed the 64bit version of MSYS2)
 * maintenancetool.exe
 
-After the first start, msys will have created a home directory for your current Windows Username in `C:\MSYS2\home\`. 
+If you didn't already start the MSYS2 shell after the installation, do this now by running the cmd script `msys2_shell.cmd` from the MSYS2 root directory. At the the first start, MSYS2 will create a home directory for your current Windows Username in `C:\MSYS2\home\`. 
 
+#### Updating
 
-The first thing to do after installing MSYS2 is to upgrade all the packages that come preinstalled with it. This procedure is explained on the MSYS2 homepage, so I will only show you the needed commands. For more information on updating/upgrading MSYS2, please refer to the [MSYS2 website](https://www.msys2.org/) directly. 
+The first thing to do after installing MSYS2 is to upgrade all the packages that come preinstalled with it. This procedure is explained in detail on the MSYS2 homepage, so I will keep this part as short as possible and only show you the needed commands. For more information on updating/upgrading MSYS2, please refer to the [MSYS2 website](https://www.msys2.org/) and to [this tutorial](https://github.com/msys2/msys2/wiki/MSYS2-installation) directly. 
 
-First, start msys2.exe and use the following command to trigger a first update. The update will happen in multiple stages, so simply follow the instructions in the terminal.
+First, start msys2.exe and use the following command to trigger an update of pacman's package index and a first package upgrade. The upgrade will happen in multiple stages, so simply follow the instructions in the terminal.
 
 ~~~ bash
 pacman -Syu
 ~~~
 
-After successful completion of the first step, close the terminal and start msys2.exe again. Now use the following command for the second update step. Again, follow the instructions in your terminal.
+After successful completion of the first step, close the terminal and start msys2_shell.cmd again. Now use the following command for the second update step. Again, follow the instructions in your terminal if there are any.
 
 ~~~ bash
 pacman -Su
 ~~~
 
+After you are done with this, you can simply close the MSYS2 shell - we will not need it for any of the upcoming steps.
 
 ### GIMP specific Setup
 
-With a freshly updated MSYS2 environment, we can now start installing dependencies that will be needed for our first GIMP build. As mentioned above, all steps that follow will be done in the mingw64 environment. So make sure, you used the mingw64.exe executable instead the msys2.exe we used before.
+With a freshly updated MSYS2 environment, we can now start installing dependencies that will be needed for our first GIMP build. As mentioned above, all steps that follow will not be executed in the global MSYS2 environment. Instead we will use the mingw64 environment because our build is supposed to support 64 bit. So start mingw64.exe from the MSYS2 root folder and run the following command:
 
 ~~~ bash
 pacman -S base-devel \
@@ -61,31 +63,35 @@ mingw-w64-x86_64-gexiv2 \
 mingw-w64-x86_64-lcms2 \
 mingw-w64-x86_64-glib-networking
 ~~~
+This will install a whole lot of libraries and software that is needed for building GIMP.
 
-As you can see, most packages start with `mingw-w64-x86_64-` so if you later encounter a missing dependency during compiling, you can first try to install it via `pacman -S mingw-w64-x86_64-PACKAGENAME`.
+As you can see, most library-packages start with `mingw-w64-x86_64-` so if you later encounter a missing dependency during compiling, you can first try to install it via `pacman -S mingw-w64-x86_64-PACKAGENAME`.
+{: class="hint"}
 
 
 #### Setting up the environment
 Now that we have most of the necessary dependencies installed, we can start with actually doing something ourselves. 
 
-##### Directory structure
-MSYS2 created a home directory for your current Windows username in `C:\MSYS2\home` this directory can be accessed via a tilde, just like on linux. Since this is a good way of keeping the paths as short as possible, we will now use the new home directory for building GIMP. Just in case we want to use MSYS2 for some other projects later on, we will not use the home directory directly but create a subfolder named `gimp_x64` instead. Inside this folder, we create a new file with the following content
+##### Directory structure and environment variables
+As already mentioned, MSYS2 created a home directory for your current Windows username in `C:\MSYS2\home` this directory can be accessed via the tilde shortcut, just like on any linux system. Since this is a good way of keeping the paths nice and short, we will now use this new home directory for building GIMP. But just in case we want to use MSYS2 for some other projects later on, we will not use the home directory directly but create a subfolder named `gimp_x64` instead. Inside this folder, we create a new file called `setup.sh` with the following content
 
 {% highlight bash linenos %}
-#!/bin/sh
-# If you did not use the same folder name as in the tutorial, change this
+#!/bin/bash
+# If you did not use the same folder names as in the tutorial, change this
 export DEVROOT=`realpath ~/gimp_x64`
 export PREFIX=$DEVROOT/build
+export SRC_DIR=$DEVROOT/src
+
+# Modify environment variables according to the definitions above
 export PATH="$PREFIX/bin:$PATH"
 export PKG_CONFIG_PATH="$PREFIX/share/pkgconfig:$PREFIX/lib/pkgconfig:$PKG_CONFIG_PATH"
 export LD_LIBRARY_PATH="$PREFIX/lib:$LD_LIBRARY_PATH"
-export SRC_DIR=$DEVROOT/src
 
 # Create the prefix and source directories
 mkdir -p $PREFIX
 mkdir -p $SRC_DIR
 
-
+# Some more environment variables
 export BINARY_PATH=$PREFIX/bin
 mkdir -p $BINARY_PATH
 export INCLUDE_PATH=$PREFIX/inc
@@ -187,7 +193,6 @@ As you can see, we pass the option `--with-gimpdir=GIMP/git-master` to the autog
 Building GIMP in a clean working directory for the first time will probably take a lot of time. Luckily we don't need to rebuild every part of GIMP for every single code change so subsequential builds will most likely be much faster.
 
 
-
 ## Troubleshooting
 
 So you did everything exactly as described above and suddenly you encounter an error. What do you do now? First of all, don't panic! Instead, check which step failed exactly and scroll through the console output to find any possible error messages.
@@ -195,7 +200,7 @@ So you did everything exactly as described above and suddenly you encounter an e
 ### Fail in autogen/configure
 
 #### Missing dependency
-As described [above](#), first try to install the missing dependency via pacman. Keep in mind that the dependency might have a version number attached to its name. You can also search pacman's package repositories for a string by using `pacman ............`
+As described [above](#), first try to install the missing dependency via pacman. Keep in mind that the dependency might have a version number attached to its name. You can also search pacman's package repositories for a string by using `pacman -Fs SEARCHSTRING`
 
 #### A library that you compiled yourself is not found or the wrong version
 * Did you run make install for the missing dependency?
