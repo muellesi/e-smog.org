@@ -2,6 +2,7 @@
 title: G'MIC für Gimp installieren
 date: 2014-03-25 21:22
 categories: Gimp
+image: assets/post_images/wilber_quest.png
 ---
 
 Ein sehr bekanntes Plugin für Gimp ist das Gmic-Plugin. Einmal installiert stellt es eine riesige Anzahl an Filtern zur Verfügung, mit denen Bilder und Photos bearbeitet werden können - dabei lässt es so gut wie keine Wünsche offen - von verschiedenen Weichzeichneralgorithmen (Gmic ist der Nachfolger des Bildentrauschungsplugins [**GREYCstoration**](http://registry.gimp.org/node/137)) bis zu eher künstlerischen Filtern wie dem Rodilius-Filter, der dem [Fractalius](http://www.redfieldplugins.com/filterFractalius.htm)-Filter von Photoshop ähnelt. Wer Gimp nutzt, sollte gmic zumindest einmal ausprobiert haben.

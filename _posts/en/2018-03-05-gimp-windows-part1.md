@@ -1,9 +1,10 @@
 ---
 title: Building Gimp for Windows Part 1 - First build
 date: 2018-03-05 20:22
-categories: en Gimp Programming
+categories: en Gimp-Build Programming
 kramdown:
   parse_block_html: true
+image: assets/post_images/wilber_puzzle.png
 ---
 When I first tried to build GIMP for Windows, I felt kind of lost - I did not find a single Tutorial that was working without any errors. And as someone who did some programming on Windows before but is a complete beginner when it comes to the GNU/Linux way of compiling C-programs, it took me a while until I finally got a working result.
 
