@@ -222,8 +222,8 @@ footer {
     
     .copyright {
         text-align: center;
-        color: rgba($light, 0.5);
-        font-size: 80%;
+        color: rgba($light, 0.3);
+        font-size: 70%;
     }
 }
 
@@ -305,32 +305,42 @@ a:hover {
     top: $big-navbar-height + 1rem;
 }
 
-
-
-.danger,
-.error,
-.important {
-   @include single-border-colored-box($danger);
-}
-
-.info,
-.hint {
-   @include single-border-colored-box($info);
-}
-
-.warning,
-.attention {
-   @include single-border-colored-box($warning);
-}
-
 .highlight {
     box-shadow: 0px 0xp 0 0 $dark;
 }
+
 
 .alert {
     border-left: 6px solid rgba(0,0,0,0.1);
     background-clip: border-box;
 }
+.alert-info {
+    border-left-color: $info;
+    &:before{
+        content: " ";
+        background: url("/assets/icons-idee.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 3rem;
+        width: 3rem;
+        float: left;
+        display: block;
+        margin-left: -1rem;
+    }
+}
+.alert-primary {
+    border-left-color: $primary;
+}
+.alert-secondary {
+    border-left-color: $secondary;
+}
+.alert-danger {
+    border-left-color: $danger;
+}
+.alert-warning {
+    border-left-color: $warning;
+}
+
 
 /* Scrollspy mods */
 body {

@@ -28,7 +28,7 @@ So first of all,
 {: style="text-align: center;"}
 
 
-**Info:** You can install MSYS2 wherever you want but for simplicities sake, I will assume that it is located in a direct subfolder of the C:\ drive. Also be careful not to use a path that contains spaces since this could lead to strange problems later on.
+You can install MSYS2 wherever you want but for simplicities sake, I will assume that it is located in a direct subfolder of the C:\ drive. Also be careful not to use a path that contains spaces since this could lead to strange problems later on.
 {: class="alert alert-info"}
 
 
