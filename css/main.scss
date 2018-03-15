@@ -232,6 +232,7 @@ main {
         text-align: justify;
         letter-spacing: 0.002em;
     }
+    
 }
 
 
@@ -336,15 +337,14 @@ body {
     position: relative;
 }
 
-#scrollspy-nav {
-    transition: 0.1s ease;
-
-    a {
+.scrollertoc {
+    transition: 0.2s ease;
+    a.nav-link {
         color: rgba($dark, 0.8);
         display: block;
         width: 100%;
-        font-size: 70%;
-        
+        font-size: 85%;
+        padding: 0.2rem 1rem;
     }
 
     a.active {
@@ -353,5 +353,13 @@ body {
 
     .nav {
         padding-left: 1rem;
+    }
+    
+    .nav > .nav {
+        display: none;
+    }
+
+    .active + .nav {
+        display: flex;
     }
 }
