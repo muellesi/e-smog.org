@@ -325,3 +325,33 @@ a:hover {
 .highlight {
     box-shadow: 0px 0xp 0 0 $dark;
 }
+
+.alert {
+    border-left: 6px solid rgba(0,0,0,0.1);
+    background-clip: border-box;
+}
+
+/* Scrollspy mods */
+body {
+    position: relative;
+}
+
+#scrollspy-nav {
+    transition: 0.1s ease;
+
+    a {
+        color: rgba($dark, 0.8);
+        display: block;
+        width: 100%;
+        font-size: 70%;
+        
+    }
+
+    a.active {
+        color: rgba($primary, 0.8);
+    }
+
+    .nav {
+        padding-left: 1rem;
+    }
+}

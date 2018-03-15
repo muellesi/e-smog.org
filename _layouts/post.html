@@ -2,17 +2,29 @@
 ---
 {% include html_head.html %}
 {% include navbar.html %}
+
+{% if page.showtoc == true or page.showcategorytoc == true %}
+    {% assign multicol = true %}
+{% endif %}
+
 <main role="main">
     <div class="container main-content">
             <div class="row">
-                <div class="col{% if page.showtoc == true %}-sm-9{% endif %}">
+
+                {% if multicol == true%}
+                <div class="col-sm-9">
+                {% else %}
+                <div class="col">
+                {% endif %}
                     <h1 class="page-header"> {{ page.title }} </h1>
                     {{content}}
                 </div>
 
 
-                {% if page.showtoc == true %}
+                {% if multicol == true %}
                 <div class="col-sm-3">
+                    {% if page.showcategorytoc == true %}
+                    
                     {% for category in page.categories %}
                         <div class="category-toc card">
                             <div class="card-body">
@@ -25,6 +37,13 @@
                             </div>
                         </div> 
                     {% endfor %}
+
+                    {% endif %}
+
+                    {% if page.showtoc == true %}
+                        {% include scrollspynav.html %}
+                    {% endif %}
+
                 </div>
                 {% endif %}
 
@@ -35,4 +54,5 @@
             </div>
     </div>
 </main>
+
 {% include post_footer.html %}
