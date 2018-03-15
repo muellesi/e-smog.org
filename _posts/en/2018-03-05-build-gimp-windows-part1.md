@@ -7,9 +7,9 @@ kramdown:
 image: assets/post_images/wilber_puzzle.png
 showtoc: true
 ---
-When I first tried to build GIMP for Windows, I felt kind of lost - I searched through the web and yet I did not find a single Tutorial that was working as-is without any errors. Additionally, as someone who did some programming on Windows before but is a complete beginner when it comes to the GNU/Linux way of compiling C-programs, I was kond of overwhelmed with all the steps required to compile a single program. Therefore it took me a whole lot of time until I finally got a working result.
+When I first tried to build GIMP for Windows, I felt kind of lost - I searched through the web for hours and yet I did not find a single tutorial that was working as-is without any errors. Additionally, as someone who did some programming on Windows before but is a complete beginner when it comes to the GNU/Linux way of compiling C-programs, I was kind of overwhelmed with all the steps required to compile a single program. Therefore it took me a whole lot of time until I finally got a working result.
 
-Now that I seem to have figured out at least the most important things, I want to share this knowledge and hope, it will maybe help someone else down the line sometimes. This first part of the tutorial will show you how to compile GIMP for yourself. In subsequent tutorials, I will show you how to integrate the GCC toolchain in [Visual Studio Code](https://www.visualstudio.com/de/) in order to get some kind of simple IDE for the whole process of bug hunting and fixing.
+Now that it seems like I have figured out at least the most important things, I want to share this knowledge and hope, it will maybe help someone else down the line sometimes. This first part of the tutorial will show you how to compile GIMP for yourself. In subsequent tutorials, I will show you how to integrate the GCC toolchain in [Visual Studio Code](https://www.visualstudio.com/de/) in order to get some kind of simple IDE for the whole process of bug hunting and fixing.
 
 <!--more-->
 
@@ -28,7 +28,7 @@ So first of all,
 {: style="text-align: center;"}
 
 
-**Info:** You can install MSYS2 wherever you want but for simplicities sake, I will assume that it is located in a direct subfolder of the C:/ drive. Also be careful not to use a path that contains spaces since this could lead to strange problems later on.
+**Info:** You can install MSYS2 wherever you want but for simplicities sake, I will assume that it is located in a direct subfolder of the C:\ drive. Also be careful not to use a path that contains spaces since this could lead to strange problems later on.
 {: class="alert alert-info"}
 
 
@@ -88,8 +88,9 @@ Just in case we want to use MSYS2 for some other projects later on, we will not 
 
 {% highlight bash linenos %}
 #!/bin/bash
-# If you did not use the same folder names as in the tutorial, change this
+# If you did not use the same folder name as in the tutorial, change this:
 export DEVROOT=`realpath ~/gimp_x64`
+
 export PREFIX=$DEVROOT/build
 export SRC_DIR=$DEVROOT/src
 
@@ -127,8 +128,8 @@ echo "CFLAGS:" $CFLAGS
 {% endhighlight %}
 
 This script does three things: 
-1. It creates a environment variable called `$PREFIX`. This variable will hold the path where all the binaries will be copied once the compiler has built them for us. 
-2. It creates a few important directories inside the PREFIX that are needed because some build scripts won't create them on their own and will fail if one of the directories is missing.
+1. It creates a environment variable called `$PREFIX` (often called build-prefix or simply prefix). This variable will hold the path where all the binaries will be copied once the compiler has generated them. 
+2. It creates a few important directories inside the PREFIX that are needed because some build scripts won't create them on their own and might fail if one of the directories is missing.
 3. It sets a few more environment variables that will be used by our build tools. Most of those variables tell our tools where to find our compiled binaries in case they are needed as a dependency. For a detailed description of what each variable is needed for, please refer to the comments in the script.
 
 **Tip:** If the build process runs out of memory on your machine, try reducing the number of parallel tasks via the `$MAKEFLAGS` variable
@@ -138,7 +139,7 @@ This script does three things:
 For now, we will build GIMP and its most volatile dependencies by hand and from the command line since this will give you a good feeling for what requirements there are and the problems that could possibly arise.
 
 ### Babl
-[Babl](https://gegl.org/babl) is the library that is used internally to convert between different color models. It is a fairly small library so its build process is also very quick.
+[Babl](https://gegl.org/babl) is the library that is used internally to convert between different color models. It is a fairly small library so its build process is decently fast.
 ~~~ bash
 git clone git://git.gnome.org/babl
 cd babl
@@ -147,7 +148,7 @@ make
 make install
 cd ..
 ~~~
-As you can see, we pass our `$PREFIX` environment variable to the `autogen.sh` script via the `--prefix` parameter. This tells the `make install` procedure where to put all the generated binary files. Make sure you do this for every dependency you compile - otherwise make install will install the binaries to the default location which would pollute your build environment with possibly unstable (and incompatible) libraries.
+As you can see, we pass our `$PREFIX` environment variable to the `autogen.sh` script via the `--prefix` parameter. This tells the `make install` procedure where to put all the generated binary files. Make sure you specify the (same) prefix for every dependency you compile - otherwise `make install` will copy the binaries to the [default location](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard) which would pollute your build environment with possibly unstable libraries.
 
 ### GEGL
 [GEGL](https://gegl.org) is a "data flow based image processing framework" that finds more and more use inside of GIMP. Instead of permanently (and therefore destructively) rendering changes to a certain image layer, gegl dynamically creates a final image by chaining multiple gegl operations. This will allow gimp to have non-destructive effect layers in the future (Gimp 3.x). But even now gegl is used for fast on-canvas previews of almost all available filters. Gegl can be built by using the same stepps we already used for babl (with some additional options for the autogen script):
@@ -182,7 +183,7 @@ cd ..
 ~~~
 
 ### Mypaint-Brushes
-A relatively new dependency is mypaint-brushes. Jehan Pagès created a git repository with the intent to collect those brushes in one place for other projects to use it instead of each of them shipping their own copy of the brushes. Building this package mostly consists of copying the brushes to your `$PREFIX` so it is fairly quick. 
+A relatively new dependency for GIMP is mypaint-brushes. Mypaint-brushes is a Github repository, created by GIMP developer Jehan Pagès with the intent to have a standard collection of mypaint brushes in one place. Other projects that also use the mypaint library can then use this repository instead of each of them shipping their own copies of the brushes. Building this package mostly consists of copying the brushes to your `$PREFIX` so it is fairly quick. 
 
 Since we used the 1.3 version of libmypaint before, we also have to use the 1.3 version of the brushes now. Failing to do so will result in a segfault when trying to start GIMP.
 {: class="alert alert-danger"}
@@ -198,7 +199,7 @@ make
 make install
 ~~~
 
-### And finally: GIMP itself
+### And finally: Build GIMP itself
 Once all of the above dependencies are compiled and installed without any errors, we should be able to compile GIMP itself now. The basic procedure is exactly the same as for the dependencied before: `git clone`, `autogen`, `make`, `make install`:
 
 ~~~ bash
