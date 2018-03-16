@@ -341,6 +341,10 @@ a:hover {
 }
 
 
+abbr[title], abbr[data-original-title] {
+    text-underline-position: under;
+}
+
 /* Scrollspy mods */
 body {
     position: relative;
