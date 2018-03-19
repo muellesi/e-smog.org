@@ -3,6 +3,7 @@ title: \[Veraltet\] Separate Plus unter Gimp 2.8.10 bis 2.8.14 installieren
 date: 2014-05-06 08:23
 image: assets/post_images/cmyk.png
 categories: Gimp
+locale: de_DE
 ---
 
 Das für den Druck der eigenen Werke durchaus sehr sinnvolle und praktische Plugin Separate Plus spielt leider unter Gimp 2.8.x für 64-Bit-Windows nichtmehr so ganz mit: Es quittiert Gimp's Versuch, es zu laden mit einer Fehlermeldung und taucht anschließend nicht im Gimp-Menü auf. <!--more-->

@@ -6,6 +6,7 @@ date:   2014-04-22 21:30:33 +0100
 categories: TTT-Server
 image: assets/post_images/garrysmod.jpg
 showtoc: true
+locale: de_DE
 ---
 
 In diesem Teil soll es nun wie bereits angekündigt darum gehen, unserem Server ein wenig Leben in Form von Steam-Workshop-Inhalten wie neuen Waffen, Funktionen – oder dem allerwichtigsten: zusätzlichen Maps! - einzuhauchen.

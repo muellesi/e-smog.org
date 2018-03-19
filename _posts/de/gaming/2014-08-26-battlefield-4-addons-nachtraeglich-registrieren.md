@@ -3,6 +3,7 @@ title: Battlefield 4 Addons nachträglich registrieren
 layout: post
 date: 2014-08-26 09:54
 categories: Games
+locale: de_DE
 ---
 
 Aufgrund der großen Menge der herunterzuladenden Daten für Battlefield 4, ist es nach einer Neuinstallation des Betriebssystems wesentlich einfacher, vorher gesicherte Spieldateien zu verwenden, anstatt alles neu herunterzuladen. Leider werden nach dem zurückkopieren der Dateien aber die Addons nichtmehr vom Battlelog-Plugin erkannt. Die Folge ist, dass die Addons zunächst nicht mehr spielbar sind. Versuche, einem Server beizutreten, werden immer nur mit einer Fehlermeldung wie "Du musst diese Erweiterung herunterladen und installieren" quittiert und auch ein Prüfen der Dateien mittels Origin schafft keine Abhilfe. Wie sich die Plugins wieder aktivieren lassen, wird im folgenden Artikel erklärt.<!--more-->

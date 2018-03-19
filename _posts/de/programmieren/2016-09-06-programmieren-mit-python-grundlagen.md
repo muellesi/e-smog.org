@@ -3,6 +3,7 @@ title: Programmieren mit Python - Grundlagen
 date: 2016-09-06 12:36
 image: assets/post_images/python_logo.png
 categories: Programmieren
+locale: de_DE
 ---
 
 Python kann in vielen Bereichen genutzt werden, um einfache - aber auch komplexe - Aufgaben zu automatisieren. Python ist eine Scriptsprache, das heißt, jedes Python-Programm ist im Prinzip einfach eine Textdatei, die vom Python-Interpreter eingelesen und ausgeführt wird (Andere Scriptsprachen sind zum Beispiel Javascript, LUA oder PHP). Auch wenn ein Python Script weitergegeben wird, bleibt es immer eine Textdatei, die jeder nach belieben anpassen und verändern kann. Python-Scripts erhalten zur einfacheren Erkennung meistens die Endung ".py". 

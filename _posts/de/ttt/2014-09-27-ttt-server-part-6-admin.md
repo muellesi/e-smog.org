@@ -6,6 +6,7 @@ date:   2014-09-27 21:30:33 +0100
 categories: TTT-Server
 image: assets/post_images/garrysmod.jpg
 showtoc: true
+locale: de_DE
 ---
 
 Nun haben wir also einen voll funktionsfähigen Server und an diesem auch schon so einige Änderungen vorgenommen. Wenn ihr nun aber eventuell nicht nur mit euren Freunden lokal auf einem privaten Server spielen wollt (dafür braucht man ja grundsätzlich nicht einmal einen dedizierten Server), sondern eventuell auch andere auf eurem Server mitspielen lassen wollt, so entsteht früher oder später der Bedarf, den Server besser administrieren zu können. Konkret bedeutet dies: Spieler kicken und bannen, die Map ändern, grundsätzliche Spieleinstellungen zu ändern oder ähnliches. Ohne ein passendes Plugin funktioniert das alles aber gar nicht oder nur nach einem Serverneustart. Aus diesem Grund möchte ich euch ein Plugin, welches eine solche Administration ermöglicht einmal etwas näher vorstellen: ULX.

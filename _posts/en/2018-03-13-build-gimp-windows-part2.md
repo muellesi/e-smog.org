@@ -2,6 +2,7 @@
 title: Building Gimp for Windows Part 2 - Integration in Visual Studio Code
 date: 2018-03-13 18:00
 categories: en Gimp-Build Programming
+locale: en_US
 kramdown:
   parse_block_html: true
 image: assets/post_images/wilber_puzzle.png

@@ -3,6 +3,7 @@ title: Separate+ unter Gimp 2.8.16+ installieren
 date: 2016-04-14 14:11
 image: assets/post_images/cmyk.png
 categories: Gimp
+locale: de_DE
 ---
 
 Am 26\. März wurde eine neue Alpha-Version des Plugins Separate Plus für Gimp veröffentlicht, die den Aufwand aus dem Tutorial "Separate Plus unter Gimp 2.8.10 bis 2.8.14 installieren" unnötig macht. Wie die Installation mit dieser neuen Version funktioniert, zeige ich hier.

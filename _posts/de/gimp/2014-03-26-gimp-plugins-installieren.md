@@ -3,6 +3,7 @@ title: Gimp Plugins installieren
 date: 2014-03-26 15:49
 categories: Gimp
 image: assets/post_images/wilber_quest.png
+locale: de_DE
 ---
 
 ## Allgemeine Vorgehensweise:

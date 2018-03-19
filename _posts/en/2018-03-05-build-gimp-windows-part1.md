@@ -1,6 +1,7 @@
 ---
 title: Building Gimp for Windows Part 1 - First build
 date: 2018-03-05 20:22
+locale: en_US
 categories: en Gimp-Build Programming
 kramdown:
   parse_block_html: true

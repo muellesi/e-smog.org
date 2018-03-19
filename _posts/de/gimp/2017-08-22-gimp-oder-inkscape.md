@@ -3,6 +3,7 @@ title: Gimp vs. Inkscape - Anwendungsbeispiele kurz erklärt
 date: 2017-08-22 20:00
 image: assets/post_images/gimpvsinkscape.png
 categories: gimp
+locale: de_DE
 ---
 
 Beim Erstellen von Grafiken gibt es einiges zu beachten. Eine wichtige Entscheidung, die noch vor allen anderen Entscheidungen getroffen werden sollte, ist dabei die Wahl des Grafikformates: Eignet sich für die geplante Grafik eher ein vektorbasiertes Format oder doch eher ein Pixelbild? Mit dieser Wahl fällt in den Meisten Fällen auch bereits die Wahl der zu verwendenden Software: Möchte ich eine Pixelgrafik erstellen, ist Gimp die richtige Wahl. Soll es hingegen eine Vektorgrafik werden, kommt Inkscape zum Zug. In diesem Artikel soll es nun darum gehen, von Anfang an die richtige Entscheidung zu treffen, damit später nicht möglicherweise ein böses Erwachen folgt.

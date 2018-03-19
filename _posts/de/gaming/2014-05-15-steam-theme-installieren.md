@@ -3,6 +3,7 @@ title: Steam Themes installieren
 layout: post
 date: 2014-05-15 08:26
 categories: Games
+locale: de_DE
 ---
 
 Wer das Standardtheme von Steam so langsam schon nichtmehr sehen kann, der bekommt abhilfe mit einem Community-Theme. Die Installation eines eigenen Themes ist eigentlich auch sehr einfach. In diesem kurzen Tutorial möchte ich zeigen, wie dies geht.

@@ -6,6 +6,7 @@ date:   2014-04-16 21:31:33 +0100
 categories: TTT-Server
 image: assets/post_images/garrysmod.jpg
 showtoc: true
+locale: de_DE
 ---
 
 Nach dem Herunterladen folgt jetzt die grundlegende Einrichtung des Servers. In diesem Teil möchte ich euch zeigen, wie man einen Garry’s Mod-Server zu einem Trouble in Terrorist Town Server macht und was es dabei zu beachten gibt. Nach diesem Teil ist der Server bereit für einen ersten Test.

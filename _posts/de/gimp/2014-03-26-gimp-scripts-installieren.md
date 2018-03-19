@@ -3,6 +3,7 @@ title: Gimp Scripts Installieren
 date: 2014-03-26 15:52
 categories: Gimp
 image: assets/post_images/wilber_quest.png
+locale: de_DE
 ---
 
 ## Allgemeine Vorgehensweise:

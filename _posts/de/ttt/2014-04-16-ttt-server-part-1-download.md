@@ -6,6 +6,7 @@ date:   2014-04-16 21:30:33 +0100
 categories: TTT-Server
 image: assets/post_images/garrysmod.jpg
 showtoc: true
+locale: de_DE
 ---
 
 Da ich vor einiger Zeit selbst vor dem Problem stand, einen Dedicated Server für den Garry’s Mod-Spielmodus Trouble in Terrorist Town zu erstellen und es sehr wenige Tutorials gibt, welche sich wirklich ausführlich mit diesem Thema beschäftigen: Hier eine (hoffentlich) sehr ausführliche Tutorialreihe zu diesem Thema.

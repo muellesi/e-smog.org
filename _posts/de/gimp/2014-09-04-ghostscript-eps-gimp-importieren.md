@@ -3,6 +3,7 @@ title: Ghostscript-Dateien (eps) in Gimp importieren
 date: 2014-09-04 10:35
 image: assets/post_images/ghostscript.png
 categories: Gimp
+locale: de_DE
 ---
 
 Gimp bringt eine Funktion mit, eps-Dokumente zu importieren. Leider scheint aber in der Version 2.8.x ein Fehler in der dafür zuständigen dll vorhanden zu sein, weshalb zwar der Export nach eps klappt, der Import aber mit einer Fehlermeldung wie "PostScript-Datei »C:\...\*.eps« konnte nicht interpretiert werden" fehlschlägt.

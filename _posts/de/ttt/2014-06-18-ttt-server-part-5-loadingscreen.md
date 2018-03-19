@@ -6,6 +6,7 @@ date:   2014-06-18 21:30:33 +0100
 categories: TTT-Server
 image: assets/post_images/garrysmod.jpg
 showtoc: true
+locale: de_DE
 ---
 
 In diesem Teil der Tutorialreihe zum Einrichten eines Dedicated Servers für TTT möchte ich euch zeigen, wie ihr einen eigenen Ladebildschirm erstellt, der dann allen Spielern, die sich mit eurem Server verbinden angezeigt wird. Ich werde in diesem Tutorial allerdings nur die allgemeinen Grundlagen zeigen und euch keinen fertigen Ladebildschirm liefern. Wenn ihr also einen eigenen Ladebildschirm erstellen wollt, solltet ihr euch zusätzlich noch ein wenig mit HTML und CSS auseinandersetzen, da dieser als ganz normale Webseite umgesetzt wird, welche einfach im Spiel angezeigt wird.

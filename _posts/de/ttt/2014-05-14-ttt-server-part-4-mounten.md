@@ -6,6 +6,7 @@ date:   2014-05-14 21:30:33 +0100
 categories: TTT-Server
 image: assets/post_images/garrysmod.jpg
 showtoc: true
+locale: de_DE
 ---
 
 Da einige (bzw. eher sehr viele) Mapersteller beim bauen ihrer Maps auf Inhalte von Counterstrike und Half Life zurückgreifen, muss unser Server diese Objekte natürlich auch kennen. Wenn ihr also beim Start einer neuen Map von Fehlermeldungen wie `ERROR!: Can't create physics object for models/(...).mdl` überschwemmt werdet und durch Objekte wie Kisten, Zäune etc. einfach hindurchlaufen könnt, wird es Zeit euren Server entsprechend anzupassen. Wie das geht, zeige ich euch in diesem Teil der TTT-Server-Tutorialreihe.
