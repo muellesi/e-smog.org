@@ -15,9 +15,9 @@ Vektorgrafik -- was ist das eigentlich?
 
 Am einfachsten lässt sich Vektorgrafik wohl dadurch erklären, was sie **nicht** ist: Jeder weiß heutzutage von Digitalkameras und dem täglichen Kontakt mit digitalen Bildern, dass diese aus Pixeln aufgebaut sind. Jedes Bild besteht dabei im Prinzip aus einer extrem großen Matrix an Pixeln, von denen jedes wiederum aus drei Farbkomponenten zusammengesetzt ist -- **R**ot, **G**rün und **B**lau, die in Kombination eine Farbe ergeben - diese Art von Bildern wird auch Rastergrafik genannt. Und genau das ist es, was Vektorgrafiken nicht sind. Eine reine Vektorgrafik enthält keine Pixel -- und dennoch wird sie auf dem Bildschirm mit Pixeln angezeigt. Was ist eine Vektorgrafik also dann?
 
-[![](https://e-smog.org/blog/wp-content/uploads/2017/08/Pixel-300x160.png)](https://e-smog.org/blog/wp-content/uploads/2017/08/Pixel.png)
-
-Die Pixel einer Rastergrafik sind gut sichtbar, wenn man hineinzoomt.
+{% figure [caption:"Die Pixel einer Rastergrafik sind gut sichtbar, wenn man hineinzoomt."] [class:"figure"] %}
+![Rastergrafik gezoomt]({{ "/assets/post_images/gimp_inkscape_pixel.jpg" | absolute_url }}){: class="figure-img img-fluid rounded"}
+{% endfigure %}
 
 Die Idee hinter Vektorgrafiken stammt vom Wunsch her, nicht mehr von der Pixelauflösung eines Bildes abhängig sein zu wollen: Nimmt man ein gewöhnliches Pixelbild, das einen Kreis enthält, hat dieser Kreis eine ganz bestimmte Größe. Will man diesen Kreis nun vergrößern oder verkleinern, muss das Bild in jedem Fall skaliert werden, worunter jedoch immer auch die Bildqualität leidet: Wird der Kreis größer skaliert, muss das Grafikprogramm Pixel "hinzuerfinden". Wird der Kreis dagegen kleiner skaliert, sind am Ende weniger Pixel im Bild -- es müssen also zwangsweise Information aus dem Bild entfernt werden.
 
@@ -26,11 +26,11 @@ Vektorgrafiken versuchen das Problem zu umgehen, indem in einer Vektorgrafikdate
 Und was bringt das jetzt?
 -------------------------
 
-[![](https://e-smog.org/blog/wp-content/uploads/2017/08/CircleScale-1.png)](https://e-smog.org/blog/wp-content/uploads/2017/08/CircleScale-1.png)
-
-Links: kleiner skaliert; Mitte: Original; Rechts: größer skaliert Es ist deutlich zu sehen, dass der kleiner skalierte Kreis deutlich heller ist, als das Original, während beim größer skalierten Kreis vor allem oben und unten starkes Aliasing sichtbar ist.
-
 Mit der obigen Definition ergibt sich ein entscheidender Vorteil: Während eine skalierte Rastergrafik auf jeden Fall immer schlechter aussieht, als das Originalbild, ist eine Vektorgrafik beliebig skalierbar -- und das ohne, dass Kanten verpixeln oder Details unscharf werden. Dafür muss das Anzeigeprogramm lediglich alle Werte aus der Textdatei mit dem Skalierungsfaktor multiplizieren.
+
+{% figure [caption:"Links: kleiner skaliert; Mitte: Original; Rechts: größer skaliert Es ist deutlich zu sehen, dass der kleiner skalierte Kreis deutlich heller ist, als das Original, während beim größer skalierten Kreis vor allem oben und unten starkes Aliasing sichtbar ist."] [class:"figure"] %}
+![Kreise in Rastergrafik gezoomt]({{ "/assets/post_images/gimp_inkscape_circle_pixel.jpg" | absolute_url }}){: class="figure-img img-fluid rounded"}
+{% endfigure %}
 
 Wollen wir den oben erwähnten Kreis also um den Faktor zwei Vergrößern, muss das Pixelgrafikprogramm aus der Vorhandenen Menge an Pixeln noch einmal die selbe Menge hinzuerfinden, was zu einem sehr verschwommenen Bild führen wird. Das Vektorgrafikprogramm hat es hingegen einfach: Der skalierte Kreis hat die folgenden Eigenschaften:
 
@@ -38,17 +38,17 @@ Wollen wir den oben erwähnten Kreis also um den Faktor zwei Vergrößern, muss 
 -   Radius: 5 * 2 = 10
 -   Linienstärke: 1 * 2 = 2
 
-Wie zu sehen ist, wird der Kreis also genau doppelt so groß, während er seine relative Position im Bild beibehält. Für die Bildschirmausgabe des skalierten Vektorkreises wird nun einfach ein neuer Kreis mit den skalierten Eigenschaften gezeichnet. 
+Wie zu sehen ist, wird der Kreis also genau doppelt so groß, während er seine relative Position im Bild beibehält. Für die Bildschirmausgabe des skalierten Vektorkreises wird nun einfach ein neuer Kreis mit den skalierten Eigenschaften gezeichnet.
 
-[![](https://e-smog.org/blog/wp-content/uploads/2017/08/CircleScale_vek-1.png)](https://e-smog.org/blog/wp-content/uploads/2017/08/CircleScale_vek-1.png)
-
-Die gleichen Kreise als Vektorgrafik. Nun sind alle Größen gleich scharf. Zudem ist zu erkennen, dass einzelne Objekte auswählbar sind, was ein weiterer Vorteil von Vektorgrafiken ist.
+{% figure [caption:"Die gleichen Kreise als Vektorgrafik. Nun sind alle Größen gleich scharf. Zudem ist zu erkennen, dass einzelne Objekte auswählbar sind, was ein weiterer Vorteil von Vektorgrafiken ist. *Dieses Bild ist ein **Screenshot** einer Vektorgrafik und damit eine Rastergrafik! Leichtes Aliasing kann also auch hier sichtbar sein.* "] [class:"figure"] %}
+![Kreise in Vektorgrafik gezoomt]({{ "/assets/post_images/gimp_inkscape_circle_vector.jpg" | absolute_url }}){: class="figure-img img-fluid rounded"}
+{% endfigure %}
 
 Natürlich kann das Vektorgrafikformat nicht nur Kreise darstellen: Auch andere geometrische Formen und sogar Freihandlinien sind möglich. Letztere werden dann einfach als eine Ansammlung von Punkten, den sogenannten Stützstellen in der svg-Datei abgelegt. Um aus diesen Stützstellen wieder eine Linie zu erzeugen ist etwas komplexere Mathematik nötig, deshalb werde ich das an dieser Stelle nicht weiter ausführen. Wer gerne mehr darüber wissen möchte, dem sei der Wikipedia-Artikel zur [Spline-Interpolation](https://de.wikipedia.org/wiki/Spline-Interpolation) ans Herz gelegt. Wichtig ist hier lediglich: Die oben gezeigte Skalierung durch einfache Multiplikation aller Eigenschaften mit dem Skalierungsfaktor funktioniert auch mit diesen komplexeren Objekten.
 
 ### Objekt versus Pixelmatsch
 
-Das Stichwort Objekt liefert hier direkt einen weiteren Vorteil von Vektorgrafiken: Während das Grafikprogramm bei einer Pixelgrafik nach dem Erstellen des Beispielkreises nicht mehr zwischen dem eigentlichen Kreis und den umgebenden Pixeln unterscheiden kann[^1], ist der Kreis in einer Vektorgrafik ganz klar als solcher definiert und kann von anderen Objekten getrennt von allen andere Objekten bearbeitet werden (siehe Grafik). Das sorgt dafür, dass der Kreis in der Vektorgrafik ohne Probleme verschoben werden kann, ohne, dass die Pixel der anderen Objekte beeinflusst werden.
+Das Stichwort Objekt liefert hier direkt einen weiteren Vorteil von Vektorgrafiken: Während das Grafikprogramm bei einer Rastergrafik nach dem Erstellen des Beispielkreises nicht mehr zwischen dem eigentlichen Kreis und den umgebenden Pixeln unterscheiden kann[^1], ist der Kreis in einer Vektorgrafik ganz klar als solcher definiert und kann von anderen Objekten getrennt bearbeitet werden (siehe Grafik). Das sorgt dafür, dass der Kreis in der Vektorgrafik ohne Probleme verschoben werden kann, ohne, dass die Pixel der anderen Objekte beeinflusst werden.
 
 Wann sollte ich nun also Vektorgrafiken benutzen?
 -------------------------------------------------
