@@ -14,7 +14,6 @@ Nun haben wir also einen voll funktionsfähigen Server und an diesem auch schon 
 <!--more-->
 
 ## Was kann ULX?
-[caption id="attachment_829" align="alignright" width="300"]<a href="https://e-smog.org/blog/wp-content/uploads/2014/09/2014-10-01_00001.jpg"><img class="wp-image-829 size-medium" src="https://e-smog.org/blog/wp-content/uploads/2014/09/2014-10-01_00001-e1412172604297-300x206.jpg" alt="ULX übersicht" width="300" height="206" /></a> <br />Das ULX-Menü bietet sehr viele Funktionen, welche allesamt in die Kategorien auf der linken Seite einsortiert sind.[/caption]
 
 ULX ist ein allrounder: Es eignet sich sehr gut zur Moderation (Spieler kicken, bannen, jailen, …), kann jedoch auch noch sehr viel mehr: Mit einigen wenigen Klicks könnt ihr die Map wechseln, einen Mapvote starten, User teleportieren, usw.
 
@@ -22,34 +21,44 @@ Zu alledem kommen noch verschiedene zusätzliche Funktionen wie das Einblenden e
 
 Im oben bereits erwähnten Konfigurationsmenü, welches ihr ingame mit dem Befehl `!menu` öffnen könnt, sind die meisten Befehle in einzelne Kategorien unterteilt, womit sie sehr schnell erreichbar sind. Die meisten dieser Befehle sind selbsterklärend, wenn man etwas englisch beherrscht, im folgenden werde ich die wichtigsten Funktionen kurz erklären, aber nicht allzu tief auf einzelne Funktionen eingehen – wer mehr Informationen zu einer bestimmten Funktion braucht, kann diese einfach mal ausprobieren, in der Dokumentation nachlesen, was sie macht oder einfach hier nachfragen.
 
+{% figure [caption:"Das ULX-Menü bietet sehr viele Funktionen, welche allesamt in die Kategorien auf der linken Seite einsortiert sind."] [class:"figure"] %}
+![ulx main menu]({{"/assets/post_images/ttt_ulx_main.jpg" | absolute_url}}){: class="figure-img img-fluid rounded"}
+{% endfigure %}
+
 ### Was sind die Vorteile zu anderen Admin-Plugins?
 Da ULX wohl das am weitesten verbreitete Plugin zur Serveradministration ist, sind auch viele andere Plugins darauf ausgelegt, damit interagieren zu können. Wenn ihr also ULX nutzt, ist in den meisten Fällen sichergestellt, dass eure Addons auch gut zusammenarbeiten. Außerdem gibt es aufgrund der hohen Bekanntheit auch einige sehr sinnvolle Erweiterungen für ULX – ein Beispiel hierfür wird auch ganz am Ende dieses Artikels noch kurz vorgestellt.
 
-### Die Einrichtung
+## Die Einrichtung
 Sehr schwer ist die Einrichtung von ULX nicht: Zunächst müsst ihr euch die beiden Pakete ULX und ULib von der [Herstellerseite](http://ulyssesmod.net/downloads.php) herunterladen.
 
 ***ACHTUNG:** Ihr solltet euch unbedingt **beide** Pakete installieren, denn ohne ULib funktioniert ULX erst gar nicht richtig!*
 
 Nun werden die zip-Archive in das Addons-Verzeichnis aus eurer Serverinstallation entpackt. Ab diesem Zeitpunkt sollte ULX bei einem Serverstart nun bereits gefunden und geladen werden. Testen könnt ihr das Plugin auch schon, indem ihr im ingame-Chat einfach !menu schreibt. Dies sollte ein kleines Fenster in der Bildschirmmitte öffnen, in dem ihr bereits die ersten paar Befehle seht, die das Plugin beherrscht. Dies sind jedoch noch nicht sehr viele, da ihr dem Plugin im Moment noch als einfacher User bekannt seid – und wer will schon jedem neuen User die Macht über den gesamten Server geben?
 
-#### Ersten Administrator anlegen
-[caption id="attachment_831" align="alignright" width="300"]<a href="https://e-smog.org/blog/wp-content/uploads/2014/09/2014-10-01_00005.jpg"><img class="wp-image-831 size-medium" src="https://e-smog.org/blog/wp-content/uploads/2014/09/2014-10-01_00005-e1412172780545-300x209.jpg" alt="Wenn alles geklappt hat, werdet ihr im Tab Groups auch angezeigt, wenn ihr als Gruppe &quot;superadmin&quot; auswählt." width="300" height="209" /></a> Wenn alles geklappt hat, werdet ihr im Tab Groups auch angezeigt, wenn ihr als Gruppe "superadmin" auswählt.[/caption]
+### Ersten Administrator anlegen
 
 Ihr müsst dem Plugin nun also zunächst einmal klarmachen, dass ihr der Serveradmin seid. Das könnt ihr über einen kurzen Befehl in der Serverkonsole (also die von srcds.exe, welche in eurer Taskleiste mit dem Halflife-Symbol auftaucht) erreichen. Bevor ihr den nachfolgenden Befehl ausführt, solltet ihr aber auf jeden Fall mit eurem Server verbunden sein, damit dieser auch euren Spielernamen kennt.
 
 Der nötige Befehl lautet: `ulx adduser EuerAktuellerSteamName superadmin`
 Um Probleme mit Leerzeichen im Benutzernamen zu umgehen ist es außerdem sinnvoll, den Benutzernamen in Leerzeichen zu setzen. Im Zweifelsfall kann man bei einem Fehler aber einfach in den Steam-Profileinstellungen kurzzeitig seinen Nicknamen ändern (Clantags entfernen etc.), damit dieser keine Fehler verursachen kann.
 
+{% figure [caption:"Wenn alles geklappt hat, werdet ihr im Tab Groups auch angezeigt, wenn ihr als Gruppe "superadmin" auswählt."] [class:"figure"] %}
+![ulx group menu]({{"/assets/post_images/ttt_ulx_group_menu.jpg" | absolute_url}}){: class="figure-img img-fluid rounded"}
+{% endfigure %}
+
 Direkt nach Ausführen des Befehls auf der Serverkonsole solltet ihr auch im Spiel die Nachricht bekommen, dass ihr nun der Gruppe superadmin angehört. Zudem solltet ihr im Menü wie im Screenshot ganz oben zu sehen sämtliche verfügbaren Befehle angezeigt bekommen, anstatt der eingeschränkten Auswahl von zuvor.
 
-#### ULX erweitern
-[caption id="attachment_832" align="alignleft" width="300"]<a href="https://e-smog.org/blog/wp-content/uploads/2014/09/2014-10-01_00003.jpg"><img class="wp-image-832 size-medium" src="https://e-smog.org/blog/wp-content/uploads/2014/09/2014-10-01_00003-e1412172986415-300x233.jpg" alt="Die TTT-Erweiterung für ULX liefert euch eine große Menge an zusätzlichen Einstellungsmöglichkeiten. So könnt ihr euren Server im laufenden Betrieb ganz nach Belieben einstellen und auch mal neue Einstellungen ohne Serverstart testen. " width="300" height="233" /></a> Die TTT-Erweiterung für ULX liefert euch eine große Menge an zusätzlichen Einstellungsmöglichkeiten. So könnt ihr euren Server im laufenden Betrieb ganz nach Belieben einstellen und auch mal neue Einstellungen ohne Serverneustart testen.[/caption]
+### ULX erweitern
 
 Gerade für einen TTT-Server ist es sinnvoll, ULX noch um einige TTT-Spezifische Befehle zu erweitern. Dies geht ganz einfach mit dem Workshopaddon [Trouble in Terrorist Town ULX Commands](http://steamcommunity.com/sharedfiles/filedetails/?id=127865722). Dieses wird wie in Part 3 beschrieben wie ein ganz normales Serveraddon installiert, woraufhin noch einige Zusätzliche Optionen im ingame-Menüfenster eingefügt werden, welche bei der Administration eines TTT-Servers noch zusätzlich helfen: Einstellen der Rundenzeit, Haste-Modus, Traitor- und Detectiveanzahl, Spielerlimit, und viele mehr. Mit der neusten Version dieses Addons hat man zusätzlich Zugriff auf so gut wie alle Server-Kofigurationsvariablen, welche TTT betreffen. Diese Einstellungen sind im ULX-Fenster in einem eigenen Tab namens TTT am oberen Fensterrand untergebracht.
 
+{% figure [caption:"Die TTT-Erweiterung für ULX liefert euch eine große Menge an zusätzlichen Einstellungsmöglichkeiten. So könnt ihr euren Server im laufenden Betrieb ganz nach Belieben einstellen und auch mal neue Einstellungen ohne Serverneustart testen."] [class:"figure"] %}
+![ulx ttt menu]({{"/assets/post_images/ttt_ulx_ttt_menu.jpg" | absolute_url}}){: class="figure-img img-fluid rounded"}
+{% endfigure %}
+
 ---
 
-#### Ersten Administrator anlegen *(Alternative, alte Version mit viel Dateigewurschtel)*
+#### Ersten Administrator anlegen *(alte Version)*
 ***Wichtig:** Ihr müsst den Server bereits einmal mit installiertem ULX gestartet haben, sonst existieren die Dateien, welche ihr im folgenden bearbeiten müsst noch gar nicht.*
 
 
@@ -99,6 +108,7 @@ Nun speichert ihr die Datei wieder und könnt eigentlich direkt schon auf dem Se
 
 ---
 
-<p style="text-align: center;"><em><strong>NOCH FRAGEN?
-</strong>Schau dir doch mal die <a title="Garrys mod TTT Dedicated Server erstellen – Part 7: F.A.Q/Troubleshooting" href="https://e-smog.org/blog/garrys-mod-ttt-dedicated-server-erstellen-part-7-f-a-q/">FAQ </a>an, vielleicht wurde deine Frage bereits beantwortet. Wenn nicht, schreibe mir gerne in den Kommentaren.</em></p>
+<p style="text-align: center;"> <em><strong>NOCH FRAGEN?</strong></em></p>
+<p style="text-align: center;"><em>Schau dir doch mal die <a title="Garrys mod TTT Dedicated Server erstellen – Part 7: F.A.Q/Troubleshooting" href="2015-11-03-ttt-server-part-8-faq">FAQ </a>an, vielleicht wurde deine Frage bereits beantwortet. Wenn nicht, schreibe mir gerne in den Kommentaren.</em></p>
+<p style="text-align: center;"><em>Weiter gehts in <a title="Garrys mod TTT Dedicated Server erstellen – Part 6: Serveradministration mit ULX und ULib" href="{% post_url 2014-09-27-ttt-server-part-6-admin %}">Part 7</a> mit der Einrichtung von FastDL, um Addons auch ohne Workshop angenehm benutzbar zu machen.</em></p>
 &nbsp;

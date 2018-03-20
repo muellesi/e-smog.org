@@ -56,5 +56,5 @@ Wenn ihr diese Datei nun speichert und euren Server neu startet, sollte er euch 
 ---
 
 <p style="text-align: center;"> <em><strong>NOCH FRAGEN?</strong></em></p>
-<p style="text-align: center;"><em>Schau dir doch mal die <a title="Garrys mod TTT Dedicated Server erstellen – Part 7: F.A.Q/Troubleshooting" href="https://e-smog.org/blog/garrys-mod-ttt-dedicated-server-erstellen-part-7-f-a-q/">FAQ </a>an, vielleicht wurde deine Frage bereits beantwortet. Wenn nicht, schreibe mir gerne in den Kommentaren.</em></p>
-<p style="text-align: center;"><em>Weiter geht's in <a href="https://e-smog.org/blog/garrys-mod-ttt-dedicated-server-erstellen-part-5-den-loading-screen-anpassen/">Part 5</a> mit dem Einrichten eines eigenen Ladebildschirms.</em></p>
+<p style="text-align: center;"><em>Schau dir doch mal die <a title="Garrys mod TTT Dedicated Server erstellen – Part 7: F.A.Q/Troubleshooting" href="2015-11-03-ttt-server-part-8-faq">FAQ </a>an, vielleicht wurde deine Frage bereits beantwortet. Wenn nicht, schreibe mir gerne in den Kommentaren.</em></p>
+<p style="text-align: center;"><em>Weiter geht's in <a href="{% post_url 2014-06-18-ttt-server-part-5-loadingscreen %}">Part 5</a> mit dem Einrichten eines eigenen Ladebildschirms.</em></p>

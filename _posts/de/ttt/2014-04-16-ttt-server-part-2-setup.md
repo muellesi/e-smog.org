@@ -139,5 +139,5 @@ Dies war die grundlegende Einrichtung eines TTT-Servers. Ihr seid jetzt bereits 
 ---
 
 <p style="text-align: center;"> <em><strong>NOCH FRAGEN?</strong></em></p>
-<p style="text-align: center;"><em>Schau dir doch mal die <a title="Garrys mod TTT Dedicated Server erstellen – Part 7: F.A.Q/Troubleshooting" href="https://e-smog.org/blog/garrys-mod-ttt-dedicated-server-erstellen-part-7-f-a-q/">FAQ </a>an, vielleicht wurde deine Frage bereits beantwortet. Wenn nicht, schreibe mir gerne in den Kommentaren.</em></p>
-<p style="text-align: center;"><em>Weiter gehts im <a title="Garrys mod TTT Dedicated Server erstellen – Part 3: Steam Workshop integrieren" href="https://e-smog.org/blog/garrys-mod-ttt-dedicated-server-erstellenpart-3/">nächsten Teil</a> mit dem Einbinden von Steam-Workshop-Inhalten</em></p>
+<p style="text-align: center;"><em>Schau dir doch mal die <a title="Garrys mod TTT Dedicated Server erstellen – Part 7: F.A.Q/Troubleshooting" href="2015-11-03-ttt-server-part-8-faq">FAQ </a>an, vielleicht wurde deine Frage bereits beantwortet. Wenn nicht, schreibe mir gerne in den Kommentaren.</em></p>
+<p style="text-align: center;"><em>Weiter gehts im <a title="Garrys mod TTT Dedicated Server erstellen – Part 3: Steam Workshop integrieren" href="{% post_url 2014-04-22-ttt-server-part-3-workshop %}">nächsten Teil</a> mit dem Einbinden von Steam-Workshop-Inhalten</em></p>

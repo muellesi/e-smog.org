@@ -110,5 +110,5 @@ Wer weitere Vorschläge für gute Maps/Addons hat, kann diese gerne in den Komme
 ---
 
 <p style="text-align: center;"> <em><strong>NOCH FRAGEN?</strong></em></p>
-<p style="text-align: center;"><em>Schau dir doch mal die <a title="Garrys mod TTT Dedicated Server erstellen – Part 7: F.A.Q/Troubleshooting" href="https://e-smog.org/blog/garrys-mod-ttt-dedicated-server-erstellen-part-7-f-a-q/">FAQ </a>an, vielleicht wurde deine Frage bereits beantwortet. Wenn nicht, schreibe mir gerne in den Kommentaren.</em></p>
-<p style="text-align: center;"><em>Weiter gehts in <a title="Garrys mod TTT Dedicated Server erstellen – Part 4: Andere Spiele “mounten”" href="https://e-smog.org/blog/garrys-mod-ttt-dedicated-server-erstellen-part-4-andere-spiele-mounten/">Part 4</a> mit dem Mounten der Dateien aus CounterStrike: Source</em></p>
+<p style="text-align: center;"><em>Schau dir doch mal die <a title="Garrys mod TTT Dedicated Server erstellen – Part 7: F.A.Q/Troubleshooting" href="2015-11-03-ttt-server-part-8-faq">FAQ </a>an, vielleicht wurde deine Frage bereits beantwortet. Wenn nicht, schreibe mir gerne in den Kommentaren.</em></p>
+<p style="text-align: center;"><em>Weiter gehts in <a title="Garrys mod TTT Dedicated Server erstellen – Part 4: Andere Spiele “mounten”" href="{% post_url 2014-05-14-ttt-server-part-4-mounten %}">Part 4</a> mit dem Mounten der Dateien aus CounterStrike: Source</em></p>

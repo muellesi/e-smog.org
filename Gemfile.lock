@@ -36,6 +36,7 @@ GEM
       autoprefixer-rails (~> 6.3.6)
     jekyll-feed (0.9.3)
       jekyll (~> 3.3)
+    jekyll-figure (0.0.2)
     jekyll-paginate-v2 (1.9.4)
       jekyll (~> 3.0)
     jekyll-relative-links (0.5.2)
@@ -70,6 +71,7 @@ GEM
       thread_safe (~> 0.1)
     tzinfo-data (1.2018.3)
       tzinfo (>= 1.0.0)
+    wdm (0.1.1)
 
 PLATFORMS
   ruby
@@ -79,9 +81,11 @@ DEPENDENCIES
   jekyll (~> 3.7.2)
   jekyll-autoprefixer
   jekyll-feed (~> 0.6)
+  jekyll-figure
   jekyll-paginate-v2
   jekyll-relative-links
   tzinfo-data
+  wdm (~> 0.1.0)
 
 BUNDLED WITH
    1.16.1
