@@ -244,7 +244,7 @@ else:
 ~~~
 Wie ihr seht, muss man dann aber jedes mal das print() neu schreiben, weshalb in solchen kleinen Beispielen die obige Version wesentlich angenehmer zu schreiben ist. Die Syntax ist dabei immer:
 ~~~ python
-(Ergebnis für True) if (Bedingung) else (Ergebnis für False)
+(Ergebnis wenn True) if (Bedingung) else (Ergebnis wenn False)
 ~~~
 was in etwa der normalen Satzstruktur in der deutschen Sprache folgt (Zum Vergleich habe ich mal die Klammern gleich gesetzt, wie im Codebeispiel): "(Tu das), wenn (das hier zutrifft), sonst (tu das)"
 [/spoiler]

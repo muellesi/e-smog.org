@@ -35,14 +35,10 @@ In den Steam-Einstellungen könnt ihr nun wenn ihr alles richtig gemacht habt im
 &nbsp;
 
 ### Gute Themes zum Start
-{% figure [caption:"Metro for Steam ist ein an Windows 8 angepasstes Theme, welches meiner Meinung nach im Moment das übersichtlichste Theme ist. Herunterladen könnt ihr es unter [http://metroforsteam.com/]"] [class:"figure"] %}
+{% figure [caption:"Metro for Steam ist ein an Windows 8 angepasstes Theme, welches meiner Meinung nach im Moment das übersichtlichste Theme ist. Herunterladen könnt ihr es unter <http://metroforsteam.com/>"] [class:"figure"] %}
 ![Metro for Steam Skin-Paket]({{"/assets/post_images/steam_metro.jpg" | absolute_url}}){: class="figure-img img-fluid rounded"}
 {% endfigure %}
 
-{% figure [caption:"Ein ebenfalls sehr schöner, für manche Geschmäcker aber zu klein gehaltener Skin. Herunterladen könnt ihr ihn unter [http://pulseh.deviantart.com/art/PixelVision-Skin-for-Steam-211426153]"] [class:"figure"] %}
+{% figure [caption:"Ein ebenfalls sehr schöner, für manche Geschmäcker aber zu klein gehaltener Skin. Herunterladen könnt ihr ihn unter <http://pulseh.deviantart.com/art/PixelVision-Skin-for-Steam-211426153>"] [class:"figure"] %}
 ![PixelVision for Steam Skin-Paket]({{"/assets/post_images/steam_pixelvision.jpg" | absolute_url}}){: class="figure-img img-fluid rounded"}
 {% endfigure %}
-
-
----
-<div>Steam Logo made by <a href="https://www.flaticon.com/authors/zurb" title="Zurb">Zurb</a> from www.flaticon.com is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
