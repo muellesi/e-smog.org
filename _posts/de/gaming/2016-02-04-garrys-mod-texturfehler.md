@@ -15,7 +15,7 @@ Wir werden uns zu Nutze machen, dass die benötigten Ressourcen auch beim kosten
 
 ### Den Counter-Strike Server herunterladen
 
-**Hinweis**: Solltet ihr bereits [Part 4](https://e-smog.org/blog/garrys-mod-ttt-dedicated-server-erstellen-part-4-andere-spiele-mounten/) meiner Tutorial-Reihe zum Garry's Mod Server befolgt haben, könnt ihr diesen Teil jetzt überspringen und unten bei „GCFScape besorgen" weitermachen.
+**Hinweis**: Solltet ihr bereits [Part 4]({% post_url 2014-05-14-ttt-server-part-4-mounten %}) meiner Tutorial-Reihe zum Garry's Mod Server befolgt haben, könnt ihr diesen Teil jetzt überspringen und unten bei „GCFScape besorgen" weitermachen.
 
 #### Srcds besorgen
 

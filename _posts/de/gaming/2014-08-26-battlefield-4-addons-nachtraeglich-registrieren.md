@@ -7,9 +7,12 @@ categories: Games Battlefield
 locale: de_DE
 ---
 
-Aufgrund der großen Menge der herunterzuladenden Daten für Battlefield 4, ist es nach einer Neuinstallation des Betriebssystems wesentlich einfacher, vorher gesicherte Spieldateien zu verwenden, anstatt alles neu herunterzuladen. Leider werden nach dem zurückkopieren der Dateien aber die Addons nichtmehr vom Battlelog-Plugin erkannt. Die Folge ist, dass die Addons zunächst nicht mehr spielbar sind. Versuche, einem Server beizutreten, werden immer nur mit einer Fehlermeldung wie "Du musst diese Erweiterung herunterladen und installieren" quittiert und auch ein Prüfen der Dateien mittels Origin schafft keine Abhilfe. Wie sich die Plugins wieder aktivieren lassen, wird im folgenden Artikel erklärt.<!--more-->
+Aufgrund der großen Menge der herunterzuladenden Daten für Battlefield 4, ist es nach einer Neuinstallation des Betriebssystems wesentlich einfacher, vorher gesicherte Spieldateien zu verwenden, anstatt alles neu herunterzuladen. Leider werden nach dem zurückkopieren der Dateien aber die Addons nichtmehr vom Battlelog-Plugin erkannt. Die Folge ist, dass die Addons zunächst nicht mehr spielbar sind. Versuche, einem Server beizutreten, werden immer nur mit einer Fehlermeldung wie "Du musst diese Erweiterung herunterladen und installieren" quittiert und auch ein Prüfen der Dateien mittels Origin schafft keine Abhilfe. Wie sich die Plugins wieder aktivieren lassen, wird im folgenden Artikel erklärt.
+<!--more-->
 
-[caption id="attachment_709" align="alignright" width="300"][![bf4_addon_activation](https://e-smog.org/blog/wp-content/uploads/2014/08/bf4_addon_activation-300x157.png)](https://e-smog.org/blog/wp-content/uploads/2014/08/bf4_addon_activation.png) So sollte jeder der Unterschlüssel nach den Schritten aussehen. Im Beispielbild wurden alle Addons installiert.[/caption]
+{% figure [caption:"So sollte jeder der Unterschlüssel nach den Schritten aussehen. Im Beispielbild wurden alle Addons installiert."] [class:"figure"] %}
+![ulx main menu]({{"/assets/post_images/bf4_addon_activation.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
+{% endfigure %}
 
 Das Problem ist relativ einfach zu lösen: Zur korrekten Aktivierung der Addonswird für jedes einzelne Addon lediglich ein zusätzlicher Eintrag in der Registry benötigt (Natürlich muss sich das jeweilige Addon auch wirklich in eurem Besitz befinden).
 
