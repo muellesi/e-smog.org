@@ -11,7 +11,7 @@ Aufgrund der großen Menge der herunterzuladenden Daten für Battlefield 4, ist 
 <!--more-->
 
 {% figure [caption:"So sollte jeder der Unterschlüssel nach den Schritten aussehen. Im Beispielbild wurden alle Addons installiert."] [class:"figure"] %}
-![ulx main menu]({{"/assets/post_images/bf4_addon_activation.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
+![BF4 Addon registration Registry Ansicht]({{"/assets/post_images/bf4_addon_activation.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
 {% endfigure %}
 
 Das Problem ist relativ einfach zu lösen: Zur korrekten Aktivierung der Addonswird für jedes einzelne Addon lediglich ein zusätzlicher Eintrag in der Registry benötigt (Natürlich muss sich das jeweilige Addon auch wirklich in eurem Besitz befinden).

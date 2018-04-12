@@ -18,11 +18,13 @@ Auflösung und Pixelzahl
 
 ### Darstellung von Pixeln auf dem Monitor
 
-[![vis bildgroesse](https://e-smog.org/blog/wp-content/uploads/2015/05/vis-bildgroesse-150x150.png)](https://e-smog.org/blog/wp-content/uploads/2015/05/vis-bildgroesse.png)
-
 Ein digitales Bild ist zunächst beliebig groß -- seine eigentliche sichtbare Größe erhält es nur durch die Monitorauflösung.
 
 Ein digitales Bild hat keine Größe? Das mag verwunderlich erscheinen -- das Bild wird doch auf dem Bildschim dargestellt und hat dort auch eine Größe? Genau!
+
+{% figure [caption:"Ein digitales Bild ist zunächst beliebig groß -- seine eigentliche sichtbare Größe erhält es nur durch die Monitorauflösung."] [class:"figure"] %}
+![Visualisierung Bildprojektion auf Monitor]({{"/assets/post_images/visualization_image_size.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
+{% endfigure %}
 
 Die sichtbare Größe eines digitalen Bildes wird aber immer erst bei der Ausgabe -- sei es auf dem Bildschirm oder beim Druck -- festgelegt.  Bei der Ausgabe auf einem Bildschirm wird bei einem Zoomfaktor von 1 üblicherweise jedes Pixel im Bild auf einem Monitorpixel abgebildet. Das Bild bekommt hier also über die Größe der einzelnen Pixel im Monitor indirekt eine Größe zugeordnet, welche sich über Pixelzahl*Monitorpixelgröße berechnen lässt. Ein Bild mit 1000 Pixeln in der Breite erscheint damit also breiter als eines mit nur 500 Pixeln. Da jedes Monitormodell eine andere Pixeldichte (Anzahl Pixel/Fläche, oft angegeben in dpi (Dots per Inch), obwohl eigentlich ppi (Pixel per Inch) besser wäre) haben kann, unterscheidet sich ein Bild in der Darstellungsgröße aber auch von Monitor zu Monitor -- auf vielen der modernen 4k-Monitoren erscheinen Bilder daher sehr klein, da die Pixeldichte bei diesen sehr hoch (100+ ppi) und die Pixelgröße damit extrem klein ist.
 

@@ -13,8 +13,6 @@ Da immer wieder Fragen aufkommen, wie das Plugin denn nun installiert wird, hier
 
 ## 1\. G'MIC besorgen
 
-[caption id="attachment_317" align="alignright" width="300"][![Rodilius Lion](https://e-smog.org/blog/wp-content/uploads/2014/03/lion-300x284.jpg)](https://e-smog.org/blog/wp-content/uploads/2014/03/lion.jpg) Der Rodilius (Fractalius)-Filter in Aktion (1)[/caption]
-
 Das geht zum Beispiel über folgenden Link:
 
 [http://gmic.eu/files/windows/gmic_gimp_qt_win32.exe](http://gmic.eu/files/windows/gmic_gimp_qt_win32.exe) (dieser sollte eigentlich immer die aktuellste gmic-Version zum Download anbieten - für ein 64Bit-System braucht ihr natürlich dann auch [http://gmic.eu/files/windows/gmic_gimp_qt_win64.exe](http://gmic.eu/files/windows/gmic_gimp_qt_win64.exe))
@@ -27,7 +25,11 @@ Per Doppelklick wird die heruntergeladene Datei nun ausgeführt. Ab Version 8 me
 
 ## 3\. Den Installationsordner in GIMP bekannt machen
 
-[![](https://e-smog.org/blog/wp-content/uploads/2014/03/gimp-gmic-new-path-300x235.png)](https://e-smog.org/blog/wp-content/uploads/2014/03/gimp-gmic-new-path.png)Nachdem ihr das Plugin nun installiert habt, ist seit der Version 2.0.3 des Plugins ein weiterer Schritt nötig (siehe [Kommentar des Plugin-Autors](https://discuss.pixls.us/t/using-the-windows-installer-for-version-2-0-3-of-gmic/4825)). Da das Plugin viele zusätzliche Dateien mit sich bringt, wird es standardmäßig in den Unterordner gmic_gimp_qt/ eures GIMP-Pluginordners installiert. Dort wird es jedoch von GIMP 2.8 nicht direkt gefunden und muss über die Einstellungen erst bekannt gemacht werden:
+{% figure [caption:"Der Pfad zum Gmic Addon muss in den GIMP Einstellungen bekannt gemacht werden"] [class:"figure"] %}
+![GMIC Pfad GIMP Einstellungen]({{"/assets/post_images/gimp-gmic-new-path.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
+{% endfigure %}
+
+Nachdem ihr das Plugin nun installiert habt, ist seit der Version 2.0.3 des Plugins ein weiterer Schritt nötig (siehe [Kommentar des Plugin-Autors](https://discuss.pixls.us/t/using-the-windows-installer-for-version-2-0-3-of-gmic/4825)). Da das Plugin viele zusätzliche Dateien mit sich bringt, wird es standardmäßig in den Unterordner gmic_gimp_qt/ eures GIMP-Pluginordners installiert. Dort wird es jedoch von GIMP 2.8 nicht direkt gefunden und muss über die Einstellungen erst bekannt gemacht werden:
 
 In den Einstellungen (Bearbeiten -&gt; Einstellungen) wird im Untermenü Ordner -&gt; Plugins ein neuer Eintrag angelegt, der den Pfad zum Installationsort des Plugins enthält. Falls ihr bei der installation keine Änderungen am Pfad vorgenommen habt, lautet der also C:\Users\EUERUSERNAME\.gimp-2.8\plug-ins\gmic_gimp_qt (EUERUSERNAME muss natürlich durch euren Windows-Benutzernamen ersetzt werden).
 
