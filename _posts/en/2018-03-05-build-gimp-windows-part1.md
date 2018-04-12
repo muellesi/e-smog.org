@@ -1,12 +1,13 @@
 ---
-title: Building Gimp for Windows Part 1 - First build
+title: Building GIMP for Windows Part 1 - First build
 date: 2018-03-05 20:22
 locale: en_US
-categories: en Gimp-Build Programming
+categories: en GIMP-Build Programming
 kramdown:
   parse_block_html: true
 image: assets/post_images/wilber_puzzle.png
 showtoc: true
+published: false
 ---
 When I first tried to build GIMP for Windows, I felt kind of lost - I searched through the web for hours and yet I did not find a single tutorial that was working as-is without any errors. Additionally, as someone who did some programming on Windows before but is a complete beginner when it comes to the GNU/Linux way of compiling C-programs, I was kind of overwhelmed with all the steps required to compile a single program. Therefore it took me a whole lot of time until I finally got a working result.
 
@@ -14,11 +15,11 @@ Now that it seems like I have figured out at least the most important things, I 
 
 <!--more-->
 
-There is a short tutorial on [wiki.gimp.org](https://wiki.gimp.org/wiki/Hacking:Building/Windows#Building_GIMP_natively_under_Windows_using_MSYS2) that guides you through the most basic steps of building Gimp but it a bit old and is therefore missing some important steps. I will try to stay as close as possible to that tutorial for most of the basic things like setting up a basic build environment and simply add information where it is needed.
+There is a short tutorial on [wiki.gimp.org](https://wiki.gimp.org/wiki/Hacking:Building/Windows#Building_GIMP_natively_under_Windows_using_MSYS2) that guides you through the most basic steps of building GIMP but it a bit old and is therefore missing some important steps. I will try to stay as close as possible to that tutorial for most of the basic things like setting up a basic build environment and simply add information where it is needed.
 
 ## Setup 
 
-Since GIMP's build process requires the GCC toolchain to be available on the build system, Gimp could not be built natively on Windows until recently. This changed with Windows 10's optional Ubuntu Subsystem but since not everyone has Windows 10 available yet, this Tutorial will still use the 'old' approach of using [MSYS2](https://www.msys2.org/) to get the required build essentials. 
+Since GIMP's build process requires the GCC toolchain to be available on the build system, GIMP could not be built natively on Windows until recently. This changed with Windows 10's optional Ubuntu Subsystem but since not everyone has Windows 10 available yet, this Tutorial will still use the 'old' approach of using [MSYS2](https://www.msys2.org/) to get the required build essentials. 
 
 ### Setting up an MSYS2 build environment
 Basically, MSYS2 emulates a Linux environment with full support of Arch Linux' 'pacman' package manager. When downloading, make sure to use the 64 bit version of MSYS2 if your system supports it - there is no advantage of using the 32bit version and I will focus on building GIMP for 64 bit systems anyways.
@@ -152,7 +153,7 @@ cd ..
 As you can see, we pass our `$PREFIX` environment variable to the `autogen.sh` script via the `--prefix` parameter. This tells the `make install` procedure where to put all the generated binary files. Make sure you specify the (same) prefix for every dependency you compile - otherwise `make install` will copy the binaries to the [default location](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard) which would pollute your build environment with possibly unstable libraries.
 
 ### GEGL
-[GEGL](https://gegl.org) is a "data flow based image processing framework" that finds more and more use inside of GIMP. Instead of permanently (and therefore destructively) rendering changes to a certain image layer, gegl dynamically creates a final image by chaining multiple gegl operations. This will allow gimp to have non-destructive effect layers in the future (Gimp 3.x). But even now gegl is used for fast on-canvas previews of almost all available filters. Gegl can be built by using the same stepps we already used for babl (with some additional options for the autogen script):
+[GEGL](https://gegl.org) is a "data flow based image processing framework" that finds more and more use inside of GIMP. Instead of permanently (and therefore destructively) rendering changes to a certain image layer, gegl dynamically creates a final image by chaining multiple gegl operations. This will allow GIMP to have non-destructive effect layers in the future (GIMP 3.x). But even now gegl is used for fast on-canvas previews of almost all available filters. Gegl can be built by using the same stepps we already used for babl (with some additional options for the autogen script):
 
 ~~~ bash
 git clone git://git.gnome.org/gegl
