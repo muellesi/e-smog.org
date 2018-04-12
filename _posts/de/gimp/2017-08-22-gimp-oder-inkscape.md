@@ -1,12 +1,12 @@
 ---
-title: Gimp vs. Inkscape - Anwendungsbeispiele kurz erklärt
+title: GIMP vs. Inkscape - Anwendungsbeispiele kurz erklärt
 date: 2017-08-22 20:00
 image: assets/post_images/gimpvsinkscape.png
-categories: gimp
+categories: GIMP
 locale: de_DE
 ---
 
-Beim Erstellen von Grafiken gibt es einiges zu beachten. Eine wichtige Entscheidung, die noch vor allen anderen Entscheidungen getroffen werden sollte, ist dabei die Wahl des Grafikformates: Eignet sich für die geplante Grafik eher ein vektorbasiertes Format oder doch eher ein Pixelbild? Mit dieser Wahl fällt in den Meisten Fällen auch bereits die Wahl der zu verwendenden Software: Möchte ich eine Pixelgrafik erstellen, ist Gimp die richtige Wahl. Soll es hingegen eine Vektorgrafik werden, kommt Inkscape zum Zug. In diesem Artikel soll es nun darum gehen, von Anfang an die richtige Entscheidung zu treffen, damit später nicht möglicherweise ein böses Erwachen folgt.
+Beim Erstellen von Grafiken gibt es einiges zu beachten. Eine wichtige Entscheidung, die noch vor allen anderen Entscheidungen getroffen werden sollte, ist dabei die Wahl des Grafikformates: Eignet sich für die geplante Grafik eher ein vektorbasiertes Format oder doch eher ein Pixelbild? Mit dieser Wahl fällt in den Meisten Fällen auch bereits die Wahl der zu verwendenden Software: Möchte ich eine Pixelgrafik erstellen, ist GIMP die richtige Wahl. Soll es hingegen eine Vektorgrafik werden, kommt Inkscape zum Zug. In diesem Artikel soll es nun darum gehen, von Anfang an die richtige Entscheidung zu treffen, damit später nicht möglicherweise ein böses Erwachen folgt.
 
 <!--more-->
 
@@ -55,8 +55,8 @@ Wann sollte ich nun also Vektorgrafiken benutzen?
 
 Die einfache Antwort ist: immer wenn es möglich ist. Aus einer Vektorgrafik kann zu jeder Zeit eine Rastergrafik mit beliebiger Auflösung gerendert werden. Eine Rastergrafik jedoch in eine Vektorgrafik umzuwandeln geht meist nur von Hand und benötigt sehr viel Zeit.
 
-Es gibt aber auch Ausnahmen: Während sich Logos, Icons und sonstige Bilder mit geometrischen Formen mit absolut scharfen Kanten sehr gut dafür eignen, im oben vorgestellten Vektorformat dargestellt zu werden, gibt es Grafiken, wo dies unmöglich ist: Photos, Renderbilder aus 3D-Softwares oder auch handgemalte Bilder enthalten so viele Informationen und oft kaum bis gar nicht voneinander trennbare Objekte, dass sie einfach nicht als Vektorgrafik darstellbar sind. Der Versuch, das doch zu tun, wird in den meisten Fällen wie der Versuch eines Kindergartenkindes aussehen, eines der Bilder nachzumalen. Diese Art von Bildern ist also der Standard-Anwendungsfall für Rastergrafikprogramme wie Gimp.
+Es gibt aber auch Ausnahmen: Während sich Logos, Icons und sonstige Bilder mit geometrischen Formen mit absolut scharfen Kanten sehr gut dafür eignen, im oben vorgestellten Vektorformat dargestellt zu werden, gibt es Grafiken, wo dies unmöglich ist: Photos, Renderbilder aus 3D-Softwares oder auch handgemalte Bilder enthalten so viele Informationen und oft kaum bis gar nicht voneinander trennbare Objekte, dass sie einfach nicht als Vektorgrafik darstellbar sind. Der Versuch, das doch zu tun, wird in den meisten Fällen wie der Versuch eines Kindergartenkindes aussehen, eines der Bilder nachzumalen. Diese Art von Bildern ist also der Standard-Anwendungsfall für Rastergrafikprogramme wie GIMP.
 
 Alle anderen Grafiken hingegen, die scharfe Linien, Text und geometrische Formen enthalten, sind auf jeden Fall immer gut geeignet, als Vektorgrafik angelegt zu werden und werden damit mit Inkscape erstellt.
 
-[^1]: Natürlich kann man den Kreis auf einer extra Ebene ablegen und hat dann innerhalb des Grafikprogramms eine ähnliche Funktionalität. Wird das Bild aber exportiert, werden am Ende immer alle Ebenen in eine einzige Ebene zusammengeführt. Soll eine Pixelgrafik also bearbeitet werden, ohne, dass die Projektdatei (bei Gimp wäre das xcf) vorliegt, besteht das genannte Problem auf jeden Fall.
+[^1]: Natürlich kann man den Kreis auf einer extra Ebene ablegen und hat dann innerhalb des Grafikprogramms eine ähnliche Funktionalität. Wird das Bild aber exportiert, werden am Ende immer alle Ebenen in eine einzige Ebene zusammengeführt. Soll eine Pixelgrafik also bearbeitet werden, ohne, dass die Projektdatei (bei GIMP wäre das xcf) vorliegt, besteht das genannte Problem auf jeden Fall.

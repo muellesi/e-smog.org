@@ -14,7 +14,7 @@ Scriptsprachen sind das genaue Gegenteil zu kompilierten Programmiersprachen wi
 
 Aus diesem Unterschied ergeben sich auch schon direkt die unterschiedlichen Einsatzzwecke für Scripts und kompilierte Programme:
 
-Kompilierte Programme sind oft wesentlich schneller, als Scripts, da sie wesentlich besser auf die Hardware optimiert werden können. Scripts jedoch können häufig mit wenigen Befehlen hochkomplexe Aufgaben übernehmen und haben zudem den Vorteil, dass jeder sich ein Script anpassen kann, ohne, dass es neu kompiliert werden müsste. Beide Arten von Programmen lassen sich so wunderbar miteinander kombinieren: Das Grundprogramm wird in einer kompilierten Sprache geschrieben und bringt einen Script-Interpreter mit. So lässt es sich mit Hilfe von Scripts sehr einfach beliebig erweitern und verbessern. Die Scripts bauen dabei alle auf den schnellen Grundfunktionen des Hauptprogramms auf und kombinieren diese zu komplexeren Abläufen. Ein gutes Beispiel hierfür ist Gimp und seine Python Plugins. An diesem Beispiel werden sich auch die nächsten Tutorial-Teile orientieren.
+Kompilierte Programme sind oft wesentlich schneller, als Scripts, da sie wesentlich besser auf die Hardware optimiert werden können. Scripts jedoch können häufig mit wenigen Befehlen hochkomplexe Aufgaben übernehmen und haben zudem den Vorteil, dass jeder sich ein Script anpassen kann, ohne, dass es neu kompiliert werden müsste. Beide Arten von Programmen lassen sich so wunderbar miteinander kombinieren: Das Grundprogramm wird in einer kompilierten Sprache geschrieben und bringt einen Script-Interpreter mit. So lässt es sich mit Hilfe von Scripts sehr einfach beliebig erweitern und verbessern. Die Scripts bauen dabei alle auf den schnellen Grundfunktionen des Hauptprogramms auf und kombinieren diese zu komplexeren Abläufen. Ein gutes Beispiel hierfür ist GIMP und seine Python Plugins. An diesem Beispiel werden sich auch die nächsten Tutorial-Teile orientieren.
 
 ## Wie funktioniert Python?
 
@@ -59,7 +59,7 @@ denn: erneut wird die Funktion main() definiert (es geschieht erneut hier noch k
 
 #### Die Schleife
 
-Da Scripts vor allem in Gimp gerne zur Stapelverarbeitung eingesetzt werden, ist die Schleife wohl eines der wichtigsten Konstrukte. Eine Schleife wird dazu genutzt, einen bestimmten Teil des Codes immer und immer wieder auszuführen, bis eine bestimmte Bedingung erfüllt ist. Zum Beispiel könnte man also eine Anzahl an Bildern laden und diese dann eines nach dem anderen verarbeiten, bis die Liste von Bildern komplett abgearbeitet ist. Es gibt im Großen und ganzen (wie in fast jeder Programmiersprache) zwei wichtige Schleifenarten:
+Da Scripts vor allem in GIMP gerne zur Stapelverarbeitung eingesetzt werden, ist die Schleife wohl eines der wichtigsten Konstrukte. Eine Schleife wird dazu genutzt, einen bestimmten Teil des Codes immer und immer wieder auszuführen, bis eine bestimmte Bedingung erfüllt ist. Zum Beispiel könnte man also eine Anzahl an Bildern laden und diese dann eines nach dem anderen verarbeiten, bis die Liste von Bildern komplett abgearbeitet ist. Es gibt im Großen und ganzen (wie in fast jeder Programmiersprache) zwei wichtige Schleifenarten:
 
 ##### Die for-Schleife
 
@@ -96,7 +96,7 @@ Obwohl die beiden Schleifenarten so verschieden sind, kann dennoch ein und die s
 
 #### Die Verzweigung / if-else-Blöcke
 
-Eine Verzweigung wird in Programmen ebenfalls oft gebraucht. Ein Beispiel wieder aus dem Bereich von Gimp wäre: Wir wollen dem Benutzer in unserem Plugin per Checkbox die Möglichkeit geben, eine bestimmte Funktion unseres Plugins an- oder abzuschalten. Unser Programm muss daraufhin natürlich auf den Status der Checkbox reagieren und die Funktion je nach Status ausführen, oder eben auch nicht.
+Eine Verzweigung wird in Programmen ebenfalls oft gebraucht. Ein Beispiel wieder aus dem Bereich von GIMP wäre: Wir wollen dem Benutzer in unserem Plugin per Checkbox die Möglichkeit geben, eine bestimmte Funktion unseres Plugins an- oder abzuschalten. Unser Programm muss daraufhin natürlich auf den Status der Checkbox reagieren und die Funktion je nach Status ausführen, oder eben auch nicht.
 
 Eine einfache Verzweigung sieht so aus:
 ~~~ python
