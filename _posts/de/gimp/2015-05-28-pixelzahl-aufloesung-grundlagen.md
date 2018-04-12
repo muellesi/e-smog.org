@@ -7,7 +7,7 @@ locale: de_DE
 ---
 
 Ein häufiges Problem beim Start in die digitale Bildbearbeitung ist, dass ein digitales Bild schwer zu begreifen ist -- was ist zum Beispiel ein Pixel und wie groß ist sowas? In diesem Artikel möchte ich kurz darauf eingehen, wie die Größe eines digitalen Bildes zustande kommt und dies hoffentlich auch für Einsteiger in die Bildbearbeitung etwas klarer machen.
-
+<!--more-->
 Das Pixel
 ---------
 

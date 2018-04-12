@@ -3,7 +3,7 @@ title: Steam Themes installieren
 layout: post
 date: 2014-05-15 08:26
 image: /assets/post_images/steam_logo.png
-categories: Games
+categories: Games Steam
 locale: de_DE
 ---
 

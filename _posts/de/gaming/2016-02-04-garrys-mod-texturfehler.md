@@ -3,7 +3,7 @@ title: Garry’s Mod - Texturfehler ohne Counter-Strike Source beheben
 layout: post
 date: 2016-02-04 08:26
 image: /assets/post_images/garrysmod_texturfehler.png
-categories: Games
+categories: Games Garrysmod
 locale: de_DE
 ---
 
