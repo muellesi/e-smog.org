@@ -1,6 +1,7 @@
 ---
 title: Shortcuts für Desktop-Verknüpfungen
 date: 2014-05-20 19:02
+image: assets/post_images/tip_birne.png
 categories: Windows
 ---
 

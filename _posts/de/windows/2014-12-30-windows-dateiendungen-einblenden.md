@@ -1,6 +1,7 @@
 ---
 title: Windows - Dateiendungen einblenden
 date: 2014-12-30 15:25
+image: assets/post_images/tip_birne.png
 categories: Windows
 ---
 

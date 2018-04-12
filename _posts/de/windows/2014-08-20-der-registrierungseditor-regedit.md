@@ -1,6 +1,7 @@
 ---
 title: Der Registrierungseditor (regedit)
 date: 2014-08-20 08:59
+image: assets/post_images/regedit_logo.png
 categories: Windows
 ---
 

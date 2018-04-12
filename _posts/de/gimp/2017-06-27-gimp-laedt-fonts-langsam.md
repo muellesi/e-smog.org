@@ -1,7 +1,8 @@
 ---
-title: Fix - GIMP 2.8.22 lädt lange fonts
+title: Fix - GIMP 2.8.22 lädt Fonts bei jedem Start
 date: 2017-06-27 13:00
 categories: GIMP
+image: assets/post_images/wilber_big.png
 locale: de_DE
 ---
 

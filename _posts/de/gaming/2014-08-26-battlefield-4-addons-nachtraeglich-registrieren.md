@@ -2,6 +2,7 @@
 title: Battlefield 4 Addons nachträglich registrieren
 layout: post
 date: 2014-08-26 09:54
+image: assets/post_images/bf4_logo.jpg
 categories: Games
 locale: de_DE
 ---

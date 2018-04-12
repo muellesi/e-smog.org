@@ -1,6 +1,7 @@
 ---
 title: Windows 8.1 Update 1 - Maus bleibt an Bildschirmkante hängen - FIX
 date: 2014-08-20 08:13
+image: assets/post_images/windows_kaefer.png
 categories: Windows
 ---
 
