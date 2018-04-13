@@ -7,7 +7,7 @@ kramdown:
   parse_block_html: true
 image: assets/post_images/wilber_puzzle.png
 showtoc: true
-published: false
+published: true
 ---
 When I first tried to build GIMP for Windows, I felt kind of lost - I searched through the web for hours and yet I did not find a single tutorial that was working as-is without any errors. Additionally, as someone who did some programming on Windows before but is a complete beginner when it comes to the GNU/Linux way of compiling C-programs, I was kind of overwhelmed with all the steps required to compile a single program. Therefore it took me a whole lot of time until I finally got a working result.
 
@@ -72,7 +72,9 @@ mingw-w64-x86_64-json-glib \
 mingw-w64-x86_64-json-c \
 mingw-w64-x86_64-gexiv2 \
 mingw-w64-x86_64-lcms2 \
-mingw-w64-x86_64-glib-networking
+mingw-w64-x86_64-glib-networking \
+mingw-w64-x86_64-poppler \
+mingw-w64-x86_64-poppler-data
 ~~~
 This will install a whole lot of libraries and software that is needed for building GIMP.
 
@@ -226,7 +228,7 @@ So you did everything exactly as described above and suddenly you encounter an e
 ### Fail in autogen/configure
 
 #### Missing dependency
-As described [above](#), first try to install the missing dependency via pacman. Keep in mind that the dependency might have a version number attached to its name. You can also search pacman's package repositories for a string by using `pacman -Fs SEARCHSTRING`
+As described [above](#), first try to install the missing dependency via pacman. Keep in mind that the dependency might have a version number attached to its name. You can also search pacman's package repositories for a string by using `pacman -Ss SEARCHSTRING`
 
 #### A library that you compiled yourself is not found or the wrong version
 * Did you run make install for the missing dependency?

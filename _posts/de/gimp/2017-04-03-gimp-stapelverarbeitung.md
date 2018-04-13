@@ -13,11 +13,7 @@ Gleich im Voraus sei erwähnt: Wer regelmäßig große Mengen an Bildmaterial im
 
 Zunächst möchte ich zwei Plugins vorstellen, die Stapelverarbeitung in Gimp mit Hilfe einer einfach zu bedienenden Oberfläche sehr leicht machen:
 
-### BIMP
-
-[![](https://e-smog.org/blog/wp-content/uploads/2017/04/Bimp-300x225.png)](https://e-smog.org/blog/wp-content/uploads/2017/04/Bimp.png)
-
-In einer übersichtlichen Oberfläche kann in Bimp ein Ablauf von Bearbeitungsschritten festgelegt werden.
+## BIMP
 
 [Bimp](https://github.com/alessandrofrancesconi/gimp-plugin-bimp) ist ein Stapelverarbeitungsplugin für Gimp, das von Alessandro Francesconi entwickelt wird. Es bietet grafische Einstellungen für alle wichtigen verallgemeinerbaren Bildoperationen (Vergrößern, Verkleinern, Schärfen, Wasserzeichen, Konvertierung, uvm.). Außerdem kann Bimp auf den Gimp-Prozedurenbrowser zugreifen und kann somit beinahe jede in Gimp verfügbare Funktion nutzen -- wenn auch nicht so komfortabel, wie die vorher genannten.
 
@@ -25,14 +21,21 @@ Ein großer Vorteil ist, dass einmal zusammengestellte Abläufe als Set gespeich
 
 Zuguterletzt bietet Bimp eine Umbenennungsfunktion an, in der auch einfache Muster genutzt werden können. So ist es zum Beispiel möglich, einen Präfix vor den Dateinamen bearbeiteter Bilder zu setzen, sie durchzummerieren oder auch, diese mit dem Bearbeitungsdatum zu versehen.
 
+{% figure [caption:"In einer übersichtlichen Oberfläche kann in Bimp ein Ablauf von Bearbeitungsschritten festgelegt werden."] [class:"figure"] %}
+![Bimp UI]({{"/assets/post_images/gimp_bimp.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
+{% endfigure %}
+
 **Hinweis:** Bimp wird mit einem Installer geliefert, der allerdings mehr als unnötig ist (und eine dll ins Systemverzeichnis kopiert, was durchaus problematisch sein kann). Dieser lässt sich aber auch mit einem Entpacker wie etwa 7zip öffnen, woraufhin einfach die enthaltene Datei „bimp.exe" ins Gimp-Pluginverzeichnis kopiert werden kann.
+{: class="alert alert-warning"}
 
-### Davids Batch Processor
 
-[![](https://e-smog.org/blog/wp-content/uploads/2017/04/dbp-241x300.png)](https://e-smog.org/blog/wp-content/uploads/2017/04/dbp.png)
-
-Davids Batch Processor bietet weniger Optionen, diese sind dafür schnell über die einzelnen Tabs erreichbar.
+## Davids Batch Processor
 
 [Davids Batch Processor](http://members.ozemail.com.au/~hodsond/dbp.html) (kurz: DBP) ist ebenfalls ein Batch-Plugin für Gimp, das allerdings mittlerweile nicht mehr aktiv weiterentwickelt wird. Dennoch funktioniert die unter  http://members.ozemail.com.au/~hodsond/dbp.html bereitgestellte Version 1.1.8 des Plugins noch problemlos mit der zum Zeitpunkt der Veröffentlichung dieses Artikels aktuellen Gimp-Version 2.8.20.
 
+{% figure [caption:"Davids Batch Processor bietet weniger Optionen, diese sind dafür schnell über die einzelnen Tabs erreichbar."] [class:"figure"] %}
+![DBP UI]({{"/assets/post_images/gimp_dbp.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
+{% endfigure %}
+
 Das Plugin bietet einige einfache Operationen auf mehreren grafisch auswählbaren Bildern an. Diese sind: Konvertierung des Bildformats, Drehen, Weichzeichnen, Farbanpassungen, Skalierung, Zuschneiden und Schärfen. Zudem lassen sich bearbeitete Bilddateien mit Hilfe von einfachen Regeln neu benennen. Der Funktionsumfang ist damit wesentlich geringer, als der von Bimp, allerdings können auch diese Funktionen bereits ausreichend sein, wenn zum Beispiel nur Bilder für eine Webseite verkleinert werden sollen. In diesem Fall bietet die einfachere Oberfläche des DBP einen deutlichen Vorteil gegenüber Bimp.
+

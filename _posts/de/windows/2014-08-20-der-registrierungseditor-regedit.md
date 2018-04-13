@@ -7,23 +7,25 @@ categories: Windows
 
 In einigen Artikeln auf dieser Seite muss etwas tiefer ins Windows-Betriebssystem eingegriffen werden, um bestimmte Einstellungen zu ändern. Dies geschieht meistens über den Registrierungseditor. Wie dieser funktioniert, soll Inhalt dieses Artikels sein.<!--more-->
 
-### Starten des Registrierungseditors
+## Starten des Registrierungseditors
 
-[![regedit](https://e-smog.org/blog/wp-content/uploads/2014/08/regedit-300x175.png)](https://e-smog.org/blog/wp-content/uploads/2014/08/regedit.png)Am schnellsten geht dies, indem ihr einfach auf der Tastatur gleichzeitig die Windows und die R-Taste drückt. Im sich anschließend öffnenden Fester gebt ihr nun `regedit` ein und drückt Enter.
+Am schnellsten geht dies, indem ihr einfach auf der Tastatur gleichzeitig die Windows und die R-Taste drückt. Im sich anschließend öffnenden Fester gebt ihr nun `regedit` ein und drückt Enter.
 
 _Falls ihr über keine Windows-Taste verfügt:_
 
 Öffnet das Startmenü (Windows XP/Vista/7) oder die  Edge UI/Metro-Oberfläche (Windows 8/8.1) über einen klick auf das Windows-Logo links unten. Ohne nun etwas weiteres vorher zu tun, gebt nun einfach regedit ein und klickt dann auf das Suchergebnis "regedit.exe". Ein Fenster sollte sich öffnen, welches ungefähr dem Screenshot rechts entspricht.
 
-&nbsp;
+{% figure [caption:"Die Standardansicht des Registrierungseditors."] [class:"figure"] %}
+![Regedit UI]({{"/assets/post_images/regedit.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
+{% endfigure %}
 
-### Die Oberfläche von regedit
+## Die Oberfläche von regedit
 
 Die Oberfläche des Editors entspricht im großen und ganzen der des Windows-Explorers, sieht nur nichtmehr ganz so zeitgemäß aus. Wie im Explorer gibt es auf der linken Seite eine Art Ordnerstruktur (Die Ordner der Registry heißen "Schlüssel"), in der man navigieren kann und auf der rechten Seiten eine Art "Dateien" (diese werden "Werte" genannt).
 
-#### Die Schlüssel
+### Schlüssel
 
-[![regedit_schluessel](https://e-smog.org/blog/wp-content/uploads/2014/08/regedit_schluessel-141x300.png)](https://e-smog.org/blog/wp-content/uploads/2014/08/regedit_schluessel.png) Beim start des Registrierungseditors sind zunächst alle Schlüssel eingeklappt und es sind nur die 5 Hauptschlüssel Sichtbar:
+Beim start des Registrierungseditors sind zunächst alle Schlüssel eingeklappt und es sind nur die 5 Hauptschlüssel Sichtbar:
 
 1.  HKEY_CLASSES_ROOT (oft abgekürzt mit **HKCR** oder HCR)
 2.  HKEY_CURRENT_USER (**HKCU**/HCU)
@@ -34,15 +36,23 @@ Wichtig sind hier bei den meisten Tutorials eigentlich nur Nr. 2 und 3, da in di
 
 Unten im Fenster wird außerdem der Übersicht wegen auch noch einmal der vollständige Pfad bis zum gerade angeklickten Schlüssel angezeigt.
 
+{% figure [caption:"Die 'Schlüssel' der Registry können wie normale Ordner genutzt werden und werden auch entsprechend in der Oberfläche des Registrierungs-Editors angezeigt."] [class:"figure"] %}
+![Regedit Schlüssel]({{"/assets/post_images/regedit_schluessel.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
+{% endfigure %}
+
 #### Erstellen eines neuen (Unter-) Schlüssels
 
 um einen neuen Registrierungsschlüssel zu erzeugen, klickt ihr mit der rechten Maustaste auf den Schlüssel, in dem der neue (Unter-)Schlüssel erzeugt werden soll und wählt im Kontextmenü Neu-&gt;Schlüssel aus. Wie beim erstellen eines Ordners könnt ihr eurem so neuen Schlüssel dann auch direkt noch einen Namen geben.
 
 &nbsp;
 
-#### Die Werte[![regedit_werte](https://e-smog.org/blog/wp-content/uploads/2014/08/regedit_werte-300x216.png)](https://e-smog.org/blog/wp-content/uploads/2014/08/regedit_werte.png)
+### Werte
 
 Rechts neben der Schlüsselansicht befindet sich die Werteansicht. Hier wird wie im Explorer mit den Dateien der Inhalt der jeweils angeklickten Schlüssel angezeigt. Jeder Wert hat dabei immer drei Eigenschaften: Einen **Namen**, einen **Typ** und zugehörige **Daten**. Name und enthaltene Daten eines Wertes können jederzeit geändert werden, während zum ändern des Typs der Wert gelöscht und mit dem gewünschten Typ neu erstellt werden muss.
+
+{% figure [caption:"Werte haben in der Registrierung einen von sechs Typen, einen Datenwert und einen Namen."] [class:"figure"] %}
+![Werte UI]({{"/assets/post_images/regedit_werte.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
+{% endfigure %}
 
 ##### Erstellen eines Wertes
 
