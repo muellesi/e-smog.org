@@ -2,7 +2,7 @@
 title: Building GIMP for Windows Part 1 - First build
 date: 2018-03-05 20:22
 locale: en_US
-categories: en GIMP-Build Programming
+categories: en Programming GIMP-Build
 kramdown:
   parse_block_html: true
 image: assets/post_images/wilber_puzzle.png
