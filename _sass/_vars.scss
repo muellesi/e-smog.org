@@ -13,7 +13,7 @@ $warning: #ffd900;
 $success: #008000;
 $info: #56a5ff;
 $light: #ececec;
-$lighter: #fafafa;
+$lighter: #f1f1f1;
 $grey: #727272;
 $dark: #303133;
 $darker: #131414;
@@ -39,7 +39,7 @@ $theme-colors: (
 @import "bootstrap/scss/variables";
 
 
-$big-navbar-height: 3rem;
+$big-navbar-height: 3.2rem;
 $small-navbar-height: 3rem;
 $header-image-url: url("/assets/circuit_board.jpg");
 $headings-font-family: Montserrat, $font-family-base;

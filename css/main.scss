@@ -124,7 +124,7 @@ main .featurette:first-of-type {
 }
 
 .featurette {
-    background: $lighter;
+    background: $body-bg;
     padding: 1.5rem;
    // box-shadow: 0 0 2px rgba(0, 0, 0, .1);
 
@@ -369,7 +369,11 @@ a:hover {
 }
 
 .highlight {
-    box-shadow: 0px 0xp 0 0 $dark;
+    background-color: $lighter;
+}
+
+figure.highlight {
+    box-shadow: 0px 0px 3px -2px $dark;
 }
 
 
