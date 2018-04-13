@@ -29,9 +29,9 @@ Am besten legt ihr auf eurem Webserver für den Content, den wir gleich hochlade
 
 
 #### Schritt 1.1: Dateien zusammensuchen: 
-Alle Dateien, die ihr bisher in `/gm/garrysmod` erstellt/kopiert habt sind Kandidaten für FastDL, da diese ziemlich sicher vom Client heruntergeladen werden müssen, wenn es sich nicht gerade um ein Server-Only Plugin wie ULX handelt.  Da auf jedem Server andere Inhalte genutzt werden, ist es schwierig, hier eine allgemeine Liste anzugeben. Auf den meisten Servern werden allerdings wahrscheinlich Inhalte in den Ordnern `maps`, `materials`, `models` und `sounds` vorhanden sein. 
+Alle Dateien, die ihr bisher in `/gm/garrysmod` erstellt/kopiert habt sind Kandidaten für FastDL, da diese ziemlich sicher vom Client heruntergeladen werden müssen, wenn es sich nicht gerade um ein Server-Only Plugin wie ULX handelt.  Da auf jedem Server andere Inhalte genutzt werden, ist es schwierig, hier eine allgemeine Liste anzugeben. Auf den meisten Servern werden allerdings wahrscheinlich Inhalte in den Ordnern `maps`, `materials`, `models` und `sounds` vorhanden sein. W 
 
-Um euch den späteren Upload zu vereinfachen, solltet ihr am besten zuerst Kopien aller Dateien anlegen, die ihr später Sucht also alle diese Dateien zusammen.
+Um euch den späteren Upload und eventuell das Komprimieren im nächsten Schritt zu vereinfachen, solltet ihr am besten zuerst Kopien aller Dateien anlegen, die ihr später hochladen wollt. Legt dazu auf eurem Desktop o.ä. einen temporären Ordner an und kopiert die hochzuladenden Dateien dort unter Erhaltung der Verzeichnisstruktur hinein. Wenn eine Datei auf dem Server also im Ordner `maps` liegt, müsst ihr in eurem temporären Ordner ebenfalls einen Ordner `maps` anlegen und die Datei dort hinein kopieren.
 
 
 #### Schritt 1.1: Komprimieren (optional)

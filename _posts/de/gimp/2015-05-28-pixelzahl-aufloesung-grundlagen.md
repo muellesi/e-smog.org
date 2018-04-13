@@ -7,14 +7,13 @@ locale: de_DE
 ---
 
 Ein häufiges Problem beim Start in die digitale Bildbearbeitung ist, dass ein digitales Bild schwer zu begreifen ist -- was ist zum Beispiel ein Pixel und wie groß ist sowas? In diesem Artikel möchte ich kurz darauf eingehen, wie die Größe eines digitalen Bildes zustande kommt und dies hoffentlich auch für Einsteiger in die Bildbearbeitung etwas klarer machen.
+
 <!--more-->
+
 Das Pixel
 ---------
 
 Ein Pixel ist die kleinste Einheit in einer digitalen Pixelgrafik (Es gibt auch noch andere Arten von Grafiken, die Vektorgrafiken, die sollen aber Thema eines anderen Artikels sein) und gleichzeitig Träger sämtlicher Informationen. Ein Pixel an sich hat zunächst keine Größe und besteht im klassischen RGB(A)-Modell aus drei, beziehungsweise vier Zahlenwerten -- dem Rotanteil, dem Grünanteil, dem Blauanteil und bei RGBA auch noch dem Alpha-Anteil. Da ein Pixel an sich eigentlich keine Größe hat, hat ein digitales Bild genausowenig eine echte Größe.
-
-Auflösung und Pixelzahl
------------------------
 
 ### Darstellung von Pixeln auf dem Monitor
 
