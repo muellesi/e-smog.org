@@ -47,6 +47,7 @@ Die beiden Listen entsprechen dabei der im vorigen Abschnitt angesprochenen Unte
 Die Path-Variable kann zusätzlich zur oben genannten permanenten Methode auch noch temporär für die Ausführzeit eines einzelnen Scripts angepasst werden. Dafür wird wie für normale batch-Variablen auch das Set-Kommando genutzt: `set "path=%path%;C:\Beispiel\Pfad"` Sinnvoll ist dabei, wie im Beispiel den bisherigen Inhalt der Variablen mittels `%path%` wieder mit einzufügen, um nicht unabsichtlich eigentlich benötigte Einträge zu überschreiben.
 
 **Wichtig:** Die Änderung bleibt wirklich nur während der Ausführung des Scriptes erhalten. Ihr müsst die Path-Variable also immer auch wirklich in dem Script anpassen, in dem ihr die Anpassung benötigt. Dies über ein externes Script zu tun, das ihr vor der Ausführung eures eigentlichen Scriptes aufruft, wird also nicht funktionieren.
+{: class="alert alert-warning"}
 
 ### Probleme
 

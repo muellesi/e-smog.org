@@ -13,6 +13,7 @@ In diesem Part möchte ich euch zeigen, wie ihr euren Mitspielern den ersten Ser
 <!--more-->
 
 Anmerkung: Das folgende Tutorial orientiert sich an <http://forums.srcds.com/viewtopic/5240>. Da diese Anleitung jedoch nur auf englisch verfügbar ist und um diese Tutorialreihe möglichst vollständig zu halten, möchte ich eine eigene Version dieses Tutorials schreiben.
+{: class="alert alert-warning"}
 
 ### Motivation
 

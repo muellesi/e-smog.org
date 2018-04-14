@@ -13,11 +13,10 @@ Für sehr viele Maps in Garry's Mod, insbesondere im Spielmodus Trouble in Terro
 
 Wir werden uns zu Nutze machen, dass die benötigten Ressourcen auch beim kostenlos erhältlichen Dedicated Server für Counter-Strike Source mitgeliefert werden. Alles, was wir also machen müssen, ist, diesen Server herunterzuladen und die entsprechenden Dateien zu kopieren und fertig sind wir schon.
 
-### Den Counter-Strike Server herunterladen
+### Den Counter-Strike:Source Server herunterladen
 
 **Hinweis**: Solltet ihr bereits [Part 4]({% post_url 2014-05-14-ttt-server-part-4-mounten %}) meiner Tutorial-Reihe zum Garry's Mod Server befolgt haben, könnt ihr diesen Teil jetzt überspringen und unten bei „GCFScape besorgen" weitermachen.
-
-#### Srcds besorgen
+{: class="alert alert-info"}
 
 Unter <https://developer.valvesoftware.com/wiki/SteamCMD#Downloading_SteamCMD> findet ihr den aktuellen Downloadlink für die sogenannte SteamCMD -- das ist sozusagen eine Kommandozeilenversion eures Steam-Clients. Von dort ladet ihr SteamCMD herunter und entpackt es in einen temporären Ordner (Nachdem wir fertig sind, könnt ihr alle entstandenen Dateien wieder löschen, wenn ihr wollt -- deshalb packt am besten alles in einen Ordner, den ihr am Ende komplett löschen könnt.
 

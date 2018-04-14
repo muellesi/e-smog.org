@@ -59,4 +59,4 @@ Es gibt aber auch Ausnahmen: Während sich Logos, Icons und sonstige Bilder mit 
 
 Alle anderen Grafiken hingegen, die scharfe Linien, Text und geometrische Formen enthalten, sind auf jeden Fall immer gut geeignet, als Vektorgrafik angelegt zu werden und werden damit mit Inkscape erstellt.
 
-[^1]: Natürlich kann man den Kreis auf einer extra Ebene ablegen und hat dann innerhalb des Grafikprogramms eine ähnliche Funktionalität. Wird das Bild aber exportiert, werden am Ende immer alle Ebenen in eine einzige Ebene zusammengeführt. Soll eine Pixelgrafik also bearbeitet werden, ohne, dass die Projektdatei (bei GIMP wäre das xcf) vorliegt, besteht das genannte Problem auf jeden Fall.
+[^1]: Natürlich kann man den Kreis auf einer extra Ebene ablegen und hat dann innerhalb des Grafikprogramms eine ähnliche Funktionalität. Wird das Bild aber exportiert, werden am Ende in den meisten Formaten alle Ebenen in eine einzige Ebene zusammengeführt. Soll eine Pixelgrafik also bearbeitet werden, ohne, dass die Projektdatei (bei GIMP wäre das xcf) vorliegt, besteht das genannte Problem auf jeden Fall.
