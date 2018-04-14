@@ -2,7 +2,7 @@
 title: G'MIC für GIMP installieren
 date: 2014-03-25 21:22
 categories: GIMP
-image: assets/post_images/wilber_quest.png
+image: assets/post_images/gmicky_deevad600.png
 locale: de_DE
 ---
 
