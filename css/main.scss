@@ -335,6 +335,11 @@ body {
 
 /* GLOBAL */
 
+blockquote {
+    border-left: 2px solid $primary;
+    padding-left: 1rem;
+}
+
 a:hover {
     color: $highlight;
     text-decoration: none;

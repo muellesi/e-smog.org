@@ -1,5 +1,5 @@
 ---
-title: \[Veraltet\] Separate Plus unter GIMP 2.8.10 bis 2.8.14 installieren
+title: Separate Plus unter GIMP 2.8.14 installieren (Achtung veraltet)
 date: 2014-05-06 08:23
 image: assets/post_images/cmyk.png
 categories: GIMP
@@ -16,7 +16,7 @@ Das für den Druck der eigenen Werke durchaus sehr sinnvolle und praktische Plug
 ![Separate+ g_get_home_dir Fehlermeldung]({{"/assets/post_images/gimp_separate_g_get_home_dir_error.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
 {% endfigure %}
 
-Dies ist dem Umstand verschuldet, dass seit GIMP 2.8.8 (ca.) eine neue Version der in der Fehlermeldung benannten libglib-2.0-0.dll genutzt wird, welche die in der Fehlermeldung genannte Funktion nichtmehr unterstützt [<sup>1</sup>](#ref1). Da Separate Plus leider aber noch auf die alte DLL-Datei setzt, müssen wir uns diese also besorgen. und dem Plugin zur Verfügung stellen. In der GIMP-Version 2.8.14 fiel zudem noch eine weitere Funktion weg, weshalb noch eine weitere dll bemängelt wurde. Auch diese muss dem Plugin also extra zur Verfügung gestellt werden.
+Dies ist dem Umstand verschuldet, dass seit GIMP 2.8.8 (ca.) eine neue Version der in der Fehlermeldung benannten libglib-2.0-0.dll genutzt wird, welche die in der Fehlermeldung genannte Funktion nichtmehr unterstützt [^1]. Da Separate Plus leider aber noch auf die alte DLL-Datei setzt, müssen wir uns diese also besorgen. und dem Plugin zur Verfügung stellen. In der GIMP-Version 2.8.14 fiel zudem noch eine weitere Funktion weg, weshalb noch eine weitere dll bemängelt wurde. Auch diese muss dem Plugin also extra zur Verfügung gestellt werden.
 
 ## Wie wird es gelöst?
 
@@ -44,7 +44,7 @@ Das Separate-Plugin an sich bekommt ihr von [http://de.sourceforge.jp/projects/s
 
 #### Schritt 2
 
-Das Plugin an sich wird allerdings nicht funktionieren. Ihr braucht zunächst wie oben beschrieben die libglib aus einer älteren GIMP-Version. Die libglib aus GIMP 2.8.6 müsste eigentlich funktionieren.
+Das Plugin wird allerdings nicht funktionieren. Ihr braucht zunächst wie oben beschrieben die libglib aus einer älteren GIMP-Version. Die libglib aus GIMP 2.8.6 müsste eigentlich funktionieren.
 
 Ich werde hier jetzt nicht ausführlich beschreiben, wie man an diese herankommt, da es einfach zu viele Wege gibt. An die alten Versionen von GIMP kommt ihr zum Beispiel über den [Download von gimpusers.de](http://www.gimpusers.de/downloads/87-gimp-2-8-6-windows) (leitet auf Sourceforge weiter, wo früher die Windows-Installer von GIMP gehostet wurden).
 
@@ -68,29 +68,23 @@ Ab hier wird vorgegangen wie in Methode 1, Schritt 2.
 
 **Download für GIMP 2.8.14:**
 
-[download id="851"]
+[Hier herunterladen]({{"/downloads.html#separate-für-gimp-2814" | absolute_url }})
 
-<span style="color: #ff0000;"><small>Hinweis: Aus irgend einem Grund kennzeichnet Google Chrome diesen Download als "Ungewöhnlich", was nicht heißt, dass Schadsoftware enthalten ist. Da Google jedoch nicht offenlegt, nach welchen Kriterien diese Einstufung erfolgt, kann ich hier leider im Moment nichts dagegen tun. Um die Datei trotz der Warnung herunterzuladen, müsst ihr ganz Rechts in der Schaltfläche des Downloads auf den kleinen Pfeil klicken und "Beibehalten" wählen. Für die Misstrauischen, hier [hier noch ein Scan durch Virustotal](https://www.virustotal.com/de/file/2527f7905d771b0e9fb011e677422165277862f070e349b7fb030d744539f40b/analysis/) ;). </small></span>
+**Hinweis:** Aus irgend einem Grund kennzeichnet Google Chrome diesen Download als "Ungewöhnlich", was nicht heißt, dass Schadsoftware enthalten ist. Da Google jedoch nicht offenlegt, nach welchen Kriterien diese Einstufung erfolgt, kann ich hier leider im Moment nichts dagegen tun. Um die Datei trotz der Warnung herunterzuladen, müsst ihr ganz Rechts in der Schaltfläche des Downloads auf den kleinen Pfeil klicken und "Beibehalten" wählen. Für die Misstrauischen, [hier noch ein Scan durch Virustotal](https://www.virustotal.com/de/file/2527f7905d771b0e9fb011e677422165277862f070e349b7fb030d744539f40b/analysis/) ;).
+{: class="alert alert-danger"}
 
 _[Update 18.03.15]: Zumindest bei mir wird jetzt keine Warnung mehr angezeigt. Wenn das bei euch auch so ist, gebt mir vielleicht einfach kurz Bescheid, damit ich diesen Hinweistext wieder entfernen kann :)_
 
-&nbsp;
-
-**Download für GIMP 2.8.10:**
-
-[download id="675"]
-
-&nbsp;
 
 ## Quellen
 
-** [1)](#ref1)**
-_Zitat dazu von Schumaml, einem Mitarbeiter am GIMP-Projekt auf gimpforum.de:_
-> Das Problem:
-> 
-> 
-> Die Funktion g_get_home_dir_utf8 sollte es in der Glib auf 64-Bit-Windows-Betriebsysstemen eigentlich nie gegeben haben, da das nur eine Krücke war, um per g_get_home_dir auf 32-Bit-Windows das Benutzerprofilverzeichnis in [UTF-8](https://de.wikipedia.org/wiki/UTF-8) ausgeben zu lassen.
-> 
-> 
-> Dummerweise gabs ein paar Versionen dieser Bibliothek, die das doch verfügbar hatten, und ein paar Plug-ins sind nun dagegen [gelinkt](https://de.wikipedia.org/wiki/Linker_%28Computerprogramm%29). Neuere Versionen der Glib beheben den Fehler der Verfügbarkeit dieser Funktion, mit dem Ergebnis dieser Fehlermeldung.
-_ [http://gimpforum.de/showthread.php?p=149780#poststop](http://gimpforum.de/showthread.php?p=149780#poststop)_
+[^1]: _Zitat dazu von Schumaml, einem Mitarbeiter am GIMP-Projekt auf gimpforum.de:_
+    > Das Problem:
+    > 
+    > 
+    > Die Funktion g_get_home_dir_utf8 sollte es in der Glib auf 64-Bit-Windows-Betriebsysstemen eigentlich nie gegeben haben, da das nur eine Krücke war, um per g_get_home_dir auf 32-Bit-Windows das Benutzerprofilverzeichnis in [UTF-8](https://de.wikipedia.org/wiki/UTF-8) ausgeben zu lassen.
+    > 
+    > 
+    > Dummerweise gabs ein paar Versionen dieser Bibliothek, die das doch verfügbar hatten, und ein paar Plug-ins sind nun dagegen [gelinkt](https://de.wikipedia.org/wiki/Linker_%28Computerprogramm%29). Neuere Versionen der Glib beheben den Fehler der Verfügbarkeit dieser Funktion, mit dem Ergebnis dieser Fehlermeldung.
+
+    [http://gimpforum.de/showthread.php?p=149780#poststop](http://gimpforum.de/showthread.php?p=149780#poststop)
