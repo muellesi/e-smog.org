@@ -8,7 +8,7 @@ locale: de_DE
 
 Das für den Druck der eigenen Werke durchaus sehr sinnvolle und praktische Plugin Separate Plus spielt leider unter GIMP 2.8.x für 64-Bit-Windows nichtmehr so ganz mit: Es quittiert GIMP's Versuch, es zu laden mit einer Fehlermeldung und taucht anschließend nicht im GIMP-Menü auf. <!--more-->
 
-**Achtung:** Dieser Artikel ist veraltet und gilt für die alten GIMP-Versionen 2.8.x bis einschließlich 2.8.14\. Mit Separate 0.5.9 Alpha 3 gibt es eine neue Version des Plugins, die mit der neusten Version von GIMP - der Version 2.8.16 - wieder zusammenarbeitet, ohne, dass weiterer Aufwand nötig wäre. Zur Installation der neuen Version, siehe [hier]({% post_url 2016-04-14-separate-unter-gimp-2-8-16-installieren %}).
+**Achtung:** Dieser Artikel ist veraltet und gilt für die alten GIMP-Versionen 2.8.x bis einschließlich 2.8.14\. Mit Separate 0.5.9 Alpha 3 gibt es eine neue Version des Plugins, die mit der neusten Version von GIMP - der Version 2.8.16 - wieder zusammenarbeitet, ohne, dass weiterer Aufwand nötig wäre. Zur Installation der neuen Version, siehe [hier]({% post_url de/gimp/2016-04-14-separate-unter-gimp-2-8-16-installieren %}).
 {: class="alert alert-danger"}
 
 ## Was ist das Problem?
