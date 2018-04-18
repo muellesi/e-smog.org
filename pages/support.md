@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: post
 title: Diese Seite unterstützen
 permalink: /support.html
 ---
 
-Um diese Webseite zu unterstützen, gibt es im Moment drei Möglichkeiten. Ich habe sie im folgenden in für euch kostenlos und für euch nicht kostenlos unterteilt:
+Um diese Webseite zu unterstützen, gibt es im Moment zwei Möglichkeiten. Ich habe sie im folgenden in für euch kostenlos und für euch nicht kostenlos unterteilt:
 
 ### Für euch kostenlos:
 
