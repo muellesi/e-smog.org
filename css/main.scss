@@ -294,6 +294,7 @@ h4:hover, h5:hover, h6:hover {
         }
     }
 }
+
 /* Scrollspy mods */
 body {
     position: relative;
@@ -417,9 +418,20 @@ a:hover {
     background-color: $lighter;
 }
 
+.card-body div.highlight {
+    background-color: inherit;
+    box-shadow: -2px 1px 5px rgba(0, 0, 0, .2);
+    padding: 1rem;
+    .highlight {
+        background-color: inherit;
+    }
+}
+
 figure.highlight {
     box-shadow: 0px 0px 3px -2px $dark;
 }
+
+
 
 
 .alert {
