@@ -71,7 +71,7 @@ Um diesen Vorgang zu erleichtern habe ich ein kleines Tool geschrieben, in dem i
 
 
 #### Manueller Weg
-Am einfachsten geht das, wenn ihr im Unterordner /garrysmod/lua/autorun/server eine neue Lua-Datei mit beliebigem Namen erstellt. Die Dateien in diesem Ordner werden alle auf jeden Fall auf dem Server beim Starten ausgeführt. Als Inhalt bekommt die Datei nun nur Zeilen nach dem folgenden Format:
+Am einfachsten geht das, wenn ihr im Unterordner `/garrysmod/lua/autorun/server` eine neue Lua-Datei mit beliebigem Namen erstellt. Die Dateien in diesem Ordner werden alle auf jeden Fall auf dem Server beim Starten ausgeführt. Als Inhalt bekommt die Datei nun nur Zeilen nach dem folgenden Format:
 
 ~~~ lua
 resource.AddWorkshop( "workshopid" )
