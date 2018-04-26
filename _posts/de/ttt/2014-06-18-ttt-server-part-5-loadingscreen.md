@@ -60,7 +60,7 @@ function GameDetails( servername, serverurl, mapname, maxplayers, steamid, gamem
 *Diese Funktion ruft das Spiel am Anfang des Ladevorgangs genau einmal auf. Hier werden die wichtigsten Infos zum Server und zum gerade laufenden Spiel übergeben. Die meisten Parameter sollten eigentlich selbsterklärend sein. Im Parameter steamid  wird die Steamid des gerade Ladenden Spielers übergeben. Damit könnt ihr dann zum Beispiel sein Avatar anzeigen. Dies ist jedoch mit PHP wesentlich einfacher, wie ich euch gleich noch zeigen werde.*
 
 #### Weitere Funktionalität für den Ladebildschirm
-Das Avatar eines Spielers könnt ihr sehr leicht via PHP anzeigen. Dazu braucht ihr allerdings erneut den im [dritten Tutorial]({% post_url 2014-04-22-ttt-server-part-3-workshop %}) erzeugten Key für die Steam API.
+Das Avatar eines Spielers könnt ihr sehr leicht via PHP anzeigen. Dazu braucht ihr allerdings erneut den im [dritten Tutorial]({% post_url de/ttt/2014-04-22-ttt-server-part-3-workshop %}) erzeugten Key für die Steam API.
 
 Der dazu nötige Code in PHP sieht folgendermaßen aus:
 
@@ -126,5 +126,5 @@ Hier müsst ihr eurer Kreativität freien Lauf lassen. Häufig wird irgendeine F
 ---
 
 <p style="text-align: center;"> <em><strong>NOCH FRAGEN?</strong></em></p>
-<p style="text-align: center;"><em>Schau dir doch mal die <a title="Garrys mod TTT Dedicated Server erstellen – Part 7: F.A.Q/Troubleshooting" href="{%post_url 2015-11-03-ttt-server-part-8-faq %}">FAQ </a>an, vielleicht wurde deine Frage bereits beantwortet. Wenn nicht, schreibe mir gerne in den Kommentaren.</em></p>
-<p style="text-align: center;"><em>Weiter gehts in <a title="Garrys mod TTT Dedicated Server erstellen – Part 6: Serveradministration mit ULX und ULib" href="{% post_url 2014-09-27-ttt-server-part-6-admin %}">Part 6</a> mit der Einrichtung und Nutzung von ULX, einem Plugin zur einfacheren Administration des Servers.</em></p>
+<p style="text-align: center;"><em>Schau dir doch mal die <a title="Garrys mod TTT Dedicated Server erstellen – Part 7: F.A.Q/Troubleshooting" href="{%post_url de/ttt/2015-11-03-ttt-server-part-8-faq %}">FAQ </a>an, vielleicht wurde deine Frage bereits beantwortet. Wenn nicht, schreibe mir gerne in den Kommentaren.</em></p>
+<p style="text-align: center;"><em>Weiter gehts in <a title="Garrys mod TTT Dedicated Server erstellen – Part 6: Serveradministration mit ULX und ULib" href="{% post_url de/ttt/2014-09-27-ttt-server-part-6-admin %}">Part 6</a> mit der Einrichtung und Nutzung von ULX, einem Plugin zur einfacheren Administration des Servers.</em></p>

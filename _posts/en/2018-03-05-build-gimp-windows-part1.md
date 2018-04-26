@@ -26,9 +26,9 @@ Basically, MSYS2 emulates a Linux environment with full support of Arch Linux' '
 
 So first of all,
 
-[download and install MSYS2](https://www.msys2.org/)
-{: style="text-align: center;"}
+<center><a href="https://www.msys2.org/" class="btn btn-primary btn-lg" role="button">Download MSYS2</a></center>
 
+<br />
 
 You can install MSYS2 wherever you want but for simplicities sake, I will assume that it is located in a direct subfolder of the C:\ drive. Also be careful not to use a path that contains spaces since this could lead to strange problems later on.
 {: class="alert alert-info"}

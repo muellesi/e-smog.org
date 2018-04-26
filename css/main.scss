@@ -206,7 +206,7 @@ main .featurette:first-of-type {
 .container.main-content {
     margin-top: 2rem;
 
-    p:first-of-type {
+    .post-content>p:first-of-type {
         font-size: 1.1rem;
         font-weight: 300;
     }
@@ -294,6 +294,7 @@ h4:hover, h5:hover, h6:hover {
         }
     }
 }
+
 /* Scrollspy mods */
 body {
     position: relative;
@@ -332,8 +333,53 @@ body {
 
 /*end scrollspy*/
 
+/* tables */
+table {
+	width: 100%;
+	margin: 0 0 20px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	border-spacing: 0;
+	border-collapse: collapse;
+	font-size: 14px;
+	line-height: 2;
+}
+
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: left;
+}
+
+caption {
+	margin: 20px 0;
+	font-size: 16px;
+}
+
+th {
+	padding: 6px 10px 6px 0;
+	border-top: 1px solid rgba(0,0,0,0.1);
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+td {
+	padding: 6px 10px 6px 0;
+	border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+thead th {
+	border: none;
+}
+
+
 
 /* GLOBAL */
+
+blockquote {
+    border-left: 2px solid $primary;
+    padding-left: 1rem;
+}
 
 a:hover {
     color: $highlight;
@@ -372,9 +418,20 @@ a:hover {
     background-color: $lighter;
 }
 
+.card-body div.highlight {
+    background-color: inherit;
+    box-shadow: -2px 1px 5px rgba(0, 0, 0, .2);
+    padding: 1rem;
+    .highlight {
+        background-color: inherit;
+    }
+}
+
 figure.highlight {
     box-shadow: 0px 0px 3px -2px $dark;
 }
+
+
 
 
 .alert {
