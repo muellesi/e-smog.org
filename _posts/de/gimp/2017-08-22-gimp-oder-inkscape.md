@@ -10,7 +10,7 @@ Beim Erstellen von Grafiken gibt es einiges zu beachten. Eine wichtige Entscheid
 
 <!--more-->
 
-## Vektor-------------------------------------------------grafik -- was ist das eigentlich?
+## Vektorgrafik -- was ist das eigentlich?
 
 Am einfachsten lässt sich Vektorgrafik wohl dadurch erklären, was sie **nicht** ist: Jeder weiß heutzutage von Digitalkameras und dem täglichen Kontakt mit digitalen Bildern, dass diese aus Pixeln aufgebaut sind. Jedes Bild besteht dabei im Prinzip aus einer sehr großen Matrix an Pixeln, von denen jedes wiederum aus drei Farbkomponenten zusammengesetzt ist -- **R**ot, **G**rün und **B**lau, die in Kombination eine Farbe ergeben - diese Art von Bildern wird auch Rastergrafik genannt. Und genau das ist es, was Vektorgrafiken nicht sind. Eine reine Vektorgrafik enthält keine Pixel -- und dennoch wird sie auf dem Bildschirm mit Pixeln angezeigt. Was ist eine Vektorgrafik also dann?
 
