@@ -10,8 +10,8 @@ Beim Erstellen von Grafiken gibt es einiges zu beachten. Eine wichtige Entscheid
 
 <!--more-->
 
-Vektorgrafik -- was ist das eigentlich?
---------------------------------------
+## Vektorgrafik -- was ist das eigentlich?
+
 
 Am einfachsten lässt sich Vektorgrafik wohl dadurch erklären, was sie **nicht** ist: Jeder weiß heutzutage von Digitalkameras und dem täglichen Kontakt mit digitalen Bildern, dass diese aus Pixeln aufgebaut sind. Jedes Bild besteht dabei im Prinzip aus einer sehr großen Matrix an Pixeln, von denen jedes wiederum aus drei Farbkomponenten zusammengesetzt ist -- **R**ot, **G**rün und **B**lau, die in Kombination eine Farbe ergeben - diese Art von Bildern wird auch Rastergrafik genannt. Und genau das ist es, was Vektorgrafiken nicht sind. Eine reine Vektorgrafik enthält keine Pixel -- und dennoch wird sie auf dem Bildschirm mit Pixeln angezeigt. Was ist eine Vektorgrafik also dann?
 
@@ -23,8 +23,8 @@ Die Idee hinter Vektorgrafiken stammt vom Wunsch her, nicht mehr von der Pixelau
 
 Vektorgrafiken versuchen das Problem zu umgehen, indem in einer Vektorgrafikdatei gar keine Pixelinformationen gespeichert werden. Anstatt dessen besteht eine svg-Datei (svg ist der Quasi-Standard für Vektorgrafiken) aus normalem Text, der die Objekte im Bild mathematisch beschreibt. Für unser Kreisbeispiel könnte in der svg-Datei also einfach die Information abgelegt sein, dass an der Position (0,0) im Bild ein Kreis mit dem Radius 5 und schwarzer Umrandung von einer Einheit Dicke gezeichnet werden soll. Ein Programm, das diese Grafik nun anzeigen möchte, muss den Text also einlesen, interpretieren und anschließend anhand der Beschreibung eine Rastergrafik in der richtigen Größe erzeugen.
 
-Und was bringt das jetzt?
--------------------------
+## Und was bringt das jetzt?
+
 
 Mit der obigen Definition ergibt sich ein entscheidender Vorteil: Während eine skalierte Rastergrafik auf jeden Fall immer schlechter aussieht, als das Originalbild, ist eine Vektorgrafik theoretisch beliebig skalierbar -- und das ohne, dass Kanten verpixeln oder Details unscharf werden. Dafür muss das Anzeigeprogramm lediglich alle Werte aus der Textdatei mit dem Skalierungsfaktor multiplizieren.
 
@@ -50,8 +50,8 @@ Natürlich kann das Vektorgrafikformat nicht nur Kreise darstellen: Auch andere 
 
 Das Stichwort Objekt liefert hier direkt einen weiteren Vorteil von Vektorgrafiken: Während das Grafikprogramm bei einer Rastergrafik nach dem Erstellen des Beispielkreises nicht mehr zwischen dem eigentlichen Kreis und den umgebenden Pixeln unterscheiden kann[^1], ist der Kreis in einer Vektorgrafik ganz klar als solcher definiert und kann von anderen Objekten getrennt bearbeitet werden (siehe Grafik). Das sorgt dafür, dass der Kreis in der Vektorgrafik ohne Probleme verschoben werden kann, ohne, dass die Pixel der anderen Objekte beeinflusst werden.
 
-Wann sollte ich nun also Vektorgrafiken benutzen?
--------------------------------------------------
+## Wann sollte ich nun also Vektorgrafiken benutzen?
+
 
 Die einfache Antwort ist: immer wenn es möglich ist. Aus einer Vektorgrafik kann zu jeder Zeit eine Rastergrafik mit beliebiger Auflösung gerendert werden. Eine Rastergrafik jedoch in eine Vektorgrafik umzuwandeln geht meist nur von Hand und benötigt sehr viel Zeit.
 
