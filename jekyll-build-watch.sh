@@ -1,3 +1,3 @@
 #!/bin/bash
 
-jekyll build --config _config.yml,_config_dev.yml --watch --incremental
+jekyll build -source ./src/ --config _config.yml,_config_dev.yml --watch --incremental

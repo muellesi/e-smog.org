@@ -1,2 +1,2 @@
 #!/bin/bash
-jekyll build --config _config.yml,_config_test.yml --destination deploy-test/
+jekyll build --source ./src/ --config _config.yml,_config_test.yml --destination deploy-test/

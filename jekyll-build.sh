@@ -1,2 +1,2 @@
 #!/bin/bash
-jekyll build --destination deploy/
+jekyll build -source ./src/ --destination deploy/

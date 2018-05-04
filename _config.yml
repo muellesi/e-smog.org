@@ -16,9 +16,7 @@
 title: e-smog.org
 subtitle: Tutorials rund um Gaming, Bildbearbeitungs- und sonstige Software
 name: e-smog.org
-description: >- # this means to ignore newlines until "baseurl:"
-Tutorials rund um Gaming, Bildbearbeitungs- und sonstige Software
-
+description: Tutorials rund um Gaming, Bildbearbeitungs und sonstige Software
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://e-smog.org" # the base hostname & protocol for your site, e.g. http://example.com
 headerimage: assets/header.png
@@ -72,6 +70,7 @@ exclude:
    - jekyll-serve.sh
    - jekyll-build-test.sh
    - deploy
+   - deploy-test
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
