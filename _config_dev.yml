@@ -4,6 +4,7 @@ plugins:
   - jekyll-relative-links
 
 url: "http://localhost:8080"
+baseurl: ""
 
 sass:
   style: expanded
