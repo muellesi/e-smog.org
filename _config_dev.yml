@@ -2,6 +2,8 @@ plugins:
   - jekyll-feed
   - jekyll-paginate-v2
   - jekyll-relative-links
+  - jekyll-autoprefixer
+  - jekyll/figure
 
 url: "http://localhost:8080"
 baseurl: ""
