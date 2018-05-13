@@ -1,0 +1,3 @@
+[submodule "theme-e-smog"]
+	path = theme-e-smog
+	url = ssh://git@raspi01/~/repos/e-smog-jekyll-theme
