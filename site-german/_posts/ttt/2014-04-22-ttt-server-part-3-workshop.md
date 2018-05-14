@@ -67,7 +67,7 @@ Um den Download der Pakete zu erzwingen benötigt ihr eine lua-Datei, deren Inha
 #### Halbautomatischer Weg
 Um diesen Vorgang zu erleichtern habe ich ein kleines Tool geschrieben, in dem ihr bequem per Häkchen auswählen könnt, für welche Addons der Download erzwungen werden soll. Das Tool generiert euch daraufhin dann den Quelltext, den ihr mit der nachfolgenden manuellen Methode komplett von Hand erzeugen müsstet.
 
-<center><a href="{{"/assets/downloads/ResourcesLuaCreator.zip" | absolute_url}}" class="btn btn-primary btn-lg" role="button">Download</a></center>
+<center><a href="{{"/downloads/ResourcesLuaCreator.zip" | absolute_url}}" class="btn btn-primary btn-lg" role="button">Download</a></center>
 
 
 #### Manueller Weg

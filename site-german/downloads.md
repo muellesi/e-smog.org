@@ -11,7 +11,7 @@ Auf dieser Seite liste ich zentral jeweils die aktuelle Version der Downloads a
 
 Ein weiteres Programm für einen Benutzer von gimpforum.de. Erlaubt es, ein Bild zu laden, auf diesem einen Bezugspunkt zu setzen und dann mit Hilfe weiterer Punkte den Abstand von Bildmerkmalen vom Bezugspunkt zu messen. [Thread auf gimpforum.de](http://www.gimpforum.de/showthread.php?t=22925)
 
-<a href="{{"/assets/downloads/Abstandsmessung.zip" | absolute_url}}" class="btn btn-primary btn-lg" role="button">Download</a>
+<a href="{{"/downloads/Abstandsmessung.zip" | absolute_url}}" class="btn btn-primary btn-lg" role="button">Download</a>
 
 ---
 
@@ -19,7 +19,7 @@ Ein weiteres Programm für einen Benutzer von gimpforum.de. Erlaubt es, ein Bild
 
 Bei der [Einrichtung von FastDL]({%post_url ttt/2015-04-21-ttt-server-part-7-fastdl %}) für einen Garry's Mod Server kann man die Dateien vor dem Hochladen mit bzip2 komprimieren, um sowohl beim Hoch- als auch beim Herunterladen Bandbreite und Zeit zu sparen. Hierfür kann entweder das hier zum Download angebotene Toolset oder ein selbst kompiliertes bzip2 von der [Herstellerseite](http://bzip.org/) genutzt werden.
 
-<a href="{{"/assets/downloads/Bzip2Tool.zip" | absolute_url}}" class="btn btn-primary btn-lg" role="button">Download</a>
+<a href="{{"/downloads/Bzip2Tool.zip" | absolute_url}}" class="btn btn-primary btn-lg" role="button">Download</a>
 
 ---
 
@@ -29,7 +29,7 @@ Ein kleines Programm, das ich für einen Benutzer von gimpforum.de geschrieben h
 
 Neu in Version 2.0: Zeigt die Farbanteile zusätzlich gruppiert nach ihrem Namen an.
 
-<a href="{{"/assets/downloads/PixelCounter.zip" | absolute_url}}" class="btn btn-primary btn-lg" role="button">Download</a>
+<a href="{{"/downloads/PixelCounter.zip" | absolute_url}}" class="btn btn-primary btn-lg" role="button">Download</a>
 
 ---
 
@@ -39,7 +39,7 @@ Ein kleines Tool, das ich im Zusammenhang mit meiner Serie zur Einrichtung eines
 Dieses Tool erleichtert das Anlegen einer lua-Datei, die den Download bestimmter Workshop-Addons für einen GMod-Server erzwingt.
 Es wird in [Part 3](https://e-smog.org/blog/index.php/garrys-mod-ttt-dedicated-server-erstellenpart-3/#forcedownloadtool) der Serie zur Einrichtung eines TTT-Servers genutzt.
 
-<a href="{{"/assets/downloads/ResourcesLuaCreator.zip" | absolute_url}}" class="btn btn-primary btn-lg" role="button">Download</a>
+<a href="{{"/downloads/ResourcesLuaCreator.zip" | absolute_url}}" class="btn btn-primary btn-lg" role="button">Download</a>
 
 ---
 
@@ -51,10 +51,10 @@ Außerdem wird ein Kommandozeilenmodus unterstützt, bei welchem automatisch das
 
 Die Ergebnisbilder werden jeweils relativ zum Ursprungsbild im Unterordner /converted gespeichert.
 
-<a href="{{"/assets/downloads/Scale4Web.zip" | absolute_url}}" class="btn btn-primary btn-lg" role="button">Download</a>
+<a href="{{"/downloads/Scale4Web.zip" | absolute_url}}" class="btn btn-primary btn-lg" role="button">Download</a>
 
 ---
 
 ## Separate+ für Gimp 2.8.14
 
-<a href="{{"/assets/downloads/separate-2814-3.zip" | absolute_url}}" class="btn btn-primary btn-lg" role="button">Download</a>
+<a href="{{"/downloads/separate-2814-3.zip" | absolute_url}}" class="btn btn-primary btn-lg" role="button">Download</a>

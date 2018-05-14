@@ -5,5 +5,4 @@ _site
 node_modules
 /deploy
 /deploy-test
-/assets/image_repo
-/assets/uploads_flat
+/deploy-dev

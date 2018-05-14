@@ -90,7 +90,7 @@ Mit Toolkit
 
 Falls ihr die von mir kompilierte Version von bzip2 herunterladet, sind Skript und Ordner schon beigelegt, sodass diese Schritte entfallen.
 
-<center><a href="{{"/assets/downloads/Bzip2Tool.zip" | absolute_url}}" class="btn btn-primary btn-lg" role="button">Download Bzip2Tool</a></center>
+<center><a href="{{"/downloads/Bzip2Tool.zip" | absolute_url}}" class="btn btn-primary btn-lg" role="button">Download Bzip2Tool</a></center>
 
 <br/>
 Nach dem Download müsst ihr zunächst den in der zip-Datei enthaltenen Ordner entpacken. Darin befindet sich die `bzip2.exe`, ein Batch-Skript namens `compress.bat` und ein Ordner namens `compress`. 

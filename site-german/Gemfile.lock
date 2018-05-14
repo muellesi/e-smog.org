@@ -67,7 +67,7 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    theme-e-smog (0.1.4)
+    theme-e-smog (0.1.6)
       jekyll (~> 3.7)
       jekyll-autoprefixer
       jekyll-paginate-v2
