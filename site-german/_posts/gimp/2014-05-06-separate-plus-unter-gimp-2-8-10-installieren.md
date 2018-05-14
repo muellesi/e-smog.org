@@ -1,19 +1,19 @@
 ---
 title: Separate Plus unter GIMP 2.8.14 installieren (Achtung veraltet)
 date: 2014-05-06 08:23
-image: assets/post_images/cmyk.png
+image: post_images/cmyk.png
 categories: GIMP
 locale: de_DE
 ---
 
 Das für den Druck der eigenen Werke durchaus sehr sinnvolle und praktische Plugin Separate Plus spielt leider unter GIMP 2.8.x für 64-Bit-Windows nichtmehr so ganz mit: Es quittiert GIMP's Versuch, es zu laden mit einer Fehlermeldung und taucht anschließend nicht im GIMP-Menü auf. <!--more-->
 
-**Achtung:** Dieser Artikel ist veraltet und gilt für die alten GIMP-Versionen 2.8.x bis einschließlich 2.8.14\. Mit Separate 0.5.9 Alpha 3 gibt es eine neue Version des Plugins, die mit der neusten Version von GIMP - der Version 2.8.16 - wieder zusammenarbeitet, ohne, dass weiterer Aufwand nötig wäre. Zur Installation der neuen Version, siehe [hier]({% post_url de/gimp/2016-04-14-separate-unter-gimp-2-8-16-installieren %}).
+**Achtung:** Dieser Artikel ist veraltet und gilt für die alten GIMP-Versionen 2.8.x bis einschließlich 2.8.14\. Mit Separate 0.5.9 Alpha 3 gibt es eine neue Version des Plugins, die mit der neusten Version von GIMP - der Version 2.8.16 - wieder zusammenarbeitet, ohne, dass weiterer Aufwand nötig wäre. Zur Installation der neuen Version, siehe [hier]({% post_url gimp/2016-04-14-separate-unter-gimp-2-8-16-installieren %}).
 {: class="alert alert-danger"}
 
 ## Was ist das Problem?
 {% figure [caption:"Der Prozedureinsprungpunkt g_get_home_dir_utf8 wurde in der DLL libglib-2.0-0.dll nicht gefunden” -Zur Korrekten Funktion des Plugins brauchen wir eine eigene libglib-DLL"] [class:"figure"] %}
-![Separate+ g_get_home_dir Fehlermeldung]({{"/assets/post_images/gimp_separate_g_get_home_dir_error.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
+![Separate+ g_get_home_dir Fehlermeldung]({{"/post_images/gimp_separate_g_get_home_dir_error.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
 {% endfigure %}
 
 Dies ist dem Umstand verschuldet, dass seit GIMP 2.8.8 (ca.) eine neue Version der in der Fehlermeldung benannten libglib-2.0-0.dll genutzt wird, welche die in der Fehlermeldung genannte Funktion nichtmehr unterstützt [^1]. Da Separate Plus leider aber noch auf die alte DLL-Datei setzt, müssen wir uns diese also besorgen. und dem Plugin zur Verfügung stellen. In der GIMP-Version 2.8.14 fiel zudem noch eine weitere Funktion weg, weshalb noch eine weitere dll bemängelt wurde. Auch diese muss dem Plugin also extra zur Verfügung gestellt werden.
@@ -29,7 +29,7 @@ Zur schnellen Installation des Plugins habe ich ein Paket ([Download unten](#dow
 #### Schritt 2
 
 {% figure [caption:"Der Pfad zum Separate-Plugin muss GIMP über die Einstellungen bekannt gemacht werden."] [class:"figure"] %}
-![Gimp Einstellungen Separate Pfad]({{"/assets/post_images/gimp_settings_separate.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
+![Gimp Einstellungen Separate Pfad]({{"/post_images/gimp_settings_separate.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
 {% endfigure %}
 
 Anschließend müssen wir GIMP noch sagen, dass es im so neu erstellten Ordner ebenfalls nach Plugins suchen soll. Dies geht in den Einstellungen (Bearbeiten -&gt; Einstellungen) unter Ordner -&gt; Plugins. Hier wird einfach ein neuer Eintrag angelegt, der den Pfad zum soeben erstellten Ordner enthält (Siehe Screenshot).

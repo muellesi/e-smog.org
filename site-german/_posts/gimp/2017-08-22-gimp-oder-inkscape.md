@@ -1,7 +1,7 @@
 ---
 title: GIMP vs. Inkscape - Rastergrafik vs. Vektorgrafik
 date: 2017-08-22 20:00
-image: assets/post_images/gimpvsinkscape.png
+image: post_images/gimpvsinkscape.png
 categories: GIMP
 locale: de_DE
 ---
@@ -15,7 +15,7 @@ Beim Erstellen von Grafiken gibt es einiges zu beachten. Eine wichtige Entscheid
 Am einfachsten lässt sich Vektorgrafik wohl dadurch erklären, was sie **nicht** ist: Jeder weiß heutzutage von Digitalkameras und dem täglichen Kontakt mit digitalen Bildern, dass diese aus Pixeln aufgebaut sind. Jedes Bild besteht dabei im Prinzip aus einer sehr großen Matrix an Pixeln, von denen jedes wiederum aus drei Farbkomponenten zusammengesetzt ist -- **R**ot, **G**rün und **B**lau, die in Kombination eine Farbe ergeben - diese Art von Bildern wird auch Rastergrafik genannt. Und genau das ist es, was Vektorgrafiken nicht sind. Eine reine Vektorgrafik enthält keine Pixel -- und dennoch wird sie auf dem Bildschirm mit Pixeln angezeigt. Was ist eine Vektorgrafik also dann?
 
 {% figure [caption:"Die Pixel einer Rastergrafik sind gut sichtbar, wenn man hineinzoomt."] [class:"figure"] %}
-![Rastergrafik gezoomt]({{ "/assets/post_images/gimp_inkscape_pixel.jpg" | absolute_url }}){: class="figure-img img-fluid rounded"}
+![Rastergrafik gezoomt]({{ "/post_images/gimp_inkscape_pixel.jpg" | absolute_url }}){: class="figure-img img-fluid rounded"}
 {% endfigure %}
 
 Die Idee hinter Vektorgrafiken stammt vom Wunsch her, nicht mehr von der Pixelauflösung eines Bildes abhängig zu sein: Erstellt man ein gewöhnliches Pixelbild, das einen Kreis enthält, so hat dieser Kreis eine ganz bestimmte Größe. Will man diesen Kreis nun vergrößern oder verkleinern, muss das Bild entsprechend größer oder kleiner skaliert werden, worunter jedoch immer auch die Bildqualität leidet: Wird der Kreis größer skaliert, muss das Grafikprogramm Pixel "hinzuerfinden". Wird der Kreis dagegen kleiner skaliert, sind am Ende weniger Pixel im Bild -- es müssen also zwangsweise Informationen aus dem Bild entfernt werden.
@@ -27,7 +27,7 @@ Vektorgrafiken versuchen das Problem zu umgehen, indem in einer Vektorgrafikdate
 Mit der obigen Definition ergibt sich ein entscheidender Vorteil: Während eine skalierte Rastergrafik auf jeden Fall immer schlechter aussieht, als das Originalbild, ist eine Vektorgrafik theoretisch beliebig skalierbar -- und das ohne, dass Kanten verpixeln oder Details unscharf werden. Dafür muss das Anzeigeprogramm lediglich alle Werte aus der Textdatei mit dem Skalierungsfaktor multiplizieren.
 
 {% figure [caption:"Links: kleiner skaliert; Mitte: Original; Rechts: größer skaliert Es ist deutlich zu sehen, dass der kleiner skalierte Kreis deutlich heller ist, als das Original, während beim größer skalierten Kreis vor allem oben und unten starkes Aliasing sichtbar ist."] [class:"figure"] %}
-![Kreise in Rastergrafik gezoomt]({{ "/assets/post_images/gimp_inkscape_circle_pixel.jpg" | absolute_url }}){: class="figure-img img-fluid rounded"}
+![Kreise in Rastergrafik gezoomt]({{ "/post_images/gimp_inkscape_circle_pixel.jpg" | absolute_url }}){: class="figure-img img-fluid rounded"}
 {% endfigure %}
 
 Wollen wir den oben erwähnten Kreis also um den Faktor zwei Vergrößern, müsste ein Pixelgrafikprogramm aus der Vorhandenen Menge an Pixeln noch einmal die selbe Menge hinzuerfinden, was zu einem sehr verschwommenen Bild führen wird. Das Vektorgrafikprogramm hat es hingegen einfach: Der skalierte Kreis hat die folgenden Eigenschaften:
@@ -39,7 +39,7 @@ Wollen wir den oben erwähnten Kreis also um den Faktor zwei Vergrößern, müss
 Wie zu sehen ist, wird der Kreis also genau doppelt so groß, während er seine relative Position im Bild beibehält. Für die Bildschirmausgabe des skalierten Vektorkreises wird nun einfach ein neuer Kreis mit den skalierten Eigenschaften gezeichnet.
 
 {% figure [caption:"Die gleichen Kreise als Vektorgrafik. Nun sind alle Größen gleich scharf. Zudem ist zu erkennen, dass einzelne Objekte auswählbar sind, was ein weiterer Vorteil von Vektorgrafiken ist. *Dieses Bild ist ein **Screenshot** einer Vektorgrafik und damit eine Rastergrafik! Leichtes Aliasing kann also auch hier sichtbar sein.* "] [class:"figure"] %}
-![Kreise in Vektorgrafik gezoomt]({{ "/assets/post_images/gimp_inkscape_circle_vector.jpg" | absolute_url }}){: class="figure-img img-fluid rounded"}
+![Kreise in Vektorgrafik gezoomt]({{ "/post_images/gimp_inkscape_circle_vector.jpg" | absolute_url }}){: class="figure-img img-fluid rounded"}
 {% endfigure %}
 
 Natürlich kann das Vektorgrafikformat nicht nur Kreise darstellen: Auch andere geometrische Formen und sogar Freihandlinien sind möglich. Letztere werden dann einfach als eine Ansammlung von Punkten, den sogenannten Stützstellen in der svg-Datei abgelegt. Um aus diesen Stützstellen wieder eine Linie zu erzeugen ist etwas komplexere Mathematik nötig, deshalb werde ich das an dieser Stelle nicht weiter ausführen. Wer gerne mehr darüber wissen möchte, dem sei der Wikipedia-Artikel zur [Spline-Interpolation](https://de.wikipedia.org/wiki/Spline-Interpolation) ans Herz gelegt. Wichtig ist hier lediglich: Die oben gezeigte Skalierung durch einfache Multiplikation aller Eigenschaften mit dem Skalierungsfaktor funktioniert auch mit diesen komplexeren Objekten.

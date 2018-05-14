@@ -4,7 +4,7 @@ title:  "TTT Dedicated Server Part 6: Administration mit ULX/ULIB"
 author: Simon Müller
 date:   2014-09-27 21:30:33 +0100
 categories: TTT-Server
-image: assets/post_images/garrysmod.jpg
+image: post_images/garrysmod.jpg
 showtoc: true
 locale: de_DE
 ---
@@ -22,7 +22,7 @@ Zu alledem kommen noch verschiedene zusätzliche Funktionen wie das Einblenden e
 Im oben bereits erwähnten Konfigurationsmenü, welches ihr ingame mit dem Befehl `!menu` öffnen könnt, sind die meisten Befehle in einzelne Kategorien unterteilt, womit sie sehr schnell erreichbar sind. Die meisten dieser Befehle sind selbsterklärend, wenn man etwas englisch beherrscht, im folgenden werde ich die wichtigsten Funktionen kurz erklären, aber nicht allzu tief auf einzelne Funktionen eingehen – wer mehr Informationen zu einer bestimmten Funktion braucht, kann diese einfach mal ausprobieren, in der Dokumentation nachlesen, was sie macht oder einfach hier nachfragen.
 
 {% figure [caption:"Das ULX-Menü bietet sehr viele Funktionen, welche allesamt in die Kategorien auf der linken Seite einsortiert sind."] [class:"figure"] %}
-![ulx main menu]({{"/assets/post_images/ttt_ulx_main.jpg" | absolute_url}}){: class="figure-img img-fluid rounded"}
+![ulx main menu]({{"/post_images/ttt_ulx_main.jpg" | absolute_url}}){: class="figure-img img-fluid rounded"}
 {% endfigure %}
 
 ### Was sind die Vorteile zu anderen Admin-Plugins?
@@ -43,7 +43,7 @@ Der nötige Befehl lautet: `ulx adduser EuerAktuellerSteamName superadmin`
 Um Probleme mit Leerzeichen im Benutzernamen zu umgehen ist es außerdem sinnvoll, den Benutzernamen in Leerzeichen zu setzen. Im Zweifelsfall kann man bei einem Fehler aber einfach in den Steam-Profileinstellungen kurzzeitig seinen Nicknamen ändern (Clantags entfernen etc.), damit dieser keine Fehler verursachen kann.
 
 {% figure [caption:"Wenn alles geklappt hat, werdet ihr im Tab Groups auch angezeigt, wenn ihr als Gruppe "superadmin" auswählt."] [class:"figure"] %}
-![ulx group menu]({{"/assets/post_images/ttt_ulx_group_menu.jpg" | absolute_url}}){: class="figure-img img-fluid rounded"}
+![ulx group menu]({{"/post_images/ttt_ulx_group_menu.jpg" | absolute_url}}){: class="figure-img img-fluid rounded"}
 {% endfigure %}
 
 Direkt nach Ausführen des Befehls auf der Serverkonsole solltet ihr auch im Spiel die Nachricht bekommen, dass ihr nun der Gruppe superadmin angehört. Zudem solltet ihr im Menü wie im Screenshot ganz oben zu sehen sämtliche verfügbaren Befehle angezeigt bekommen, anstatt der eingeschränkten Auswahl von zuvor.
@@ -53,7 +53,7 @@ Direkt nach Ausführen des Befehls auf der Serverkonsole solltet ihr auch im Spi
 Gerade für einen TTT-Server ist es sinnvoll, ULX noch um einige TTT-Spezifische Befehle zu erweitern. Dies geht ganz einfach mit dem Workshopaddon [Trouble in Terrorist Town ULX Commands](http://steamcommunity.com/sharedfiles/filedetails/?id=127865722). Dieses wird wie in Part 3 beschrieben wie ein ganz normales Serveraddon installiert, woraufhin noch einige Zusätzliche Optionen im ingame-Menüfenster eingefügt werden, welche bei der Administration eines TTT-Servers noch zusätzlich helfen: Einstellen der Rundenzeit, Haste-Modus, Traitor- und Detectiveanzahl, Spielerlimit, und viele mehr. Mit der neusten Version dieses Addons hat man zusätzlich Zugriff auf so gut wie alle Server-Kofigurationsvariablen, welche TTT betreffen. Diese Einstellungen sind im ULX-Fenster in einem eigenen Tab namens TTT am oberen Fensterrand untergebracht.
 
 {% figure [caption:"Die TTT-Erweiterung für ULX liefert euch eine große Menge an zusätzlichen Einstellungsmöglichkeiten. So könnt ihr euren Server im laufenden Betrieb ganz nach Belieben einstellen und auch mal neue Einstellungen ohne Serverneustart testen."] [class:"figure"] %}
-![ulx ttt menu]({{"/assets/post_images/ttt_ulx_ttt_menu.jpg" | absolute_url}}){: class="figure-img img-fluid rounded"}
+![ulx ttt menu]({{"/post_images/ttt_ulx_ttt_menu.jpg" | absolute_url}}){: class="figure-img img-fluid rounded"}
 {% endfigure %}
 
 ---
@@ -109,6 +109,6 @@ Nun speichert ihr die Datei wieder und könnt eigentlich direkt schon auf dem Se
 ---
 
 <p style="text-align: center;"> <em><strong>NOCH FRAGEN?</strong></em></p>
-<p style="text-align: center;"><em>Schau dir doch mal die <a title="Garrys mod TTT Dedicated Server erstellen – Part 7: F.A.Q/Troubleshooting" href="{%post_url de/ttt/2015-11-03-ttt-server-part-8-faq %}">FAQ </a>an, vielleicht wurde deine Frage bereits beantwortet. Wenn nicht, schreibe mir gerne in den Kommentaren.</em></p>
-<p style="text-align: center;"><em>Weiter gehts in <a title="Garrys mod TTT Dedicated Server erstellen – Part 6: Serveradministration mit ULX und ULib" href="{% post_url de/ttt/2014-09-27-ttt-server-part-6-admin %}">Part 7</a> mit der Einrichtung von FastDL, um Addons auch ohne Workshop angenehm benutzbar zu machen.</em></p>
+<p style="text-align: center;"><em>Schau dir doch mal die <a title="Garrys mod TTT Dedicated Server erstellen – Part 7: F.A.Q/Troubleshooting" href="{%post_url ttt/2015-11-03-ttt-server-part-8-faq %}">FAQ </a>an, vielleicht wurde deine Frage bereits beantwortet. Wenn nicht, schreibe mir gerne in den Kommentaren.</em></p>
+<p style="text-align: center;"><em>Weiter gehts in <a title="Garrys mod TTT Dedicated Server erstellen – Part 6: Serveradministration mit ULX und ULib" href="{% post_url ttt/2014-09-27-ttt-server-part-6-admin %}">Part 7</a> mit der Einrichtung von FastDL, um Addons auch ohne Workshop angenehm benutzbar zu machen.</em></p>
 &nbsp;

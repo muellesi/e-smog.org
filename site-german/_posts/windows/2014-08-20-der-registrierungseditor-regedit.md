@@ -1,7 +1,7 @@
 ---
 title: Der Registrierungseditor (regedit)
 date: 2014-08-20 08:59
-image: assets/post_images/regedit_logo.png
+image: post_images/regedit_logo.png
 categories: Windows
 ---
 
@@ -16,7 +16,7 @@ _Falls ihr über keine Windows-Taste verfügt:_
 Öffnet das Startmenü (Windows XP/Vista/7) oder die  Edge UI/Metro-Oberfläche (Windows 8/8.1) über einen klick auf das Windows-Logo links unten. Ohne nun etwas weiteres vorher zu tun, gebt nun einfach regedit ein und klickt dann auf das Suchergebnis "regedit.exe". Ein Fenster sollte sich öffnen, welches ungefähr dem Screenshot rechts entspricht.
 
 {% figure [caption:"Die Standardansicht des Registrierungseditors."] [class:"figure"] %}
-![Regedit UI]({{"/assets/post_images/regedit.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
+![Regedit UI]({{"/post_images/regedit.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
 {% endfigure %}
 
 ## Die Oberfläche von regedit
@@ -37,7 +37,7 @@ Wichtig sind hier bei den meisten Tutorials eigentlich nur Nr. 2 und 3, da in di
 Unten im Fenster wird außerdem der Übersicht wegen auch noch einmal der vollständige Pfad bis zum gerade angeklickten Schlüssel angezeigt.
 
 {% figure [caption:"Die 'Schlüssel' der Registry können wie normale Ordner genutzt werden und werden auch entsprechend in der Oberfläche des Registrierungs-Editors angezeigt."] [class:"figure"] %}
-![Regedit Schlüssel]({{"/assets/post_images/regedit_schluessel.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
+![Regedit Schlüssel]({{"/post_images/regedit_schluessel.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
 {% endfigure %}
 
 #### Erstellen eines neuen (Unter-) Schlüssels
@@ -51,7 +51,7 @@ um einen neuen Registrierungsschlüssel zu erzeugen, klickt ihr mit der rechten 
 Rechts neben der Schlüsselansicht befindet sich die Werteansicht. Hier wird wie im Explorer mit den Dateien der Inhalt der jeweils angeklickten Schlüssel angezeigt. Jeder Wert hat dabei immer drei Eigenschaften: Einen **Namen**, einen **Typ** und zugehörige **Daten**. Name und enthaltene Daten eines Wertes können jederzeit geändert werden, während zum ändern des Typs der Wert gelöscht und mit dem gewünschten Typ neu erstellt werden muss.
 
 {% figure [caption:"Werte haben in der Registrierung einen von sechs Typen, einen Datenwert und einen Namen."] [class:"figure"] %}
-![Werte UI]({{"/assets/post_images/regedit_werte.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
+![Werte UI]({{"/post_images/regedit_werte.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
 {% endfigure %}
 
 ##### Erstellen eines Wertes

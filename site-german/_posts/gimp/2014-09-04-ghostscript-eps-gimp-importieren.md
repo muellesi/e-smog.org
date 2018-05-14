@@ -1,7 +1,7 @@
 ---
 title: Ghostscript-Dateien (eps) in GIMP importieren
 date: 2014-09-04 10:35
-image: assets/post_images/ghostscript.png
+image: post_images/ghostscript.png
 categories: GIMP
 locale: de_DE
 ---

@@ -4,7 +4,7 @@ title:  "TTT Dedicated Server Part 4: Fehlende Physik - CSS Mounten"
 author: Simon Müller
 date:   2014-05-14 21:30:33 +0100
 categories: TTT-Server
-image: assets/post_images/garrysmod.jpg
+image: post_images/garrysmod.jpg
 showtoc: true
 locale: de_DE
 ---
@@ -56,5 +56,5 @@ Wenn ihr diese Datei nun speichert und euren Server neu startet, sollte er euch 
 ---
 
 <p style="text-align: center;"> <em><strong>NOCH FRAGEN?</strong></em></p>
-<p style="text-align: center;"><em>Schau dir doch mal die <a title="Garrys mod TTT Dedicated Server erstellen – Part 7: F.A.Q/Troubleshooting" href="{%post_url de/ttt/2015-11-03-ttt-server-part-8-faq %}">FAQ </a>an, vielleicht wurde deine Frage bereits beantwortet. Wenn nicht, schreibe mir gerne in den Kommentaren.</em></p>
-<p style="text-align: center;"><em>Weiter geht's in <a href="{% post_url de/ttt/2014-06-18-ttt-server-part-5-loadingscreen %}">Part 5</a> mit dem Einrichten eines eigenen Ladebildschirms.</em></p>
+<p style="text-align: center;"><em>Schau dir doch mal die <a title="Garrys mod TTT Dedicated Server erstellen – Part 7: F.A.Q/Troubleshooting" href="{%post_url ttt/2015-11-03-ttt-server-part-8-faq %}">FAQ </a>an, vielleicht wurde deine Frage bereits beantwortet. Wenn nicht, schreibe mir gerne in den Kommentaren.</em></p>
+<p style="text-align: center;"><em>Weiter geht's in <a href="{% post_url ttt/2014-06-18-ttt-server-part-5-loadingscreen %}">Part 5</a> mit dem Einrichten eines eigenen Ladebildschirms.</em></p>

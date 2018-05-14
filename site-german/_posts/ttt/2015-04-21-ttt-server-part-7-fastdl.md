@@ -4,7 +4,7 @@ title:  "TTT Dedicated Server Part 7: Fast-DL einrichten"
 author: Simon Müller
 date:   2015-04-21 21:30:33 +0100
 categories: TTT-Server
-image: assets/post_images/garrysmod.jpg
+image: post_images/garrysmod.jpg
 kramdown:
     parse_block_html: true
     parse_span_html: true
@@ -159,5 +159,5 @@ sv_allowupload 1
 
 ---
 <p style="text-align: center;"> <em><strong>NOCH FRAGEN?</strong></em></p>
-<p style="text-align: center;"><em>Schau dir doch mal die <a title="Garrys mod TTT Dedicated Server erstellen – Part 7: F.A.Q/Troubleshooting" href="{%post_url de/ttt/2015-11-03-ttt-server-part-8-faq %}">FAQ </a>an, vielleicht wurde deine Frage bereits beantwortet. Wenn nicht, schreibe mir gerne in den Kommentaren.</em></p>
+<p style="text-align: center;"><em>Schau dir doch mal die <a title="Garrys mod TTT Dedicated Server erstellen – Part 7: F.A.Q/Troubleshooting" href="{%post_url ttt/2015-11-03-ttt-server-part-8-faq %}">FAQ </a>an, vielleicht wurde deine Frage bereits beantwortet. Wenn nicht, schreibe mir gerne in den Kommentaren.</em></p>
 &nbsp;

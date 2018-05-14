@@ -2,7 +2,7 @@
 title: G'MIC für GIMP installieren
 date: 2014-03-25 21:22
 categories: GIMP
-image: assets/post_images/gmicky_deevad600.png
+image: post_images/gmicky_deevad600.png
 locale: de_DE
 ---
 
@@ -26,7 +26,7 @@ Per Doppelklick wird die heruntergeladene Datei nun ausgeführt. Ab Version 8 me
 ## Den Installationsordner in GIMP bekannt machen
 
 {% figure [caption:"Der Pfad zum Gmic Addon muss in den GIMP Einstellungen bekannt gemacht werden"] [class:"figure"] %}
-![GMIC Pfad GIMP Einstellungen]({{"/assets/post_images/gimp_gmic_new_path.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
+![GMIC Pfad GIMP Einstellungen]({{"/post_images/gimp_gmic_new_path.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
 {% endfigure %}
 
 Nachdem ihr das Plugin nun installiert habt, ist seit der Version 2.0.3 des Plugins ein weiterer Schritt nötig (siehe [Kommentar des Plugin-Autors](https://discuss.pixls.us/t/using-the-windows-installer-for-version-2-0-3-of-gmic/4825)). Da das Plugin viele zusätzliche Dateien mit sich bringt, wird es standardmäßig in den Unterordner gmic_gimp_qt/ eures GIMP-Pluginordners installiert. Dort wird es jedoch von GIMP 2.8 nicht direkt gefunden und muss über die Einstellungen erst bekannt gemacht werden:

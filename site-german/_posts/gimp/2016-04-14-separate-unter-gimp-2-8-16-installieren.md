@@ -1,7 +1,7 @@
 ---
 title: Separate+ unter GIMP 2.8.16+ installieren
 date: 2016-04-14 14:11
-image: assets/post_images/cmyk.png
+image: post_images/cmyk.png
 categories: GIMP
 locale: de_DE
 ---
@@ -16,7 +16,7 @@ Das Plugin kann nach wie vor auf [osdn.jp](https://osdn.jp/projects/separate-pl
 Bevor wir uns ans entpacken machen, legen wir zunächst im GIMP-Benutzerordner (Unter C:\Users\EUER BENUTZERNAME\.gimp-2.8\) innerhalb des Ordners plug-ins einen neuen Ordner namens separate an. Nun habt ihr also den Ordnerpfad  C:\Users\EUER BENUTZERNAME\.gimp-2.8\plug-ins\separate. Falls dieser Ordner schon existiert, weil ihr eventuell bereits meiner alten Anleitung gefolgt seid, kann der bestehen bleiben, ihr müsst aber **alle(!)** Dateien, die sich darin befinden, löschen.
 
 {% figure [caption:"So sollte der Inhalt des separate-Ordners dann aussehen."] [class:"figure"] %}
-![Separate Ordner Inhalt]({{"/assets/post_images/separate_entpackt.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
+![Separate Ordner Inhalt]({{"/post_images/separate_entpackt.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
 {% endfigure %}
 
 An diesem Punkt solltet ihr nun - wenn ihr das nicht sowieso schon wisst - nachsehen, ob ihr ein 32-bit oder ein 64-bit System habt. Je nachdem, welche Art von System ihr habt, kopiert ihr jetzt den Inhalt des Unterordners Win32_x86 (für 32-Bit Systeme) oder des Ordners Win32_x64 (für 64-Bit Systeme) in den gerade angelegten separate-Ordner.  Am Ende sollte das dann so in etwa aussehen, wie auf obigem Screenshot.
@@ -32,6 +32,6 @@ Nach dem Entpacken müssen wir GIMP noch sagen, dass es im gerade neu erstellt
 Einen neuen Eintrag legt ihr an, indem ihr einmal oben das Icon mit dem leeren Papier anklickt, anschließend in das Textfeld den Pfad zum Separate-Ordner eintragt und mit Enter bestätigt. Wenn ihr einen gültigen Pfad angegeben habt, wechselt beim Drücken von Enter außerdem der Punkt neben dem  Textfeld seine Farbe von rot nach grün. Falls ihr den Pfad nicht von Hand eingeben wollt, könnt ihr auch den Durchsuchen-Dialog nutzen, den ihr mit einem Klick auf das Ordnersymbol bekommt.
 
 {% figure [caption:"In den Einstellungen von GIMP muss der Pfad zum neu installierten Plugin bekannt gemacht werden."] [class:"figure"] %}
-![Gimp Einstellungen Plugins]({{"/assets/post_images/gimp_settings_separate.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
+![Gimp Einstellungen Plugins]({{"/post_images/gimp_settings_separate.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
 {% endfigure %}
 Nach einem Neustart von GIMP sollte das neue Separate+ nun geladen werden und euch unter Bild-&gt;Separate zur Verfügung stehen.

@@ -4,7 +4,7 @@ title:  "TTT Dedicated Server Part 1: Download"
 author: Simon Müller
 date:   2014-04-16 21:30:33 +0100
 categories: TTT-Server
-image: assets/post_images/garrysmod.jpg
+image: post_images/garrysmod.jpg
 showtoc: true
 locale: de_DE
 ---
@@ -51,5 +51,5 @@ Während der Server herunterlädt, könnt ihr euch in Ruhe einen Kaffee holen ge
 
 &nbsp;
 <p style="text-align: center;"><em><strong>NOCH FRAGEN?
-</strong>Schau dir doch mal die <a title="Garrys mod TTT Dedicated Server erstellen – Part 8: F.A.Q/Troubleshooting" href="{% post_url de/ttt/2015-11-03-ttt-server-part-8-faq %}">FAQ </a>an, vielleicht wurde deine Frage bereits beantwortet. Wenn nicht, schreibe mir gerne in den Kommentaren.</em></p>
-<p style="text-align: center;"><em><span style="font-size: small;">Weiter geht's in <a href="{% post_url de/ttt/2014-04-16-ttt-server-part-2-setup %}">Part 2</a>  mit der grundlegenden Einrichtung.</span></em></p>
+</strong>Schau dir doch mal die <a title="Garrys mod TTT Dedicated Server erstellen – Part 8: F.A.Q/Troubleshooting" href="{% post_url ttt/2015-11-03-ttt-server-part-8-faq %}">FAQ </a>an, vielleicht wurde deine Frage bereits beantwortet. Wenn nicht, schreibe mir gerne in den Kommentaren.</em></p>
+<p style="text-align: center;"><em><span style="font-size: small;">Weiter geht's in <a href="{% post_url ttt/2014-04-16-ttt-server-part-2-setup %}">Part 2</a>  mit der grundlegenden Einrichtung.</span></em></p>

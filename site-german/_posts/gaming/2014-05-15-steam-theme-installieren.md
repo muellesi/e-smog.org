@@ -2,7 +2,7 @@
 title: Steam Themes installieren
 layout: post
 date: 2014-05-15 08:26
-image: /assets/post_images/steam_logo.png
+image: /post_images/steam_logo.png
 categories: Games Steam
 locale: de_DE
 ---
@@ -13,7 +13,7 @@ Wer das Standardtheme von Steam so langsam schon nichtmehr sehen kann, der bekom
 Steam legt schon bei der Installation den Ordner an, in dem später alle unsere Skins landen. Er trägt den Namen "skins" und ihr findet ihn in eurem Steam-Installationsverzeichnis.
 
 {% figure [caption:"Steam-Skinpakete sehen eigentlich immer ähnlich aus."] [class:"figure"] %}
-![Steam Skin Ordnerstruktur]({{"/assets/post_images/steam_skin_folder.jpg" | absolute_url}}){: class="figure-img img-fluid rounded"}
+![Steam Skin Ordnerstruktur]({{"/post_images/steam_skin_folder.jpg" | absolute_url}}){: class="figure-img img-fluid rounded"}
 {% endfigure %}
 
 Die meisten Skins werden als Zip-Datei ausgeliefert, die einen ähnlichen Inhalt hat, wie im obigen Screenshot gezeigt.
@@ -36,9 +36,9 @@ In den Steam-Einstellungen könnt ihr nun wenn ihr alles richtig gemacht habt im
 
 ### Gute Themes zum Start
 {% figure [caption:"Metro for Steam ist ein an Windows 8 angepasstes Theme, welches meiner Meinung nach im Moment das übersichtlichste Theme ist. Herunterladen könnt ihr es unter <http://metroforsteam.com/>"] [class:"figure"] %}
-![Metro for Steam Skin-Paket]({{"/assets/post_images/steam_metro.jpg" | absolute_url}}){: class="figure-img img-fluid rounded"}
+![Metro for Steam Skin-Paket]({{"/post_images/steam_metro.jpg" | absolute_url}}){: class="figure-img img-fluid rounded"}
 {% endfigure %}
 
 {% figure [caption:"Ein ebenfalls sehr schöner, für manche Geschmäcker aber zu klein gehaltener Skin. Herunterladen könnt ihr ihn unter <http://pulseh.deviantart.com/art/PixelVision-Skin-for-Steam-211426153>"] [class:"figure"] %}
-![PixelVision for Steam Skin-Paket]({{"/assets/post_images/steam_pixelvision.jpg" | absolute_url}}){: class="figure-img img-fluid rounded"}
+![PixelVision for Steam Skin-Paket]({{"/post_images/steam_pixelvision.jpg" | absolute_url}}){: class="figure-img img-fluid rounded"}
 {% endfigure %}

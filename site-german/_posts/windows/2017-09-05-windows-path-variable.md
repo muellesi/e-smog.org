@@ -1,7 +1,7 @@
 ---
 title: Windows - Anpassen der Path-Variablen
 date: 2017-09-05 15:25
-image: assets/post_images/path_variable.png
+image: post_images/path_variable.png
 categories: Windows
 ---
 
@@ -31,7 +31,7 @@ Die Path-Variable kann an zwei Stellen geändert werden. Beide Methoden werde ic
 Ruft die Systemsteuerung eures PCs auf und klickt in der Kategorieansicht auf „Sicherheit und System". Anschließend klickt ihr auf System und seht dann die Systemsteuerungsseite aus dem Screenshot rechts vor euch. Auf der linken Seite klickt ihr nun auf „Erweiterte Systemeinstellungen" und erhaltet damit ein weiteres Fenster mit mehreren Tabs. Hier ist der Tab „Erweitert" nun interessant, da es in diesem ganz unten den button „Umgebungsvariablen" gibt.
 
 {% figure [class:"figure"] %}
-![System und Sicherheit]({{"/assets/post_images/windows_system.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
+![System und Sicherheit]({{"/post_images/windows_system.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
 {% endfigure %}
 
 Mit einem Klick auf diesen Buttton bekommt ihr ein weiteres Fenster, in dem jetzt alle Umgebungsvariablen aufgelistet werden. Unter Windows 10 sieht dieser aus, wie im Bild unten, unter früheren Windows-Versionen ist der grundlegende Aufbau gleich, nur sieht der Dialog etwas anders aus.
@@ -39,7 +39,7 @@ Mit einem Klick auf diesen Buttton bekommt ihr ein weiteres Fenster, in dem jetz
 Die beiden Listen entsprechen dabei der im vorigen Abschnitt angesprochenen Unterteilung in System- und Benutzervariablen.
 
 {% figure [caption:"Umgebungsvariablen haben einen Namen und einen Wert. PATH ist eine Spezielle Umgebungsvariable, die Pfade zu Programmen enthält."] [class:"figure"] %}
-![Umgebungsvariableneditor UI]({{"/assets/post_images/environment_variables.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
+![Umgebungsvariableneditor UI]({{"/post_images/environment_variables.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
 {% endfigure %}
 
 #### Via Script

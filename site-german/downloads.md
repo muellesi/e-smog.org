@@ -17,7 +17,7 @@ Ein weiteres Programm für einen Benutzer von gimpforum.de. Erlaubt es, ein Bild
 
 ## FastDL Bzip2 Komprimierungstool
 
-Bei der [Einrichtung von FastDL]({%post_url de/ttt/2015-04-21-ttt-server-part-7-fastdl %}) für einen Garry's Mod Server kann man die Dateien vor dem Hochladen mit bzip2 komprimieren, um sowohl beim Hoch- als auch beim Herunterladen Bandbreite und Zeit zu sparen. Hierfür kann entweder das hier zum Download angebotene Toolset oder ein selbst kompiliertes bzip2 von der [Herstellerseite](http://bzip.org/) genutzt werden.
+Bei der [Einrichtung von FastDL]({%post_url ttt/2015-04-21-ttt-server-part-7-fastdl %}) für einen Garry's Mod Server kann man die Dateien vor dem Hochladen mit bzip2 komprimieren, um sowohl beim Hoch- als auch beim Herunterladen Bandbreite und Zeit zu sparen. Hierfür kann entweder das hier zum Download angebotene Toolset oder ein selbst kompiliertes bzip2 von der [Herstellerseite](http://bzip.org/) genutzt werden.
 
 <a href="{{"/assets/downloads/Bzip2Tool.zip" | absolute_url}}" class="btn btn-primary btn-lg" role="button">Download</a>
 

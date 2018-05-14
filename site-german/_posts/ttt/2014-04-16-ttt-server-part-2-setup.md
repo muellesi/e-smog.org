@@ -4,7 +4,7 @@ title:  "TTT Dedicated Server Part 2: Setup"
 author: Simon Müller
 date:   2014-04-16 21:31:33 +0100
 categories: TTT-Server
-image: assets/post_images/garrysmod.jpg
+image: post_images/garrysmod.jpg
 showtoc: true
 locale: de_DE
 ---
@@ -139,5 +139,5 @@ Dies war die grundlegende Einrichtung eines TTT-Servers. Ihr seid jetzt bereits 
 ---
 
 <p style="text-align: center;"> <em><strong>NOCH FRAGEN?</strong></em></p>
-<p style="text-align: center;"><em>Schau dir doch mal die <a title="Garrys mod TTT Dedicated Server erstellen – Part 7: F.A.Q/Troubleshooting" href="{%post_url de/ttt/2015-11-03-ttt-server-part-8-faq %}">FAQ </a>an, vielleicht wurde deine Frage bereits beantwortet. Wenn nicht, schreibe mir gerne in den Kommentaren.</em></p>
-<p style="text-align: center;"><em>Weiter gehts im <a title="Garrys mod TTT Dedicated Server erstellen – Part 3: Steam Workshop integrieren" href="{% post_url de/ttt/2014-04-22-ttt-server-part-3-workshop %}">nächsten Teil</a> mit dem Einbinden von Steam-Workshop-Inhalten</em></p>
+<p style="text-align: center;"><em>Schau dir doch mal die <a title="Garrys mod TTT Dedicated Server erstellen – Part 7: F.A.Q/Troubleshooting" href="{%post_url ttt/2015-11-03-ttt-server-part-8-faq %}">FAQ </a>an, vielleicht wurde deine Frage bereits beantwortet. Wenn nicht, schreibe mir gerne in den Kommentaren.</em></p>
+<p style="text-align: center;"><em>Weiter gehts im <a title="Garrys mod TTT Dedicated Server erstellen – Part 3: Steam Workshop integrieren" href="{% post_url ttt/2014-04-22-ttt-server-part-3-workshop %}">nächsten Teil</a> mit dem Einbinden von Steam-Workshop-Inhalten</em></p>

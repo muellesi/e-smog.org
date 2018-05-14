@@ -2,7 +2,7 @@
 title: Battlefield 4 Addons nachträglich registrieren
 layout: post
 date: 2014-08-26 09:54
-image: assets/post_images/bf4_logo.jpg
+image: post_images/bf4_logo.jpg
 categories: Games Battlefield
 locale: de_DE
 ---
@@ -32,6 +32,6 @@ Das Problem ist relativ einfach zu lösen: Zur korrekten Aktivierung der Addons 
 
 *   Anschließend solltet ihr noch Origin neustarten, um zu garantieren, dass auch alles wirklich korrekt erkannt wird. Dieser Schritt scheint allerdings nicht zwingend notwendig zu sein.
 {% figure [caption:"So sollte jeder der Unterschlüssel nach den Schritten aussehen. Im Beispielbild wurden alle Addons installiert."] [class:"figure"] %}
-![BF4 Addon registration Registry Ansicht]({{"/assets/post_images/bf4_addon_activation.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
+![BF4 Addon registration Registry Ansicht]({{"/post_images/bf4_addon_activation.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
 {% endfigure %}
 &nbsp;

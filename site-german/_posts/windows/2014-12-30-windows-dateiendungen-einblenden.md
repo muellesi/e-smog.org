@@ -1,7 +1,7 @@
 ---
 title: Windows - Dateiendungen einblenden
 date: 2014-12-30 15:25
-image: assets/post_images/tip_birne.png
+image: post_images/tip_birne.png
 categories: Windows
 ---
 
@@ -14,5 +14,5 @@ Unter **Windows 7** klickt ihr oben Links in einem beliebigen Fenster des Window
 Wenn im sich öffnenden Menü nicht bereits der Tab "Ansicht" geöffnet ist, klickt ihr einmal darauf und erhaltet dann unten eine Liste mit vielen anhakbaren Elementen, wie im Screenshot zu sehen. Nun müsst ihr nur noch das Häkchen vor dem im Screenshot markierten Eintrag "Erweiterungen bei bekannten Dateitypen ausblenden" deaktivieren und den Dialog mit einem Klick auf OK schließen. Von nun an sollte hinter jedem Dateinamen noch eine Dateiendung mit angezeigt werden.
 
 {% figure [caption:"In den Ordneroptionen muss dieser Standardmäßig gesetzte Haken deaktiviert werden."] [class:"figure"] %}
-![Ordneroptionen]({{"/assets/post_images/show_file_extensions.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
+![Ordneroptionen]({{"/post_images/show_file_extensions.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
 {% endfigure %}

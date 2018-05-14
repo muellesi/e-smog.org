@@ -5,7 +5,7 @@ locale: en_US
 categories: en Programming GIMP-Build
 kramdown:
   parse_block_html: true
-image: assets/post_images/wilber_puzzle.png
+image: post_images/wilber_puzzle.png
 showtoc: true
 published: true
 ---

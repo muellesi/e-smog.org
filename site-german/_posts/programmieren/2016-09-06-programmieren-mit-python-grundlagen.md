@@ -1,7 +1,7 @@
 ---
 title: Programmieren mit Python - Grundlagen
 date: 2016-09-06 12:36
-image: assets/post_images/python_logo.png
+image: post_images/python_logo.png
 categories: Programmieren
 locale: de_DE
 ---
