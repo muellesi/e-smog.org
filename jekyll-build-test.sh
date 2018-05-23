@@ -2,6 +2,7 @@
 
 # first, build theme gem
 cd ./theme-e-smog       &&
+bundle install --force  &&
 chmod +x build.sh       &&
 ./build.sh              &&
 cd ..                   &&
@@ -23,6 +24,3 @@ cd site-english          &&
 bundle install --force   &&
 bundle exec jekyll build --destination ../deploy-test/english --config _config.yml,_config_test.yml &&
 cd ..
-
-#&& mkdir ./deploy/english &&
-#jekyll build --source ./site-english/ --destination ./deploy/english --config ./site-english/_config.yml &&
