@@ -17,7 +17,7 @@ title: e-smog.org
 subtitle: Tutorials rund um Gaming, Bildbearbeitungs- und sonstige Software
 name: e-smog.org
 description: Tutorials rund um Gaming, Bildbearbeitungs und sonstige Software
-baseurl: "/blog/de" # the subpath of your site, e.g. /blog
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://e-smog.org" # the base hostname & protocol for your site, e.g. http://example.com
 headerimage: assets/header.png
 smallicon: assets/logo-50x50.png

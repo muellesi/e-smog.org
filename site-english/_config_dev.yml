@@ -1,0 +1,15 @@
+plugins:
+  - jekyll-feed
+  - jekyll-paginate-v2
+  - jekyll-relative-links
+  - jekyll-autoprefixer
+  - jekyll/figure
+
+url: "http://127.0.0.1:4000"
+baseurl: "/en"
+
+sass:
+  style: expanded
+
+pagination:
+  per_page: 5
