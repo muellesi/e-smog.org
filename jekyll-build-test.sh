@@ -17,7 +17,7 @@ mkdir ./deploy-test/english  &&
 cd site-german          &&
 bundle install --force  &&
 bundle exec jekyll build --destination ../deploy-test/german --config _config.yml,_config_test.yml &&
-cd ..
+cd ..                   &&
 
 # build english site 
 cd site-english          &&
