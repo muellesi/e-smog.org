@@ -2,6 +2,7 @@
 
 # first, build theme gem
 cd ./theme-e-smog       &&
+chmod +x build.sh       &&
 ./build.sh              &&
 cd ..                   &&
 

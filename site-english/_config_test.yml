@@ -6,7 +6,7 @@ plugins:
   - jekyll/figure
 
 url: "https://test.e-smog.org"
-baseurl: "/de"
+baseurl: "/en"
 
 sass:
   style: expanded
