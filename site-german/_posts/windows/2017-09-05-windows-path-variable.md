@@ -28,7 +28,7 @@ Die Path-Variable kann an zwei Stellen geändert werden. Beide Methoden werde ic
 #### In der Systemsteuerung
 
 
-Ruft die Systemsteuerung eures PCs auf und klickt in der Kategorieansicht auf „Sicherheit und System". Anschließend klickt ihr auf System und seht dann die Systemsteuerungsseite aus dem Screenshot rechts vor euch. Auf der linken Seite klickt ihr nun auf „Erweiterte Systemeinstellungen" und erhaltet damit ein weiteres Fenster mit mehreren Tabs. Hier ist der Tab „Erweitert" nun interessant, da es in diesem ganz unten den button „Umgebungsvariablen" gibt.
+Ruft die Systemsteuerung eures PCs auf und klickt in der Kategorieansicht auf „Sicherheit und System". Anschließend klickt ihr auf System und seht dann die Systemsteuerungsseite aus dem Screenshot unten vor euch. Auf der linken Seite klickt ihr nun auf „Erweiterte Systemeinstellungen" und erhaltet damit ein weiteres Fenster mit mehreren Tabs. Hier ist der Tab „Erweitert" nun interessant, da es in diesem ganz unten den button „Umgebungsvariablen" gibt.
 
 {% figure [class:"figure"] %}
 ![System und Sicherheit]({{"/post_images/windows_system.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
