@@ -48,7 +48,8 @@ plugins:
   - jekyll-relative-links
   - jekyll-autoprefixer
   - jekyll/figure
-
+  - jekyll-sitemap
+  
 excerpt_separator: "<!--more-->"
 
 sass:
