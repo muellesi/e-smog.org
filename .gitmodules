@@ -1,3 +1,8 @@
-[submodule "theme-e-smog"]
-	path = theme-e-smog
+[submodule "site-german/_theme/e-smog"]
+	path = site-german/_theme/e-smog
 	url = ../e-smog-jekyll-theme
+
+[submodule "site-english/_theme/e-smog"]
+	path = site-english/_theme/e-smog
+	url = ../e-smog-jekyll-theme
+
