@@ -1,6 +1,6 @@
 ---
 title: Launch der neuen Webseite
-date: 2018-06-05 00:15
+date: 2018-06-04 22:15
 image: post_images/dsgvo.png
 categories: General
 ---
