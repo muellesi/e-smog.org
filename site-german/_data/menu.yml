@@ -1,0 +1,10 @@
+- title: "Main Menu"
+  items:
+    - title: "Home"
+      href: "/"
+    - title: "TTT Dedicated Server"
+      href: "/category/ttt-server"
+    - title: "Games"
+      href: "/category/games"
+    - title: "GIMP"
+      href: "/category/gimp"

@@ -1,5 +1,4 @@
 source "https://rubygems.org"
-source "file://#{File.expand_path('.')}/../theme-e-smog/build"
 
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
@@ -11,7 +10,7 @@ source "file://#{File.expand_path('.')}/../theme-e-smog/build"
 # Happy Jekylling!
 gem "jekyll", "~> 3.7.3"
 
-gem "theme-e-smog"
+gem "e-smog", :path => "_theme"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.

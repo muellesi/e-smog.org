@@ -1,8 +1,9 @@
 [submodule "site-german/_theme/e-smog"]
 	path = site-german/_theme/e-smog
 	url = ../e-smog-jekyll-theme
+	branch = master
 
 [submodule "site-english/_theme/e-smog"]
 	path = site-english/_theme/e-smog
-	url = ssh://git@raspi01/~/repos/e-smog-jekyll-theme
-
+	url = ../e-smog-jekyll-theme
+	branch = master

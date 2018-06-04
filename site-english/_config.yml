@@ -24,7 +24,7 @@ smallicon: assets/logo-50x50.png
 largeicon: assets/logo.png
 logo: ""
 
-theme: theme-e-smog
+theme: e-smog
 
 defaults: 
   -

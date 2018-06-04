@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# first, build theme gem
-cd ./theme-e-smog       &&
-./build.sh              &&
-cd ..                   &&
-
 # prepare the deployment directory
 rm -rf ./deploy-dev         &&
 mkdir ./deploy-dev          && 
@@ -13,7 +8,6 @@ mkdir ./deploy-dev/english  &&
 
 # build german site 
 cd site-german          &&
-bundle update           &&
 bundle exec jekyll build --destination ../deploy-dev/german --config _config.yml,_config_dev.yml --watch
 
 #&& mkdir ./deploy/english &&
