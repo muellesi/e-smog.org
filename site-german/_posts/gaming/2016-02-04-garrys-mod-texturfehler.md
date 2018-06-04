@@ -18,7 +18,7 @@ Wir werden uns zu Nutze machen, dass die benötigten Ressourcen auch beim kosten
 
 ### Den Counter-Strike:Source Server herunterladen
 
-**Hinweis**: Solltet ihr bereits [Part 4]({% post_url ttt/2014-05-14-ttt-server-part-4-mounten %}) meiner Tutorial-Reihe zum Garry's Mod Server befolgt haben, könnt ihr diesen Teil jetzt überspringen und unten bei „GCFScape besorgen" weitermachen.
+**Hinweis**: Solltet ihr bereits [Part 4]({{ site.baseurl }}{% post_url ttt/2014-05-14-ttt-server-part-4-mounten %}) meiner Tutorial-Reihe zum Garry's Mod Server befolgt haben, könnt ihr diesen Teil jetzt überspringen und unten bei „GCFScape besorgen" weitermachen.
 {: class="alert alert-info"}
 
 Unter <https://developer.valvesoftware.com/wiki/SteamCMD#Downloading_SteamCMD> findet ihr den aktuellen Downloadlink für die sogenannte SteamCMD -- steamcmd ist im Grunde eine Kommandozeilenversion des Steam-Clients. Nach dem Herunterladen muss die enthaltene steamcmd.exe zunächst entpackt werden. Um später alle bei den nachfolgenden Schritten anfallenden Dateien problemlos wieder löschen zu können, empfiehlt es sich, dafür einen neuen, leeren Ordner zu benutzen.

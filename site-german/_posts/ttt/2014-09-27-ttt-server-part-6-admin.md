@@ -109,6 +109,6 @@ Nun speichert ihr die Datei wieder und könnt eigentlich direkt schon auf dem Se
 ---
 
 <p style="text-align: center;"> <em><strong>NOCH FRAGEN?</strong></em></p>
-<p style="text-align: center;"><em>Schau dir doch mal die <a title="Garrys mod TTT Dedicated Server erstellen – Part 7: F.A.Q/Troubleshooting" href="{%post_url ttt/2015-11-03-ttt-server-part-8-faq %}">FAQ </a>an, vielleicht wurde deine Frage bereits beantwortet. Wenn nicht, schreibe mir gerne in den Kommentaren.</em></p>
-<p style="text-align: center;"><em>Weiter gehts in <a title="Garrys mod TTT Dedicated Server erstellen – Part 6: Serveradministration mit ULX und ULib" href="{% post_url ttt/2014-09-27-ttt-server-part-6-admin %}">Part 7</a> mit der Einrichtung von FastDL, um Addons auch ohne Workshop angenehm benutzbar zu machen.</em></p>
+<p style="text-align: center;"><em>Schau dir doch mal die <a title="Garrys mod TTT Dedicated Server erstellen – Part 7: F.A.Q/Troubleshooting" href="{{ site.baseurl }}{% post_url ttt/2015-11-03-ttt-server-part-8-faq %}">FAQ </a>an, vielleicht wurde deine Frage bereits beantwortet. Wenn nicht, schreibe mir gerne in den Kommentaren.</em></p>
+<p style="text-align: center;"><em>Weiter gehts in <a title="Garrys mod TTT Dedicated Server erstellen – Part 6: Serveradministration mit ULX und ULib" href="{{ site.baseurl }}{% post_url ttt/2014-09-27-ttt-server-part-6-admin %}">Part 7</a> mit der Einrichtung von FastDL, um Addons auch ohne Workshop angenehm benutzbar zu machen.</em></p>
 &nbsp;

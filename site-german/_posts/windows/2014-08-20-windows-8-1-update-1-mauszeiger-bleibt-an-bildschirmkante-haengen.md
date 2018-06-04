@@ -9,7 +9,7 @@ Wenn ihr einen PC mit mehreren Monitoren nutzt, kann es beim Update auf die Wind
 
 #### 1\. Schritt: Beheben für die Desktopansicht
 
-1.  Öffnet den [Registrierungseditor]({%post_url windows/2014-08-20-der-registrierungseditor-regedit %})
+1.  Öffnet den [Registrierungseditor]({{ site.baseurl }}{% post_url windows/2014-08-20-der-registrierungseditor-regedit %})
 2.  Wechselt in der Schlüsselansicht auf der Linken Seite in den Schlüssel `HKEY_CURRENT_USER\Control Panel\Desktop`
 3.  Dort sollte sich nun auf der rechten Seite unter den ganzen anderen enthaltenen Werten auch der Wert `MouseMonitorEscapeSpeed` befinden, welcher standardmäßig den Datenwert 0 hat.
 4.  Mit einem Doppelklick auf diesen Wert öffnet ihr ihn zum Bearbeiten und gebt im Textfeld für den Wert eine 1 anstatt der bereits eingetragenen 0 an.

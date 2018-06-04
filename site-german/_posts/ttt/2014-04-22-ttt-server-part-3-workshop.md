@@ -40,7 +40,7 @@ Nun könnt ihr nach belieben im Workshop nach Addons und Maps stöbern, die ihr 
 ## Das Serverstartscript anpassen
 Da der Server von alledem ja noch nichts mitbekommen hat, müssen wir ihm nun noch mitteilen, welche Kollektion er denn nutzen soll. Hierzu braucht ihr noch die ID eurer Kollektion. Diese findet ihr heraus, indem ihr eure Kollektion in eurem Browser aufruft und euch die URL anschaut. Lautet diese zum Beispiel `http://steamcommunity.com/sharedfiles/filedetails/?id=251913754`, dann ist die ID eurer Kollektion entsprechend `251913754`.
 
-Nun müsst ihr eurem Server noch euren frisch generierten API-Key und die ID der Kollektion mitteilen. Dies geschieht im Startscript über weitere Parameter: `+host_workshop_collection` für die ID eurer Kollektion und `-authkey` für den oben frisch generierten Identifikationsschlüssel. Habt ihr bisher also aus [Tutorial Nr. 2]({% post_url ttt/2014-04-16-ttt-server-part-2-setup %}) noch folgendes in eurem Startscript stehen:
+Nun müsst ihr eurem Server noch euren frisch generierten API-Key und die ID der Kollektion mitteilen. Dies geschieht im Startscript über weitere Parameter: `+host_workshop_collection` für die ID eurer Kollektion und `-authkey` für den oben frisch generierten Identifikationsschlüssel. Habt ihr bisher also aus [Tutorial Nr. 2]({{ site.baseurl }}{% post_url ttt/2014-04-16-ttt-server-part-2-setup %}) noch folgendes in eurem Startscript stehen:
 
 ~~~ bash
 srcds.exe -console -maxplayers 16 -game garrysmod +gamemode terrortown +map gm_construct
@@ -96,7 +96,7 @@ Deshalb hier eine kleine Liste von Addons, die auf einem TTT-Server durchaus sin
 
 * [Mapvote](http://steamcommunity.com/sharedfiles/filedetails/?id=151583504)– Der Name sagt alles. Anstatt immer von Hand in der Serverkonsole die Map ändern zu müssen, wird nach der Runde eine Liste mit Maps angezeigt, über die die Spieler abstimmen können.
 * [TTT Weapon Collection](http://steamcommunity.com/sharedfiles/filedetails/?id=194965598) – macht das Spiel durch zusätzliche Waffen – auch für Traitors und Detectives - etwas abwechslungsreicher.
-* [ULX/ULIB]({% post_url ttt/2014-09-27-ttt-server-part-6-admin %}) - Ein Addon zum administrieren des Servers. Von der kompletten Neukonfiguration des Servers (nur während einer Runde) bis zu einem Mapwechsel ist alles mit wenigen Mausklicks machbar. *Die aktuelle Version des Addons sollte man sich auf jeden Fall auf der Herstellerseite herunterladen und nicht über den Steam Workshop, deshalb verlinke ich hier auf einen weiteren Teil dieser Artikelserie, wo die Installation von ULX genau erklärt wird.*
+* [ULX/ULIB]({{ site.baseurl }}{% post_url ttt/2014-09-27-ttt-server-part-6-admin %}) - Ein Addon zum administrieren des Servers. Von der kompletten Neukonfiguration des Servers (nur während einer Runde) bis zu einem Mapwechsel ist alles mit wenigen Mausklicks machbar. *Die aktuelle Version des Addons sollte man sich auf jeden Fall auf der Herstellerseite herunterladen und nicht über den Steam Workshop, deshalb verlinke ich hier auf einen weiteren Teil dieser Artikelserie, wo die Installation von ULX genau erklärt wird.*
 
 #### Maps:
 
@@ -111,5 +111,5 @@ Wer weitere Vorschläge für gute Maps/Addons hat, kann diese gerne in den Komme
 ---
 
 <p style="text-align: center;"> <em><strong>NOCH FRAGEN?</strong></em></p>
-<p style="text-align: center;"><em>Schau dir doch mal die <a title="Garrys mod TTT Dedicated Server erstellen – Part 7: F.A.Q/Troubleshooting" href="{%post_url ttt/2015-11-03-ttt-server-part-8-faq %}">FAQ </a>an, vielleicht wurde deine Frage bereits beantwortet. Wenn nicht, schreibe mir gerne in den Kommentaren.</em></p>
-<p style="text-align: center;"><em>Weiter gehts in <a title="Garrys mod TTT Dedicated Server erstellen – Part 4: Andere Spiele “mounten”" href="{% post_url ttt/2014-05-14-ttt-server-part-4-mounten %}">Part 4</a> mit dem Mounten der Dateien aus CounterStrike: Source</em></p>
+<p style="text-align: center;"><em>Schau dir doch mal die <a title="Garrys mod TTT Dedicated Server erstellen – Part 7: F.A.Q/Troubleshooting" href="{{ site.baseurl }}{% post_url ttt/2015-11-03-ttt-server-part-8-faq %}">FAQ </a>an, vielleicht wurde deine Frage bereits beantwortet. Wenn nicht, schreibe mir gerne in den Kommentaren.</em></p>
+<p style="text-align: center;"><em>Weiter gehts in <a title="Garrys mod TTT Dedicated Server erstellen – Part 4: Andere Spiele “mounten”" href="{{ site.baseurl }}{% post_url ttt/2014-05-14-ttt-server-part-4-mounten %}">Part 4</a> mit dem Mounten der Dateien aus CounterStrike: Source</em></p>
