@@ -13,10 +13,10 @@ mkdir ./deploy-test/english  &&
 cd site-german          &&
 bundle install          &&
 bundle exec jekyll build --destination ../deploy-test/german --config _config.yml,_config_test.yml &&
-cd ..                   &&
+cd ..                  # &&
 
 # build english site 
-cd site-english          &&
-bundle install           &&
-bundle exec jekyll build --destination ../deploy-test/english --config _config.yml,_config_test.yml &&
-cd ..
+#cd site-english          &&
+#bundle install           &&
+#bundle exec jekyll build --destination ../deploy-test/english --config _config.yml,_config_test.yml &&
+#cd ..
