@@ -11,12 +11,12 @@ mkdir ./deploy-test/english  &&
 
 # build german site 
 cd site-german          &&
-bundle install --force  &&
+bundle install          &&
 bundle exec jekyll build --destination ../deploy-test/german --config _config.yml,_config_test.yml &&
 cd ..                   &&
 
 # build english site 
 cd site-english          &&
-bundle install --force   &&
+bundle install           &&
 bundle exec jekyll build --destination ../deploy-test/english --config _config.yml,_config_test.yml &&
 cd ..
