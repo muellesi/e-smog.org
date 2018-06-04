@@ -3,13 +3,6 @@
 mkdir $PWD/gems         &&
 export GEM_HOME=$PWD/gems &&
 
-# first, build theme gem
-cd ./theme-e-smog       &&
-bundle install --force  &&
-chmod +x build.sh       &&
-./build.sh              &&
-cd ..                   &&
-
 # prepare the deployment directory
 rm -rf ./deploy-test         &&
 mkdir ./deploy-test          && 
