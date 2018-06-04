@@ -4,5 +4,5 @@
 
 [submodule "site-english/_theme/e-smog"]
 	path = site-english/_theme/e-smog
-	url = ../e-smog-jekyll-theme
+	url = ssh://git@raspi01/~/repos/e-smog-jekyll-theme
 
