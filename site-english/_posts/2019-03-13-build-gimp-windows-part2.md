@@ -1,6 +1,6 @@
 ---
 title: Building GIMP for Windows Part 2 - Integration in Visual Studio Code
-date: 2018-03-13 18:00
+date: 2019-03-13 18:00
 categories: en Programming GIMP-Build
 locale: en_US
 kramdown:

@@ -14,10 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: e-smog.org
-subtitle: Tutorials rund um Gaming, Bildbearbeitungs- und sonstige Software
+subtitle: Tutorials about gaming, image manipulation and after software
 name: e-smog.org
-description: Tutorials rund um Gaming, Bildbearbeitungs und sonstige Software
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+description: Tutorials about gaming, image manipulation and after software
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://en.e-smog.org" # the base hostname & protocol for your site, e.g. http://example.com
 headerimage: assets/header.png
 smallicon: assets/logo-50x50.png

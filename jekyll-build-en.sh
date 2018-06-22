@@ -6,9 +6,9 @@ export GEM_HOME=$PWD/gems &&
 # prepare the deployment directory
 rm -rf ./deploy         &&
 mkdir ./deploy          && 
-mkdir ./deploy/de   && 
+mkdir ./deploy/en  && 
 
-# build german site 
-cd site-german          &&
+# build english site 
+cd site-english          &&
 bundle install          &&
-bundle exec jekyll build --destination ../deploy/de --config _config.yml 
+bundle exec jekyll build --destination ../deploy/en --config _config.yml 
