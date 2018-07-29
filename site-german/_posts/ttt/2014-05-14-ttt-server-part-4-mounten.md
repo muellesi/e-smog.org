@@ -29,7 +29,7 @@ Wenn ihr diese Kommandos nacheinander auf der SteamCMD ausführt, sollte nach de
 ## 2. Schritt: CSS-Server in GM-Server einbinden/"mounten"
 Die SteamCMD hat uns beim Download einen neuen Ordner namens `css` in unserer Server-Ordnerstruktur angelegt. In ihm liegen nun sämtliche Dateien, die von einem CSS-Server benötigt werden. Ein Garry's Mod-Server kann ebendiese Dateien nun für sich selbst einbinden und nutzen, hierfür sind nur minimale Änderungen an einer Konfigurationsdatei nötig:
 
-Wir begeben uns wie auch schon in Part2 in den Ordner `C:\steamcmd\gm\garrysmod\cfg` und bearbeiten jetzt die Datei "mount.cfg" mit einem Texteditor.
+Wir begeben uns wie auch schon in [Part 2]({% post_url ttt/2014-04-16-ttt-server-part-2-setup %}) in den Ordner `C:\steamcmd\gm\garrysmod\cfg` und bearbeiten jetzt die Datei "mount.cfg" mit einem Texteditor.
 
 Wenn wir diese das erste mal öffnen, sollte sie folgendermaßen aussehen:
 
