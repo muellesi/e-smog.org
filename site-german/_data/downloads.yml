@@ -31,7 +31,7 @@
   description: |
     Ein kleines Tool, das ich im Zusammenhang mit meiner Serie zur Einrichtung eines TTT-Servers gebastelt habe.
     Dieses Tool erleichtert das Anlegen einer lua-Datei, die den Download bestimmter Workshop-Addons für einen GMod-Server erzwingt.
-    Es wird in [Part 3](https://e-smog.org/blog/index.php/garrys-mod-ttt-dedicated-server-erstellenpart-3/#forcedownloadtool) der Serie zur Einrichtung eines TTT-Servers genutzt.
+    Es wird in [Part 3]({{ site.baseurl }}{% post_url ttt/2014-04-22-ttt-server-part-3-workshop%}#halbautomatischer-weg) der Serie zur Einrichtung eines TTT-Servers genutzt.
   version: "1.0"
   imageurl: "/post_images/resourceslua.png"
   filesize: "309 KB"
