@@ -1,5 +1,5 @@
 --- 
-layout: post 
+layout: downloads 
 title: Downloads
 permalink: downloads.html
 showtoc: true
@@ -9,9 +9,35 @@ Auf dieser Seite liste ich zentral jeweils die aktuelle Version der Downloads a
 
 ## Abstandsmessung
 
-Ein weiteres Programm für einen Benutzer von gimpforum.de. Erlaubt es, ein Bild zu laden, auf diesem einen Bezugspunkt zu setzen und dann mit Hilfe weiterer Punkte den Abstand von Bildmerkmalen vom Bezugspunkt zu messen. [Thread auf gimpforum.de](http://www.gimpforum.de/showthread.php?t=22925)
+<div class="container">
+    <div class="row">
+        <div class="col"><img src=""/></div>
+        <div class="col">
+            <h2 class="downloadtitle">
+                Download
+            </h2>
+            <ul>
+                <li>
+                    Version: 1.0
+                </li>
+                <li>
+                    Größe: 2GB
+                </li>
+                <li>
+                    Datum: 1.1.1997
+                </li>
+            </ul>
+            <a href="{{"/downloads/Abstandsmessung.zip" | absolute_url}}" class="btn btn-primary btn-lg d-block w-100" role="button">Download</a>
+        </div>
+    </div>
+    <div class="row">
+        <p>
+        Ein weiteres Programm für einen Benutzer von gimpforum.de. Erlaubt es, ein Bild zu laden, auf diesem einen Bezugspunkt zu setzen und dann mit Hilfe weiterer Punkte den Abstand von Bildmerkmalen vom Bezugspunkt zu messen. [Thread auf gimpforum.de](http://www.gimpforum.de/showthread.php?t=22925)
+        </p>
+    </div>
+</div>
 
-<a href="{{"/downloads/Abstandsmessung.zip" | absolute_url}}" class="btn btn-primary btn-lg" role="button">Download</a>
+
 
 ---
 
