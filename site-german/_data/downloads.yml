@@ -22,7 +22,7 @@
 
     Neu in Version 2.0: Zeigt die Farbanteile zusätzlich gruppiert nach ihrem Namen an.
   version: "2.0"
-  imageurl: "/post_images/pixelcounter.png"
+  imageurl: "/post_images/pixel_counter.png"
   filesize: "4,42 KB"
   date: "24.06.2017"
   downloadurl: "/downloads/PixelCounter.zip"
