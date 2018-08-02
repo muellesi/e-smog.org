@@ -40,15 +40,16 @@
 
 - title: "Scale4Web"
   description: |
-    Ein Programm, das Bilder für Webseiten optimieren kann. Es können verschiedene Presets für verschiedene Anwendungszwecke angelegt werden. Pro Preset gibt es Einstellungsmöglichkeiten für die Maximale Länge der größeren Bildseite und für die Jpeg-Kompressionsqualität.
+    Ein Programm, das Bilder für Webseiten optimieren kann. Es können verschiedene Presets für verschiedene Anwendungszwecke angelegt werden. Pro Preset gibt es Einstellungsmöglichkeiten für die Länge einer Bildseite und für die Jpeg-Kompressionsqualität. Außerdem wird ein Kommandozeilenmodus unterstützt, bei welchem automatisch das (konfigurierbare) Standardpreset genutzt wird. Die Ergebnisbilder werden jeweils relativ zum Ursprungsbild im Unterordner /converted gespeichert.
+    
+    
+    *Achtung:* Transparenz wird noch nicht unterstützt.
 
-    Außerdem wird ein Kommandozeilenmodus unterstützt, bei welchem automatisch das (konfigurierbare) Standardpreset genutzt wird.
-
-    Die Ergebnisbilder werden jeweils relativ zum Ursprungsbild im Unterordner /converted gespeichert.
-  version: "1.0"
+    **Neu in Version 2.0:** Die Seite, anhand deren Das Bild skaliert werden soll ist jetzt einstellbar.
+  version: "2.0"
   imageurl: "/post_images/scale4web.png"
-  filesize: "219 KB"
-  date: "28.07.2016"
+  filesize: "232 KB"
+  date: "02.08.2018"
   downloadurl: "/downloads/Scale4Web.zip"
 
 - title: "Separate+ für Gimp 2.8.14"
