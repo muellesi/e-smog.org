@@ -1,5 +1,5 @@
 ---
-title: Gimp Grundlagen - Pixelzahl und Auflösung – Die Bildgröße
+title: GIMP Grundlagen - Pixelzahl und Auflösung – Die Bildgröße
 date: 2015-05-28 14:11
 image: post_images/pixelzahl_aufloesung.jpg
 categories: GIMP

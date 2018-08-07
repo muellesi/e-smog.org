@@ -81,6 +81,6 @@ Die Ergebnisbilder werden jeweils relativ zum Ursprungsbild im Unterordner /conv
 
 ---
 
-## Separate+ für Gimp 2.8.14
+## Separate+ für GIMP 2.8.14
 
 <a href="{{"/downloads/separate-2814-3.zip" | absolute_url}}" class="btn btn-primary btn-lg" role="button">Download</a>

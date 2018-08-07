@@ -32,6 +32,6 @@ Nach dem Entpacken müssen wir GIMP noch sagen, dass es im gerade neu erstellt
 Einen neuen Eintrag legt ihr an, indem ihr einmal oben das Icon mit dem leeren Papier anklickt, anschließend in das Textfeld den Pfad zum Separate-Ordner eintragt und mit Enter bestätigt. Wenn ihr einen gültigen Pfad angegeben habt, wechselt beim Drücken von Enter außerdem der Punkt neben dem  Textfeld seine Farbe von rot nach grün. Falls ihr den Pfad nicht von Hand eingeben wollt, könnt ihr auch den Durchsuchen-Dialog nutzen, den ihr mit einem Klick auf das Ordnersymbol bekommt.
 
 {% figure [caption:"In den Einstellungen von GIMP muss der Pfad zum neu installierten Plugin bekannt gemacht werden."] [class:"figure"] %}
-![Gimp Einstellungen Plugins]({{"/post_images/gimp_settings_separate.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
+![GIMP Einstellungen Plugins]({{"/post_images/gimp_settings_separate.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
 {% endfigure %}
 Nach einem Neustart von GIMP sollte das neue Separate+ nun geladen werden und euch unter Bild-&gt;Separate zur Verfügung stehen.

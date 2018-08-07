@@ -6,16 +6,16 @@ categories: GIMP
 locale: de_DE
 ---
 
-Nicht selten kommt es vor, dass auf mehrere Bilder hintereinander die gleichen Bearbeitungsschritte angewendet werden müssen -- sei es, um eine Belichtungskorrektur bei allen Photos einer Serie durchzuführen oder um Bilder für die Verwendung auf einer Webseite auf ein passendes, gemeinsames Format zu bringen. In diesem Artikel möchte ich zwei hilfreiche Plugins vorstellen, die dies in Gimp möglich machen.
+Nicht selten kommt es vor, dass auf mehrere Bilder hintereinander die gleichen Bearbeitungsschritte angewendet werden müssen -- sei es, um eine Belichtungskorrektur bei allen Photos einer Serie durchzuführen oder um Bilder für die Verwendung auf einer Webseite auf ein passendes, gemeinsames Format zu bringen. In diesem Artikel möchte ich zwei hilfreiche Plugins vorstellen, die dies in GIMP möglich machen.
 <!--more-->
 
-Gleich im Voraus sei erwähnt: Wer regelmäßig große Mengen an Bildmaterial im Stapel verarbeiten muss, sollte sich überlegen, ob für ihn nicht andere, genau für diesen Zweck entwickelte, Software wie imagemagick besser geeignet wäre. Stapelverarbeitung mit Gimp ist durchaus möglich, allerdings meistens nicht die schnellste und beste Lösung. Wer allerdings seltener Stapelverarbeitungsaufgaben hat und entsprechend nicht den Umgang mit einem komplett neuen Tool lernen möchte, ist auch bei Gimp gut aufgehoben.
+Gleich im Voraus sei erwähnt: Wer regelmäßig große Mengen an Bildmaterial im Stapel verarbeiten muss, sollte sich überlegen, ob für ihn nicht andere, genau für diesen Zweck entwickelte, Software wie imagemagick besser geeignet wäre. Stapelverarbeitung mit GIMP ist durchaus möglich, allerdings meistens nicht die schnellste und beste Lösung. Wer allerdings seltener Stapelverarbeitungsaufgaben hat und entsprechend nicht den Umgang mit einem komplett neuen Tool lernen möchte, ist auch bei GIMP gut aufgehoben.
 
-Zunächst möchte ich zwei Plugins vorstellen, die Stapelverarbeitung in Gimp mit Hilfe einer einfach zu bedienenden Oberfläche sehr leicht machen:
+Zunächst möchte ich zwei Plugins vorstellen, die Stapelverarbeitung in GIMP mit Hilfe einer einfach zu bedienenden Oberfläche sehr leicht machen:
 
 ## BIMP
 
-[Bimp](https://github.com/alessandrofrancesconi/gimp-plugin-bimp) ist ein Stapelverarbeitungsplugin für Gimp, das von Alessandro Francesconi entwickelt wird. Es bietet grafische Einstellungen für alle wichtigen verallgemeinerbaren Bildoperationen (Vergrößern, Verkleinern, Schärfen, Wasserzeichen, Konvertierung, uvm.). Außerdem kann Bimp auf den Gimp-Prozedurenbrowser zugreifen und kann somit beinahe jede in Gimp verfügbare Funktion nutzen -- wenn auch nicht so komfortabel, wie die vorher genannten.
+[Bimp](https://github.com/alessandrofrancesconi/gimp-plugin-bimp) ist ein Stapelverarbeitungsplugin für GIMP, das von Alessandro Francesconi entwickelt wird. Es bietet grafische Einstellungen für alle wichtigen verallgemeinerbaren Bildoperationen (Vergrößern, Verkleinern, Schärfen, Wasserzeichen, Konvertierung, uvm.). Außerdem kann Bimp auf den GIMP-Prozedurenbrowser zugreifen und kann somit beinahe jede in GIMP verfügbare Funktion nutzen -- wenn auch nicht so komfortabel, wie die vorher genannten.
 
 Ein großer Vorteil ist, dass einmal zusammengestellte Abläufe als Set gespeichert und zu einem späteren Zeitpunkt wieder geladen werden können. So können die zusammengestellten Funktionen mit den gleichen Parametern immer wieder genutzt werden, ohne jedes Mal die Einstellungen neu vornehmen zu müssen. Eine mögliche Einsatzmöglichkeit wäre, zwei unterschiedliche Presets mit Skalierung und Kompression anzulegen und damit Bilder für Webseiten und dazugehörige Thumbnails zu generieren.
 
@@ -25,13 +25,13 @@ Zuguterletzt bietet Bimp eine Umbenennungsfunktion an, in der auch einfache Must
 ![Bimp UI]({{"/post_images/gimp_bimp.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
 {% endfigure %}
 
-**Hinweis:** Bimp wird mit einem Installer geliefert, der allerdings mehr als unnötig ist (und eine dll ins Systemverzeichnis kopiert, was durchaus problematisch sein kann). Dieser lässt sich aber auch mit einem Entpacker wie etwa 7zip öffnen, woraufhin einfach die enthaltene Datei „bimp.exe" ins Gimp-Pluginverzeichnis kopiert werden kann.
+**Hinweis:** Bimp wird mit einem Installer geliefert, der allerdings mehr als unnötig ist (und eine dll ins Systemverzeichnis kopiert, was durchaus problematisch sein kann). Dieser lässt sich aber auch mit einem Entpacker wie etwa 7zip öffnen, woraufhin einfach die enthaltene Datei „bimp.exe" ins GIMP-Pluginverzeichnis kopiert werden kann.
 {: class="alert alert-warning"}
 
 
 ## Davids Batch Processor
 
-[Davids Batch Processor](http://members.ozemail.com.au/~hodsond/dbp.html) (kurz: DBP) ist ebenfalls ein Batch-Plugin für Gimp, das allerdings mittlerweile nicht mehr aktiv weiterentwickelt wird. Dennoch funktioniert die unter  http://members.ozemail.com.au/~hodsond/dbp.html bereitgestellte Version 1.1.8 des Plugins noch problemlos mit der zum Zeitpunkt der Veröffentlichung dieses Artikels aktuellen Gimp-Version 2.8.20.
+[Davids Batch Processor](http://members.ozemail.com.au/~hodsond/dbp.html) (kurz: DBP) ist ebenfalls ein Batch-Plugin für GIMP, das allerdings mittlerweile nicht mehr aktiv weiterentwickelt wird. Dennoch funktioniert die unter  http://members.ozemail.com.au/~hodsond/dbp.html bereitgestellte Version 1.1.8 des Plugins noch problemlos mit der zum Zeitpunkt der Veröffentlichung dieses Artikels aktuellen GIMP-Version 2.8.20.
 
 {% figure [caption:"Davids Batch Processor bietet weniger Optionen, diese sind dafür schnell über die einzelnen Tabs erreichbar."] [class:"figure"] %}
 ![DBP UI]({{"/post_images/gimp_dbp.png" | absolute_url}}){: class="figure-img img-fluid rounded"}

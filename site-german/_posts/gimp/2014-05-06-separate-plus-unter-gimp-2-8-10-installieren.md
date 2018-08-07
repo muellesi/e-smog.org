@@ -29,7 +29,7 @@ Zur schnellen Installation des Plugins habe ich ein Paket ([Download unten](#dow
 #### Schritt 2
 
 {% figure [caption:"Der Pfad zum Separate-Plugin muss GIMP über die Einstellungen bekannt gemacht werden."] [class:"figure"] %}
-![Gimp Einstellungen Separate Pfad]({{"/post_images/gimp_settings_separate.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
+![GIMP Einstellungen Separate Pfad]({{"/post_images/gimp_settings_separate.png" | absolute_url}}){: class="figure-img img-fluid rounded"}
 {% endfigure %}
 
 Anschließend müssen wir GIMP noch sagen, dass es im so neu erstellten Ordner ebenfalls nach Plugins suchen soll. Dies geht in den Einstellungen (Bearbeiten -&gt; Einstellungen) unter Ordner -&gt; Plugins. Hier wird einfach ein neuer Eintrag angelegt, der den Pfad zum soeben erstellten Ordner enthält (Siehe Screenshot).
