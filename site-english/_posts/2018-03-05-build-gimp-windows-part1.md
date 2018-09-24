@@ -145,7 +145,7 @@ For now, we will build GIMP and its most volatile dependencies by hand and from 
 ### Babl
 [Babl](https://gegl.org/babl) is the library that is used internally to convert between different color models. It is a fairly small library so its build process is decently fast.
 ~~~ bash
-git clone git://git.gnome.org/babl
+git clone https://gitlab.gnome.org/GNOME/babl.git
 cd babl
 ./autogen.sh --prefix=$PREFIX --disable-docs
 make
@@ -158,7 +158,7 @@ As you can see, we pass our `$PREFIX` environment variable to the `autogen.sh` s
 [GEGL](https://gegl.org) is a "data flow based image processing framework" that finds more and more use inside of GIMP. Instead of permanently (and therefore destructively) rendering changes to a certain image layer, gegl dynamically creates a final image by chaining multiple gegl operations. This will allow GIMP to have non-destructive effect layers in the future (GIMP 3.x). But even now gegl is used for fast on-canvas previews of almost all available filters. Gegl can be built by using the same stepps we already used for babl (with some additional options for the autogen script):
 
 ~~~ bash
-git clone git://git.gnome.org/gegl
+git clone https://gitlab.gnome.org/GNOME/gegl.git
 cd gegl
 ./autogen.sh --prefix=$PREFIX --enable-gtk-doc-html=no --disable-docs
 make
@@ -207,7 +207,7 @@ make install
 Once all of the above dependencies are compiled and installed without any errors, we should be able to compile GIMP itself now. The basic procedure is exactly the same as for the dependencied before: `git clone`, `autogen`, `make`, `make install`:
 
 ~~~ bash
-git clone git://git.gnome.org/gimp
+git clone https://gitlab.gnome.org/GNOME/gimp.git
 cd gimp
 ./autogen.sh --prefix=$PREFIX --disable-python --disable-gtk-doc --with-gimpdir=GIMP/git-master
 make
