@@ -1,6 +1,6 @@
 ---
 title: Separate+ für GIMP 2.10.6
-date: 2018-10-10 12:00
+date: 2018-10-10 11:00
 image: post_images/cmyk.png
 categories: GIMP
 locale: de_DE
