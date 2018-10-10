@@ -54,9 +54,18 @@
 
 - title: "Separate+ für GIMP 2.8.14"
   description: ""
-  version: "3.0"
+  version: "0.59 (3.0)"
   imageurl: "/post_images/cmyk.png"
   filesize: "1,54 MB"
   date: "19.01.2015"
   downloadurl: "/downloads/seperate-2814-3.zip"
+
+- title: "Separate+ für GIMP 2.10.6"
+  description: "**Achtung:** reduziert bei Benutzung die Farbtiefe des Bildes auf 8 bit."
+  version: "0.59 alpha3"
+  imageurl: "/post_images/cmyk.png"
+  filesize: "706 kB"
+  date: "10.10.2018"
+  downloadurl: "/downloads/separate-2106.zip"
+
 
