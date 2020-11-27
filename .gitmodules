@@ -1,9 +1,9 @@
 [submodule "site-german/_theme/e-smog"]
 	path = site-german/_theme/e-smog
-	url = ../e-smog-jekyll-theme
+	url = https://github.com/muellesi/e-smog.org_theme.git
 	branch = master
 
 [submodule "site-english/_theme/e-smog"]
 	path = site-english/_theme/e-smog
-	url = ../e-smog-jekyll-theme
+	url = https://github.com/muellesi/e-smog.org_theme.git
 	branch = master
