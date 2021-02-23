@@ -1,0 +1,15 @@
+plugins:
+  - jekyll-feed
+  - jekyll-paginate-v2
+  - jekyll-relative-links
+  - jekyll-autoprefixer
+  - jekyll/figure
+
+url: ""
+baseurl: ""
+
+sass:
+  style: expanded
+
+pagination:
+  per_page: 5

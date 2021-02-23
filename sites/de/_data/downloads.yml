@@ -1,0 +1,71 @@
+- title: "Abstandsmessung"
+  description: |
+    Ein weiteres Programm für einen Benutzer von gimpforum.de. Erlaubt es, ein Bild zu laden, auf diesem einen Bezugspunkt zu setzen und dann mit Hilfe weiterer Punkte den Abstand von Bildmerkmalen vom Bezugspunkt zu messen. [Thread auf gimpforum.de](http://www.gimpforum.de/showthread.php?t=22925)
+  version: "1.0"
+  imageurl: "/post_images/Abstandsmessung.png"
+  filesize: "48,7 KB"
+  date: "08.02.2016"
+  downloadurl: "/downloads/Abstandsmessung.zip"
+
+- title: "FastDL Bzip2 Komprimierungstool"
+  description: |
+    Bei der [Einrichtung von FastDL]({{ site.baseurl }}{% post_url ttt/2015-04-21-ttt-server-part-7-fastdl %}) für einen Garry's Mod Server kann man die Dateien vor dem Hochladen mit bzip2 komprimieren, um sowohl beim Hoch- als auch beim Herunterladen Bandbreite und Zeit zu sparen. Hierfür kann entweder das hier zum Download angebotene Toolset oder ein selbst kompiliertes bzip2 von der [Herstellerseite](http://bzip.org/) genutzt werden.
+  version: "1.01"
+  imageurl: "/post_images/bzip2.png"
+  filesize: "229 KB"
+  date: "08.08.2018"
+  downloadurl: "/downloads/Bzip2Tool.zip"
+
+- title: "Pixel Counter"
+  description: |
+    Ein kleines Programm, das ich für einen Benutzer von gimpforum.de geschrieben habe. Es akzeptiert ein Bild als Eingabeparameter und zählt die Anzahl der Pixel pro Farbe im Bild. Diese werden anschließend in einer csv-Datei abgespeichert.
+
+    Neu in Version 2.0: Zeigt die Farbanteile zusätzlich gruppiert nach ihrem Namen an.
+  version: "2.0"
+  imageurl: "/post_images/pixel_counter.png"
+  filesize: "4,42 KB"
+  date: "24.06.2017"
+  downloadurl: "/downloads/PixelCounter.zip"
+
+- title: "Resources.lua Creator"
+  description: |
+    Ein kleines Tool, das ich im Zusammenhang mit meiner Serie zur Einrichtung eines TTT-Servers gebastelt habe.
+    Dieses Tool erleichtert das Anlegen einer lua-Datei, die den Download bestimmter Workshop-Addons für einen GMod-Server erzwingt.
+    Es wird in [Part 3]({{ site.baseurl }}{% post_url ttt/2014-04-22-ttt-server-part-3-workshop%}#halbautomatischer-weg) der Serie zur Einrichtung eines TTT-Servers genutzt.
+  version: "1.0"
+  imageurl: "/post_images/resourceslua.png"
+  filesize: "309 KB"
+  date: "23.06.2017"
+  downloadurl: "/downloads/ResourcesLuaCreator.zip"
+
+- title: "Scale4Web"
+  description: |
+    Ein Programm, das Bilder für Webseiten optimieren kann. Es können verschiedene Presets für verschiedene Anwendungszwecke angelegt werden. Pro Preset gibt es Einstellungsmöglichkeiten für die Länge einer Bildseite und für die Jpeg-Kompressionsqualität. Außerdem wird ein Kommandozeilenmodus unterstützt, bei welchem automatisch das (konfigurierbare) Standardpreset genutzt wird. Die Ergebnisbilder werden jeweils relativ zum Ursprungsbild im Unterordner /converted gespeichert.
+    
+    
+    *Achtung:* Transparenz wird noch nicht unterstützt.
+
+    **Neu in Version 2.0:** Die Seite, anhand deren Das Bild skaliert werden soll ist jetzt einstellbar.
+  version: "2.0"
+  imageurl: "/post_images/scale4web.png"
+  filesize: "232 KB"
+  date: "02.08.2018"
+  downloadurl: "/downloads/Scale4Web.zip"
+
+- title: "Separate+ für GIMP 2.8.14"
+  description: ""
+  version: "0.59 (3.0)"
+  imageurl: "/post_images/cmyk.png"
+  filesize: "1,54 MB"
+  date: "19.01.2015"
+  downloadurl: "/downloads/seperate-2814-3.zip"
+
+- title: "Separate+ für GIMP 2.10.6"
+  description: "**Achtung:** reduziert bei Benutzung die Farbtiefe des Bildes auf 8 bit."
+  version: "0.59 alpha3"
+  imageurl: "/post_images/cmyk.png"
+  filesize: "706 kB"
+  date: "10.10.2018"
+  downloadurl: "/downloads/separate-2106.zip"
+
+
