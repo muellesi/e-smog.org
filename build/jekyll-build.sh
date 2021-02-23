@@ -1,8 +1,5 @@
 #!/bin/bash
 
-mkdir -p $PWD/gems         &&
-export GEM_HOME=$PWD/gems &&
-
 # prepare the deployment directory
 mkdir -p ../deploy/de   && 
 
