@@ -18,4 +18,4 @@ jobs:
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll \
         jekyll/builder:latest \
-        /bin/bash -c "chmod 777 /srv/jekyll && chmod 777 build && cd build && chmod +x jekyll-build-en.sh && ./jekyll-build-en.sh"
+        /bin/bash -c "chmod 777 /srv/jekyll && chmod 777 build && chmod +w /srv/jekyll/common/theme/Gemfile.lock && chmod +w /srv/jekyll/sites/en/Gemfile.lock && cd build && chmod +x jekyll-build-en.sh && ./jekyll-build-en.sh"
