@@ -1,4 +1,4 @@
-name: Jekyll site CI
+name: Build english site
 
 on:
   push:
@@ -18,4 +18,4 @@ jobs:
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll \
         jekyll/builder:latest \
-        /bin/bash -c "chmod 777 /srv/jekyll && ./jekyll-build-en.sh"
+        /bin/bash -c "chmod 777 /srv/jekyll && chmod +x jekyll-build-en.sh && ./jekyll-build-en.sh"
