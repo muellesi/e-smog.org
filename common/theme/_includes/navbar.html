@@ -1,0 +1,37 @@
+<header>
+  <nav id="header" class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{{ "/" | absolute_url }}">
+          {% if site.logo != "" %}
+          <img src="{{ site.logo | absolute_url }}" alt="{{site.name}}"/>
+          {% else %}
+          <h1 class="brand-heading">{{ site.name }}</h1>
+          {% endif %}
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          {% for entry in site.data.menu %}
+          <ul class="navbar-nav">
+          {% for item in entry.items %}
+            {% assign itemhassubitems = item.subitems.size != 0 %}
+            <li class="nav-item {% if itemhassubitems %}dropdown{% endif %}">
+              <a class="nav-link {% if itemhassubitems %}dropdown-toggle{% endif %} {% if item.href == page.url %}active{% endif %}" href="{{ item.href | absolute_url }}" {% if itemhassubitems %}id="navbarDropdown{{ item.title  | slugify }}" 
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"{% endif %}>{{ item.title }}</a>
+                {% if itemhassubitems %}
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown{{item.title | slugify }}">
+                  {% for subitem in item.subitems %}
+                      <a class="dropdown-item " href="{{ subitem.href | absolute_url }}">{{ subitem.title }}</a>
+                  {% endfor %}
+                </div>
+                {% endif %}
+            </li>
+          {% endfor %}
+          </ul>
+        {% endfor %}
+        </div>
+    </div>
+  </nav>
+</header>

@@ -1,5 +1,5 @@
 PATH
-  remote: _theme
+  remote: ../../common/theme
   specs:
     e-smog (0.1.6)
       jekyll (~> 3.7)
