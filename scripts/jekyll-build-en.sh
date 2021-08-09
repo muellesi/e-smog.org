@@ -1,5 +1,8 @@
 #!/bin/bash
 
+DIRECTORY=$(cd `dirname $0` && pwd)
+cd $DIRECTORY
+
 # prepare the deployment directory
 mkdir -p ../deploy/en  &&
 

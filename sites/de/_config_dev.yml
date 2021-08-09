@@ -3,7 +3,8 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-relative-links
   - jekyll-autoprefixer
-  - jekyll/figure
+  - jekyll-figure
+  - jekyll-sitemap
 
 url: ""
 baseurl: ""
