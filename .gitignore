@@ -6,3 +6,4 @@ node_modules
 /deploy
 /deploy-test
 /deploy-dev
+/vendor
