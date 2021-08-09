@@ -26,6 +26,6 @@ jobs:
     - name: Upload result as artifact
       uses: actions/upload-artifact@v2
       with:
-        name: build-artifact
+        name: site-en
         path: deploy/en/**/*.*
 
