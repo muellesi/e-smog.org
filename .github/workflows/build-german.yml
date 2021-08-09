@@ -12,10 +12,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Build the site in the jekyll/builder container
+    - name: Checkout source
+      uses: actions/checkout@v2
+
+    - name: Build "de" site
       run: |
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll \
         jekyll/builder:latest \
         /bin/bash -c "chmod +w /srv/jekyll -R  && cd scripts && chmod +x jekyll-build.sh && ./jekyll-build.sh"
+        
+    - name: Upload result as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: build-artifact
+        path: deploy/de/**/*.*
