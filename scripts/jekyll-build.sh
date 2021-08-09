@@ -5,6 +5,7 @@ cd $DIRECTORY
 
 # prepare the deployment directory
 mkdir -p ../deploy/de   && 
+chmod 777 ../deploy/de &&
 
 # build german site 
 cd ../sites/de              &&
